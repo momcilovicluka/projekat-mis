@@ -1,0 +1,12 @@
+window_sizes 1920 1017 250 1664 861 104
+cleanlooks_style
+diagrams
+  active  usecasediagram_ref 128069 // useCaseDiagramBiblAdmin
+    1665 865 100 A0 28 0
+end
+show_stereotypes
+selected usecasediagram_ref 128011 // useCaseClan
+open
+  usecaseview_ref 128069 // bibliotekaUseCase
+end
+end

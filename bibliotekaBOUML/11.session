@@ -1,0 +1,14 @@
+window_sizes 956 991 236 714 809 128
+
+diagrams
+  usecasediagram_ref 128069 // useCaseDiagramBiblAdmin
+    1171 655 59 A0 0 0
+  active  usecasediagram_ref 128011 // useCaseClan
+    714 809 69 A4 0 0
+end
+show_stereotypes
+selected usecasediagram_ref 128011 // useCaseClan
+open
+  usecaseview_ref 128069 // bibliotekaUseCase
+end
+end
