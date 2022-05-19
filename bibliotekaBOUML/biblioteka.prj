@@ -1,7 +1,7 @@
 format 224
 "biblioteka"
-  revision 3
-  modified_by 69 "Home"
+  revision 4
+  modified_by 11 "Dalibor"
 
 
   
@@ -216,6 +216,11 @@ ${docstring}${members}
       
       activitydiagramsettings
        end
+      simplerelation 136971
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128709 // Pretraga clanova
+      end
     end
 
     usecase 128581 "Brisanje clana"
@@ -506,6 +511,11 @@ ${docstring}${members}
       
       activitydiagramsettings
        end
+      simplerelation 137227
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 129221 // pretraga bibliotekara
+      end
     end
 
     usecasediagram 128011 "useCaseClan"
@@ -674,6 +684,11 @@ ${docstring}${members}
       
       activitydiagramsettings
        end
+      simplerelation 137099
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128069 // Pretraga knjiga
+      end
     end
 
     usecase 128779 "Izdavanje knjige"
@@ -918,6 +933,10 @@ ${docstring}${members}
 	flow 129221 "Da"
 	  on activityaction_ref 128453 // activity action Odabir knjige
 	end
+
+	flow 138891 "Ne"
+	  on activitynode_ref 135819 // merge
+	end
       end
 
       activityaction 128325 "Provera da li hoce drugu knjigu"
@@ -982,6 +1001,18 @@ ${docstring}${members}
 	flow 132293 "Jeste na stanju"
 	  on activityaction_ref 129861 // activity action Pretraga clana
 	end
+
+	flow 137739 "<flow>"
+	  on activitynode_ref 135435 // merge
+	end
+
+	flow 138123 "Na stanju je"
+	  on activitynode_ref 135563 // merge
+	end
+
+	flow 139019 "Nije na stanju"
+	  on activitynode_ref 135819 // merge
+	end
       end
 
       activitynode 128837 activity_final ""
@@ -1030,6 +1061,10 @@ ${docstring}${members}
 	flow 131781 "Nema rezervaciju"
 	  on activityaction_ref 128325 // activity action Provera da li hoce drugu knjigu
 	end
+
+	flow 138763 "Nema rezervaciju"
+	  on activitynode_ref 135819 // merge
+	end
       end
 
       activityaction 129349 "Odabir rezervacije"
@@ -1040,6 +1075,10 @@ ${docstring}${members}
 
 	flow 133317 "<flow>"
 	  on activityaction_ref 130245 // activity action Provera da li clan zadovoljava uslove
+	end
+
+	flow 138507 "<flow>"
+	  on activitynode_ref 135691 // merge
 	end
       end
 
@@ -1108,6 +1147,10 @@ ${docstring}${members}
 	opaque_action
 	flow 132805 "<flow>"
 	  on activityaction_ref 130245 // activity action Provera da li clan zadovoljava uslove
+	end
+
+	flow 138251 "<flow>"
+	  on activitynode_ref 135691 // merge
 	end
       end
 
@@ -1178,6 +1221,14 @@ ${docstring}${members}
 	flow 134469 "Ne"
 	  on activitynode_ref 129989 // activity_final
 	end
+
+	flow 137611 "<flow>"
+	  on activitynode_ref 135435 // merge
+	end
+
+	flow 137995 "<flow>"
+	  on activitynode_ref 135563 // merge
+	end
       end
 
       activitynode 130117 decision ""
@@ -1190,6 +1241,170 @@ ${docstring}${members}
 
 	flow 134853 "Ne"
 	  on activitynode_ref 129989 // activity_final
+	end
+      end
+
+      activitydiagram 134539 "dodavanjeKnjige"
+	activitydiagramsettings draw_all_relations no
+	 end
+	size A0
+      end
+
+      activitynode 134539 initial_node ""
+	flow 134539 "<flow>"
+	  on activityaction_ref 134539 // activity action Unos podataka o knjizi: ime knjige, broj stranica, povez
+	end
+
+	flow 134795 "<flow>"
+	  on activitynode_ref 134667 // merge
+	end
+      end
+
+      activityaction 134539 "Unos podataka o knjizi: ime knjige, broj stranica, povez"
+	opaque_action
+	flow 134667 "<flow>"
+	  on activityaction_ref 134667 // activity action Provera validnosti podataka
+	end
+      end
+
+      activityaction 134667 "Provera validnosti podataka"
+	opaque_action
+	flow 135051 "<flow>"
+	  on activitynode_ref 134795 // decision
+	end
+      end
+
+      activitynode 134667 merge ""
+	flow 134923 "<flow>"
+	  on activityaction_ref 134539 // activity action Unos podataka o knjizi: ime knjige, broj stranica, povez
+	end
+      end
+
+      activitynode 134795 decision ""
+	flow 135179 "nisu validni"
+	  on activitynode_ref 134667 // merge
+	end
+
+	flow 135307 "<flow>"
+	  on activityaction_ref 134795 // activity action Pretraga liste autora
+	end
+
+	flow 135947 "<flow>"
+	  on activityaction_ref 135179 // activity action Dodeljivanje autora knjizi
+	end
+
+	flow 136459 "validni su"
+	  on activitynode_ref 135051 // merge
+	end
+      end
+
+      activityaction 134795 "Pretraga liste autora"
+	opaque_action
+	flow 135435 "<flow>"
+	  on activityaction_ref 134923 // activity action Provera da li autor postoji u sistemu
+	end
+      end
+
+      activityaction 134923 "Provera da li autor postoji u sistemu"
+	opaque_action
+	flow 135563 "<flow>"
+	  on activitynode_ref 134923 // decision
+	end
+      end
+
+      activitynode 134923 decision ""
+	flow 135691 "ne"
+	  on activityaction_ref 135051 // activity action Dodavanje novog autora
+	end
+
+	flow 136587 "da"
+	  on activityaction_ref 135307 // activity action Odabir autora
+	end
+      end
+
+      activityaction 135051 "Dodavanje novog autora"
+	opaque_action
+	flow 135819 "<flow>"
+	  on activityaction_ref 134795 // activity action Pretraga liste autora
+	end
+
+	flow 136331 "<flow>"
+	  on activitynode_ref 135051 // merge
+	end
+      end
+
+      activityaction 135179 "Dodeljivanje autora knjizi"
+	opaque_action
+	flow 136075 "<flow>"
+	  on activitynode_ref 135051 // merge
+	end
+      end
+
+      activitynode 135051 merge ""
+	flow 136203 "<flow>"
+	  on activityaction_ref 134795 // activity action Pretraga liste autora
+	end
+      end
+
+      activityaction 135307 "Odabir autora"
+	opaque_action
+	flow 136715 "<flow>"
+	  on activityaction_ref 135435 // activity action Provera da li knjiga vec postoji u sistemu
+	end
+      end
+
+      activityaction 135435 "Provera da li knjiga vec postoji u sistemu"
+	opaque_action
+	flow 136843 "<flow>"
+	  on activitynode_ref 135179 // decision
+	end
+      end
+
+      activitynode 135179 decision ""
+	flow 136971 "postoji"
+	  on activitynode_ref 135307 // activity_final
+	end
+
+	flow 137099 "ne postoji"
+	  on activityaction_ref 135563 // activity action Unos knjige u sistem
+	end
+
+	flow 137355 "postoji"
+	  on activitynode_ref 135307 // activity_final
+	end
+      end
+
+      activitynode 135307 activity_final ""
+      end
+
+      activityaction 135563 "Unos knjige u sistem"
+	opaque_action
+	flow 137227 "<flow>"
+	  on activitynode_ref 135307 // activity_final
+	end
+      end
+
+      activitynode 135435 merge ""
+	flow 137483 "<flow>"
+	  on activitynode_ref 135435 // merge
+	end
+      end
+
+      activitynode 135563 merge ""
+	flow 137867 "<flow>"
+	  on activityaction_ref 129861 // activity action Pretraga clana
+	end
+      end
+
+      activitynode 135691 merge ""
+	flow 138379 "<flow>"
+	  on activityaction_ref 130245 // activity action Provera da li clan zadovoljava uslove
+	end
+      end
+
+      activitynode 135819 merge ""
+	flow 138635 "<flow>"
+	  on activityaction_ref 128325 // activity action Provera da li hoce drugu knjigu
 	end
       end
     end
@@ -1222,6 +1437,90 @@ ${docstring}${members}
 	-_->
 	  stereotype "extend"
 	  on usecase_ref 129419 // Odabir rezervacije
+      end
+    end
+
+    usecase 135947 "Dodavanje autora"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 136843
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 136075 // Pretraga autora
+      end
+    end
+
+    usecase 136075 "Pretraga autora"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 136587
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128523 // Dodavanje knjige
+      end
+    end
+
+    usecase 136203 "Odabir autora"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 136715
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 136075 // Pretraga autora
       end
     end
   end
