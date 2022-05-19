@@ -1,8 +1,0 @@
-window_sizes 1920 1017 250 1664 861 104
-cleanlooks_style
-show_stereotypes
-selected usecasediagram_ref 128069 // useCaseDiagramBiblAdmin
-open
-  activity_ref 128069 // izdavanjeKnjigeActivity
-end
-end
