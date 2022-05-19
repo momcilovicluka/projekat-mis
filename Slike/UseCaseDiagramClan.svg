@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Bouml (http://bouml.free.fr/) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="736" height="306" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<ellipse fill="none" stroke="black" stroke-width="1" stroke-opacity="1" cx="44" cy="223" rx="6" ry="6" />
+	<line stroke="black" stroke-opacity="1" x1="33" y1="234" x2="55" y2="234" />
+	<line stroke="black" stroke-opacity="1" x1="44" y1="229" x2="44" y2="244" />
+	<line stroke="black" stroke-opacity="1" x1="44" y1="244" x2="34" y2="256" />
+	<line stroke="black" stroke-opacity="1" x1="44" y1="244" x2="54" y2="256" />
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" text-anchor="middle" x="46" y="267">Clan</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="271" y="275">&lt;&lt;include&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="492" y="283">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="661" cy="279" rx="65" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="658" cy="276" rx="65" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="406" cy="280" rx="50" ry="16" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="403" cy="277" rx="50" ry="16" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="196" cy="263" rx="60" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="193" cy="260" rx="60" ry="15" />
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="358" y="277">Pretraga knjiga</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="138" y="261">rezervisanje knjige</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="599" y="276">Prikaz detalja knjige</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="352" y1="271" x2="346" y2="264" />
+	<line stroke="black" stroke-opacity="1" x1="352" y1="271" x2="345" y2="276" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="255" y1="264" x2="352" y2="271" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="455" y1="276" x2="461" y2="282" />
+	<line stroke="black" stroke-opacity="1" x1="455" y1="276" x2="461" y2="270" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="592" y1="276" x2="455" y2="276" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="66" y1="248" x2="132" y2="254" />
+</g>
+</svg>

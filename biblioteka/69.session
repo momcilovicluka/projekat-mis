@@ -1,7 +1,7 @@
 window_sizes 1760 1017 250 1504 861 104
 cleanlooks_style
 show_stereotypes
-selected activitydiagram_ref 134597 // izdavanjeKnjige
+selected activity_ref 128197 // pretraga knjige
 open
   activity_ref 128069 // izdavanjeKnjigeActivity
 end

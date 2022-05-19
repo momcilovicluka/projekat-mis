@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Bouml (http://bouml.free.fr/) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="926" height="716" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<ellipse fill="none" stroke="black" stroke-width="1" stroke-opacity="1" cx="467" cy="263" rx="6" ry="6" />
+	<line stroke="black" stroke-opacity="1" x1="456" y1="274" x2="478" y2="274" />
+	<line stroke="black" stroke-opacity="1" x1="467" y1="269" x2="467" y2="284" />
+	<line stroke="black" stroke-opacity="1" x1="467" y1="284" x2="457" y2="296" />
+	<line stroke="black" stroke-opacity="1" x1="467" y1="284" x2="477" y2="296" />
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" text-anchor="middle" x="469" y="307">Bibliotekar</text>
+</g>
+<g>
+	<ellipse fill="none" stroke="black" stroke-width="1" stroke-opacity="1" cx="468" cy="377" rx="6" ry="6" />
+	<line stroke="black" stroke-opacity="1" x1="457" y1="388" x2="479" y2="388" />
+	<line stroke="black" stroke-opacity="1" x1="468" y1="383" x2="468" y2="398" />
+	<line stroke="black" stroke-opacity="1" x1="468" y1="398" x2="458" y2="410" />
+	<line stroke="black" stroke-opacity="1" x1="468" y1="398" x2="478" y2="410" />
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" text-anchor="middle" x="470" y="421">Admin</text>
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="469" y1="370" x2="469" y2="323" />
+	<line stroke="#000000" stroke-opacity="1" x1="469" y1="317" x2="463" y2="323" />
+	<line stroke="#000000" stroke-opacity="1" x1="469" y1="317" x2="475" y2="323" />
+	<line stroke="#000000" stroke-opacity="1" x1="463" y1="323" x2="475" y2="323" />
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="548" y="138">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="317" y="152">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="222" y="440">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="126" y="528">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="311" y="105">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="122" y="453">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="604" y="518">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="377" y="534">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="431" y="158">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="617" y="287">&lt;&lt;include&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="336" y="647">&lt;&lt;include&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="423" y="576">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="638" y="260">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="687" y="535">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="650" y="229">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="102" y="237">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="309" y="543">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="356" y="229">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="125" y="313">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="565" y="186">&lt;&lt;include&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="208" y="264">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="654" y="364">&lt;&lt;extend&gt;&gt;</text>
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="469" cy="195" rx="53" ry="20" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="466" cy="192" rx="53" ry="20" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="467" cy="111" rx="65" ry="17" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="464" cy="108" rx="65" ry="17" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="253" cy="184" rx="48" ry="16" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="250" cy="181" rx="48" ry="16" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="805" cy="271" rx="77" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="802" cy="268" rx="77" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="237" cy="87" rx="55" ry="16" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="234" cy="84" rx="55" ry="16" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="801" cy="207" rx="48" ry="16" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="798" cy="204" rx="48" ry="16" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="582" cy="246" rx="43" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="579" cy="243" rx="43" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="734" cy="323" rx="58" ry="16" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="731" cy="320" rx="58" ry="16" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="188" cy="485" rx="56" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="185" cy="482" rx="56" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="692" cy="152" rx="56" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="689" cy="149" rx="56" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="338" cy="249" rx="61" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="335" cy="246" rx="61" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="479" cy="526" rx="59" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="476" cy="523" rx="59" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="339" cy="385" rx="64" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="336" cy="382" rx="64" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="134" cy="407" rx="75" ry="17" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="131" cy="404" rx="75" ry="17" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="152" cy="559" rx="60" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="149" cy="556" rx="60" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="659" cy="394" rx="58" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="656" cy="391" rx="58" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="657" cy="564" rx="65" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="654" cy="561" rx="65" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="122" cy="192" rx="49" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="119" cy="189" rx="49" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="523" cy="625" rx="64" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="520" cy="622" rx="64" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="165" cy="271" rx="54" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="162" cy="268" rx="54" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="387" cy="690" rx="59" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="384" cy="687" rx="59" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="821" cy="488" rx="94" ry="23" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="818" cy="485" rx="94" ry="23" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="353" cy="595" rx="67" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="350" cy="592" rx="67" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="605" cy="462" rx="93" ry="16" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="602" cy="459" rx="93" ry="16" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="346" cy="481" rx="71" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="343" cy="478" rx="71" ry="15" />
+</g>
+<g>
+	<ellipse fill="#cbcbcb" stroke="none" cx="165" cy="347" rx="60" ry="15" />
+	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="162" cy="344" rx="60" ry="15" />
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="422" y="522">prikaz bibliotekara</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="733" y="266">Produzavanje clanarine</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="186" y="85">Izmena podataka</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="420" y="193">Pretraga knjiga</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="409" y="108">Prikaz detalja knjige</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="207" y="178">Brisanje knjige</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="605" y="389">Dodavanje clana</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="682" y="320">Pretraga clanova</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="540" y="243">Odabir clana</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="755" y="203">Brisanje clana</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="283" y="247">Dodavanje knjige</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="96" y="557">Produzavanje roka</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="641" y="148">Izdavanje knjige</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="134" y="482">Odabir izdavanja</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="274" y="381">Prikaz izdatih knjiga</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="71" y="405">Izdavanje opomene</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="113" y="267">Pretraga autora</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="108" y="342">Dodavanje autora</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="528" y="458">Prikaz rezervisanih knjiga</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="275" y="478">dodavanje bibliotekara</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="595" y="562">Odabir rezervacije</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="336" y="688">odabir bibliotekara</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="77" y="189">Odabir autora</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="290" y="590">pretraga bibliotekara</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="462" y="623">brisanje bibliotekara</text>
+</g>
+<g>
+	<text font-family="MS Shell Dlg 2" font-size="8" fill="#000000" xml:space="preserve" x="733" y="487">Izdavanje rezervisane knjige</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="175" y1="499" x2="166" y2="501" />
+	<line stroke="black" stroke-opacity="1" x1="175" y1="499" x2="177" y2="507" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="155" y1="540" x2="175" y2="499" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="442" y1="540" x2="433" y2="537" />
+	<line stroke="black" stroke-opacity="1" x1="442" y1="540" x2="439" y2="548" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="377" y1="576" x2="442" y2="540" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="595" y1="227" x2="603" y2="227" />
+	<line stroke="black" stroke-opacity="1" x1="595" y1="227" x2="595" y2="218" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="669" y1="166" x2="595" y2="227" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="623" y1="246" x2="628" y2="252" />
+	<line stroke="black" stroke-opacity="1" x1="623" y1="246" x2="629" y2="240" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="724" y1="258" x2="623" y2="246" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="403" y1="127" x2="395" y2="123" />
+	<line stroke="black" stroke-opacity="1" x1="403" y1="127" x2="399" y2="134" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="297" y1="164" x2="403" y2="127" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="378" y1="671" x2="381" y2="663" />
+	<line stroke="black" stroke-opacity="1" x1="378" y1="671" x2="370" y2="667" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="355" y1="609" x2="378" y2="671" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="615" y1="477" x2="613" y2="485" />
+	<line stroke="black" stroke-opacity="1" x1="615" y1="477" x2="623" y2="478" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="666" y1="545" x2="615" y2="477" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="701" y1="303" x2="698" y2="294" />
+	<line stroke="black" stroke-opacity="1" x1="701" y1="303" x2="692" y2="305" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="613" y1="259" x2="701" y2="303" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="483" y1="540" x2="479" y2="547" />
+	<line stroke="black" stroke-opacity="1" x1="483" y1="540" x2="490" y2="543" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="512" y1="606" x2="483" y2="540" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="398" y1="105" x2="392" y2="98" />
+	<line stroke="black" stroke-opacity="1" x1="398" y1="105" x2="391" y2="110" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="290" y1="90" x2="398" y2="105" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="465" y1="171" x2="470" y2="164" />
+	<line stroke="black" stroke-opacity="1" x1="465" y1="171" x2="458" y2="165" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="464" y1="127" x2="465" y2="171" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="530" y1="125" x2="535" y2="131" />
+	<line stroke="black" stroke-opacity="1" x1="530" y1="125" x2="536" y2="119" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="632" y1="138" x2="530" y2="125" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="172" y1="466" x2="173" y2="457" />
+	<line stroke="black" stroke-opacity="1" x1="172" y1="466" x2="163" y2="464" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="144" y1="423" x2="172" y2="466" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="308" y1="399" x2="299" y2="397" />
+	<line stroke="black" stroke-opacity="1" x1="308" y1="399" x2="306" y2="407" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="208" y1="466" x2="308" y2="399" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="412" y1="213" x2="404" y2="209" />
+	<line stroke="black" stroke-opacity="1" x1="412" y1="213" x2="408" y2="220" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="372" y1="230" x2="412" y2="213" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="623" y1="233" x2="629" y2="237" />
+	<line stroke="black" stroke-opacity="1" x1="623" y1="233" x2="627" y2="226" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="749" y1="210" x2="623" y2="233" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="684" y1="545" x2="691" y2="547" />
+	<line stroke="black" stroke-opacity="1" x1="684" y1="545" x2="686" y2="537" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="761" y1="510" x2="684" y2="545" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="273" y1="253" x2="266" y2="247" />
+	<line stroke="black" stroke-opacity="1" x1="273" y1="253" x2="267" y2="259" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="217" y1="259" x2="273" y2="253" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="153" y1="252" x2="155" y2="243" />
+	<line stroke="black" stroke-opacity="1" x1="153" y1="252" x2="144" y2="249" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="127" y1="206" x2="153" y2="252" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="162" y1="284" x2="156" y2="290" />
+	<line stroke="black" stroke-opacity="1" x1="162" y1="284" x2="168" y2="290" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="162" y1="328" x2="162" y2="284" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="711" y1="337" x2="702" y2="336" />
+	<line stroke="black" stroke-opacity="1" x1="711" y1="337" x2="710" y2="345" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="672" y1="375" x2="711" y2="337" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="348" y1="576" x2="353" y2="569" />
+	<line stroke="black" stroke-opacity="1" x1="348" y1="576" x2="341" y2="570" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="343" y1="494" x2="348" y2="576" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="497" y1="274" x2="535" y2="258" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="449" y1="412" x2="365" y2="462" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="468" y1="256" x2="467" y2="213" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="471" y1="431" x2="475" y2="507" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="492" y1="317" x2="589" y2="442" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="440" y1="307" x2="356" y2="366" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="497" y1="303" x2="628" y2="375" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="440" y1="291" x2="223" y2="330" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="440" y1="278" x2="363" y2="263" />
+</g>
+</svg>
