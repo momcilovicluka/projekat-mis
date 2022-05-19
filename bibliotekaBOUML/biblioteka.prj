@@ -1,0 +1,1228 @@
+format 224
+"biblioteka"
+  revision 3
+  modified_by 69 "Home"
+
+
+  
+  // class settings
+  default_attribute_visibility private default_relation_visibility private default_operation_visibility public
+  
+  classdiagramsettings draw_all_relations yes hide_attributes no hide_operations no hide_getset_operations no hide_ports no show_members_full_definition no show_members_visibility no show_members_stereotype no show_members_context no show_members_multiplicity no show_members_initialization no show_attribute_modifiers no member_max_width 127 show_parameter_dir yes show_parameter_name yes package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes show_relation_modifiers no show_relation_visibility no show_infonote no shadow yes gradient none show_stereotype_properties no end
+  
+  classcompositediagramsettings auto_label_position yes draw_all_relations yes shadow yes gradient none end
+  
+  usecasediagramsettings package_name_in_tab no show_context_mode no auto_label_position yes draw_all_relations yes class_drawing_mode actor shadow yes gradient none show_stereotype_properties no end
+  
+  sequencediagramsettings show_full_operations_definition no show_class_of_operation no write_horizontally yes instances_drawing_mode natural drawing_language uml draw_all_relations yes shadow yes gradient none show_stereotype_properties no show_class_context_mode no show_msg_context_mode no end
+  
+  collaborationdiagramsettings show_full_operations_definition no show_class_of_operation no show_hierarchical_rank no write_horizontally yes instances_drawing_mode natural drawing_language uml package_name_in_tab no show_class_pack_context_mode no show_msg_context_mode no draw_all_relations yes shadow yes gradient none show_stereotype_properties no end
+  
+  objectdiagramsettings write_horizontally yes package_name_in_tab no show_class_pack_context_mode no auto_label_position yes draw_all_relations yes shadow yes gradient none show_stereotype_properties no end
+  
+  objectcompositediagramsettings auto_label_position yes draw_all_relations yes shadow yes gradient none end
+  
+  componentdiagramsettings package_name_in_tab no show_context_mode no auto_label_position yes draw_all_relations yes shadow yes gradient none
+   draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no end
+  
+  deploymentdiagramsettings package_name_in_tab no show_context_mode no write_horizontally yes auto_label_position yes draw_all_relations yes shadow yes gradient none
+   draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no end
+  
+  statediagramsettings package_name_in_tab no show_context_mode no auto_label_position yes write_label_horizontally yes show_trans_definition no draw_all_relations yes shadow yes gradient none
+   show_activities yes region_horizontally yes drawing_language uml show_stereotype_properties no end
+  
+  activitydiagramsettings package_name_in_tab no show_context_mode no show_opaque_action_definition no auto_label_position yes write_label_horizontally no draw_all_relations yes shadow yes gradient none
+   show_infonote yes drawing_language uml show_stereotype_properties no end
+  
+  class_color yellow duration_color transparent continuation_color gray note_color blue fragment_color transparent subject_color transparent usecase_color yellow package_color transparent component_color green artifact_color green deploymentnode_color gray state_color yellow stateaction_color transparent activity_color transparent activityregion_color transparent activitypartition_color transparent activityaction_color transparent parameterpin_color white generalization_color black 
+  dpi 96
+  font_size 8
+  diagram_format A4
+
+  image_root_dir ""
+
+
+  mark_for_import
+  
+  usecaseview 128069 "bibliotekaUseCase"
+    
+    usecasediagramsettings end
+    
+    sequencediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    activitydiagramsettings
+     end
+    usecasediagram 128069 "useCaseDiagramBiblAdmin"
+      usecasediagramsettings draw_all_relations no end
+      size A0
+    end
+
+    class 128069 "Bibliotekar"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 128325 "Admin"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128069 // <generalisation>
+	relation 128069 ---|>
+	  a public
+	    java "${type}"
+	    python "${type}"
+	    classrelation_ref 128069 // <generalisation>
+	  b parent class_ref 128069 // Bibliotekar
+      end
+    end
+
+    usecase 128069 "Pretraga knjiga"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 128197 "Prikaz detalja knjige"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128069
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128069 // Pretraga knjiga
+      end
+    end
+
+    usecase 128325 "rezervisanje knjige"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128197
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128197 // Prikaz detalja knjige
+      end
+
+      simplerelation 136005
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128069 // Pretraga knjiga
+      end
+    end
+
+    usecase 128453 "Dodavanje clana"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 128581 "Brisanje clana"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128453
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128709 // Pretraga clanova
+      end
+
+      simplerelation 129093
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128965 // prikaz clanova
+      end
+
+      simplerelation 128267
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128709 // Pretraga clanova
+      end
+
+      simplerelation 130059
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128837 // Odabir clana
+      end
+    end
+
+    usecase 128709 "Pretraga clanova"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128325
+	-_->
+	  on usecase_ref 128581 // Brisanje clana
+      end
+
+      simplerelation 128581
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128965 // prikaz clanova
+      end
+
+      simplerelation 128651
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128837 // Odabir clana
+      end
+
+      simplerelation 136133
+	-_->
+	  on usecase_ref 128709 // Pretraga clanova
+      end
+    end
+
+    usecase 128837 "Odabir clana"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128709
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128709 // Pretraga clanova
+      end
+
+      simplerelation 128837
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128965 // prikaz clanova
+      end
+
+      simplerelation 128965
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128709 // Pretraga clanova
+      end
+
+      simplerelation 129675
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128709 // Pretraga clanova
+      end
+    end
+
+    usecase 128965 "prikaz clanova"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 129093 "prikaz bibliotekara"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 129221 "pretraga bibliotekara"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 129221
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 129093 // prikaz bibliotekara
+      end
+
+      simplerelation 129349
+	-_->
+	  stereotype "include"
+	  on usecase_ref 129349 // odabir bibliotekara
+      end
+    end
+
+    usecase 129349 "odabir bibliotekara"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 129477 "brisanje bibliotekara"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 129477
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 129093 // prikaz bibliotekara
+      end
+    end
+
+    usecase 129605 "dodavanje bibliotekara"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecasediagram 128011 "useCaseClan"
+      usecasediagramsettings draw_all_relations no end
+      size A4
+    end
+
+    class 128139 "Clan"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    usecase 128011 "Izmena podataka"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128011
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128197 // Prikaz detalja knjige
+      end
+    end
+
+    usecase 128139 "Brisanje knjige"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128139
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128197 // Prikaz detalja knjige
+      end
+    end
+
+    usecase 128267 "Produzavanje clanarine"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128395
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128709 // Pretraga clanova
+      end
+
+      simplerelation 129931
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128837 // Odabir clana
+      end
+    end
+
+    usecase 128395 "Izdavanje opomene"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128523
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128709 // Pretraga clanova
+      end
+
+      simplerelation 129163
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 129035 // Odabir izdavanja
+      end
+    end
+
+    usecase 128523 "Dodavanje knjige"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 128779 "Izdavanje knjige"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128779
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128197 // Prikaz detalja knjige
+      end
+
+      simplerelation 128907
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128709 // Pretraga clanova
+      end
+
+      simplerelation 129419
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 129419 // Odabir rezervacije
+      end
+
+      simplerelation 129803
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128837 // Odabir clana
+      end
+
+      simplerelation 136261
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 129419 // Odabir rezervacije
+      end
+    end
+
+    usecase 128907 "Prikaz izdatih knjiga"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 129035 "Odabir izdavanja"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 129035
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128907 // Prikaz izdatih knjiga
+      end
+    end
+
+    usecase 129163 "Produzavanje roka"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 129291
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 129035 // Odabir izdavanja
+      end
+    end
+
+    usecase 129291 "Prikaz rezervisanih knjiga"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 129419 "Odabir rezervacije"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 129547
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 129291 // Prikaz rezervisanih knjiga
+      end
+    end
+
+    activity 128069 "izdavanjeKnjigeActivity"
+      activitydiagram 134597 "izdavanjeKnjige"
+	activitydiagramsettings draw_all_relations no
+	 end
+	size A0
+      end
+
+      activitynode 128069 initial_node ""
+	flow 128069 "<flow>"
+	  on activitynode_ref 128197 // activity_final
+	end
+
+	flow 128197 "<flow>"
+	  on activitynode_ref 128325 // merge
+	end
+
+	flow 130373 "<flow>"
+	  on activityaction_ref 128965 // activity action Provera da li clan ima rezervaciju
+	end
+      end
+
+      activitynode 128197 activity_final ""
+      end
+
+      activityaction 128069 "Pretraga knjige"
+	opaque_action
+	flow 128453 "<flow>"
+	  on activityaction_ref 128197 // activity action Provera da li knjiga postoji u sistemu
+	end
+
+	flow 129349 "<flow>"
+	  on activityaction_ref 128581 // activity action Odabir knjige
+	end
+
+	flow 129605 "<flow>"
+	  on activityaction_ref 128197 // activity action Provera da li knjiga postoji u sistemu
+	end
+      end
+
+      activitynode 128325 merge ""
+	flow 128325 "<flow>"
+	  on activityaction_ref 128069 // activity action Pretraga knjige
+	end
+      end
+
+      activityaction 128197 "Provera da li knjiga postoji u sistemu"
+	opaque_action
+	flow 128581 "<flow>"
+	  on activitynode_ref 128453 // decision
+	end
+      end
+
+      activitynode 128453 decision ""
+	flow 128709 "Ne"
+	  on activityaction_ref 128325 // activity action Provera da li hoce drugu knjigu
+	end
+
+	flow 129221 "Da"
+	  on activityaction_ref 128453 // activity action Odabir knjige
+	end
+      end
+
+      activityaction 128325 "Provera da li hoce drugu knjigu"
+	opaque_action
+	flow 128837 "Ne"
+	  on activitynode_ref 128325 // merge
+	end
+
+	flow 128965 "Ne"
+	  on activitynode_ref 128581 // activity_final
+	end
+
+	flow 129093 "Da"
+	  on activitynode_ref 128325 // merge
+	end
+
+	flow 131909 "<flow>"
+	  on activitynode_ref 129477 // decision
+	end
+      end
+
+      activityaction 128453 "Odabir knjige"
+	opaque_action
+	flow 129733 "<flow>"
+	  on activityaction_ref 128709 // activity action Prikaz detalja knjige
+	end
+      end
+
+      activitynode 128581 activity_final ""
+      end
+
+      activityaction 128581 "Odabir knjige"
+	opaque_action
+	flow 129477 "<flow>"
+	  on activityaction_ref 128197 // activity action Provera da li knjiga postoji u sistemu
+	end
+      end
+
+      activityaction 128709 "Prikaz detalja knjige"
+	opaque_action
+	flow 129861 "<flow>"
+	  on activityaction_ref 128837 // activity action Provera da li je na stanju
+	end
+      end
+
+      activityaction 128837 "Provera da li je na stanju"
+	opaque_action
+	flow 129989 "<flow>"
+	  on activitynode_ref 128709 // decision
+	end
+      end
+
+      activitynode 128709 decision ""
+	flow 130117 "Nije na stanju"
+	  on activitynode_ref 128837 // activity_final
+	end
+
+	flow 130245 "Nije na stanju"
+	  on activityaction_ref 128325 // activity action Provera da li hoce drugu knjigu
+	end
+
+	flow 132293 "Jeste na stanju"
+	  on activityaction_ref 129861 // activity action Pretraga clana
+	end
+      end
+
+      activitynode 128837 activity_final ""
+      end
+
+      activityaction 128965 "Provera da li clan ima rezervaciju"
+	opaque_action
+	flow 130501 "<flow>"
+	  on activitynode_ref 128965 // decision
+	end
+      end
+
+      activitynode 128965 decision ""
+	flow 130629 "Nema rezervaciju"
+	  on activitynode_ref 128325 // merge
+	end
+
+	flow 130757 "Ima"
+	  on activityaction_ref 129093 // activity action Prikaz rezervisanih knjiga
+	end
+      end
+
+      activityaction 129093 "Prikaz rezervisanih knjiga"
+	opaque_action
+	flow 130885 "<flow>"
+	  on activityaction_ref 129221 // activity action Provera da li postoji rezervacija na ime tog clana
+	end
+      end
+
+      activityaction 129221 "Provera da li postoji rezervacija na ime tog clana"
+	opaque_action
+	flow 131013 "<flow>"
+	  on activitynode_ref 129093 // decision
+	end
+      end
+
+      activitynode 129093 decision ""
+	flow 131141 "Ima rezervaciju"
+	  on activityaction_ref 129349 // activity action Odabir rezervacije
+	end
+
+	flow 131525 "Nema"
+	  on activityaction_ref 129733 // activity action Provera da li hoce knjigu
+	end
+
+	flow 131781 "Nema rezervaciju"
+	  on activityaction_ref 128325 // activity action Provera da li hoce drugu knjigu
+	end
+      end
+
+      activityaction 129349 "Odabir rezervacije"
+	opaque_action
+	flow 131269 "<flow>"
+	  on activityaction_ref 129477 // activity action Izdavanje knjige
+	end
+
+	flow 133317 "<flow>"
+	  on activityaction_ref 130245 // activity action Provera da li clan zadovoljava uslove
+	end
+      end
+
+      activityaction 129477 "Izdavanje knjige"
+	opaque_action
+	flow 131397 "<flow>"
+	  on activitynode_ref 129221 // activity_final
+	end
+      end
+
+      activitynode 129221 activity_final ""
+      end
+
+      activityaction 129605 "zovemo muriju"
+	opaque_action
+      end
+
+      activityaction 129733 "Provera da li hoce knjigu"
+	opaque_action
+	flow 131653 "<flow>"
+	  on activitynode_ref 129349 // decision
+	end
+      end
+
+      activitynode 129349 decision ""
+      end
+
+      activitynode 129477 decision ""
+	flow 132037 "Da"
+	  on activitynode_ref 128325 // merge
+	end
+
+	flow 132165 "Ne"
+	  on activitynode_ref 129605 // activity_final
+	end
+      end
+
+      activitynode 129605 activity_final ""
+      end
+
+      activityaction 129861 "Pretraga clana"
+	opaque_action
+	flow 132421 "<flow>"
+	  on activityaction_ref 129989 // activity action Provera da li clan postoji
+	end
+      end
+
+      activityaction 129989 "Provera da li clan postoji"
+	opaque_action
+	flow 132549 "<flow>"
+	  on activitynode_ref 129733 // decision
+	end
+      end
+
+      activitynode 129733 decision ""
+	flow 132677 "Da"
+	  on activityaction_ref 130117 // activity action Odabir clana
+	end
+
+	flow 133573 "Ne postoji"
+	  on activityaction_ref 130629 // activity action Provera da li zeli da se uclani
+	end
+      end
+
+      activityaction 130117 "Odabir clana"
+	opaque_action
+	flow 132805 "<flow>"
+	  on activityaction_ref 130245 // activity action Provera da li clan zadovoljava uslove
+	end
+      end
+
+      activitynode 129861 decision ""
+	flow 133061 "Da"
+	  on activityaction_ref 130373 // activity action Izdavanje knjige
+	end
+
+	flow 133189 "Ne"
+	  on activitynode_ref 129989 // activity_final
+	end
+      end
+
+      activityaction 130245 "Provera da li clan zadovoljava uslove"
+	opaque_action
+	flow 132933 "<flow>"
+	  on activitynode_ref 129861 // decision
+	end
+      end
+
+      activityaction 130373 "Izdavanje knjige"
+	opaque_action
+	flow 133445 "<flow>"
+	  on activitynode_ref 129989 // activity_final
+	end
+      end
+
+      activityaction 130501 "Fuck off"
+	opaque_action
+      end
+
+      activitynode 129989 activity_final ""
+      end
+
+      activityaction 130629 "Provera da li zeli da se uclani"
+	opaque_action
+	flow 133701 "Ne zeli"
+	  on activitynode_ref 129989 // activity_final
+	end
+
+	flow 133829 "<flow>"
+	  on activityaction_ref 130757 // activity action Dodavanje clana
+	end
+
+	flow 134085 "<flow>"
+	  on activityaction_ref 130757 // activity action Dodavanje clana
+	end
+
+	flow 134597 "<flow>"
+	  on activitynode_ref 130245 // decision
+	end
+      end
+
+      activityaction 130757 "Dodavanje clana"
+	opaque_action
+	flow 133957 "<flow>"
+	  on activityaction_ref 130117 // activity action Odabir clana
+	end
+
+	flow 134213 "<flow>"
+	  on activityaction_ref 129861 // activity action Pretraga clana
+	end
+
+	flow 134341 "<flow>"
+	  on activityaction_ref 129861 // activity action Pretraga clana
+	end
+
+	flow 134469 "Ne"
+	  on activitynode_ref 129989 // activity_final
+	end
+      end
+
+      activitynode 130117 decision ""
+      end
+
+      activitynode 130245 decision ""
+	flow 134725 "Da"
+	  on activityaction_ref 130757 // activity action Dodavanje clana
+	end
+
+	flow 134853 "Ne"
+	  on activitynode_ref 129989 // activity_final
+	end
+      end
+    end
+
+    activity 128197 "pretraga knjige"
+    end
+
+    usecase 136133 "Izdavanje rezervisane knjige"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 136389
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 129419 // Odabir rezervacije
+      end
+    end
+  end
+end

@@ -1,0 +1,327 @@
+format 224
+
+activitynodecanvas 128069 activitynode_ref 128069 // initial_node
+  xyz 362.4 1.8 2000
+end
+activityactioncanvas 128581 activityaction_ref 128069 // activity action Pretraga knjige
+  
+  show_opaque_action_definition default
+  xyzwh 537.3 195.3 2000 101 61
+end
+activitynodecanvas 128709 activitynode_ref 128325 // merge
+  xyz 570.2 142 2000
+end
+activityactioncanvas 129093 activityaction_ref 128197 // activity action Provera da li knjiga postoji u sistemu
+  
+  show_opaque_action_definition default
+  xyzwh 535.9 292 2000 101 61
+end
+activitynodecanvas 129349 activitynode_ref 128453 // decision
+  xyz 576.2 375.5 2000
+end
+activityactioncanvas 129605 activityaction_ref 128325 // activity action Provera da li hoce drugu knjigu
+  
+  show_opaque_action_definition default
+  xyzwh 409.1 433.4 2000 101 61
+end
+activityactioncanvas 130501 activityaction_ref 128453 // activity action Odabir knjige
+  
+  show_opaque_action_definition default
+  xyzwh 663 420.9 2000 101 61
+end
+activityactioncanvas 132293 activityaction_ref 128709 // activity action Prikaz detalja knjige
+  
+  show_opaque_action_definition default
+  xyzwh 663 514.4 2000 101 61
+end
+activityactioncanvas 132549 activityaction_ref 128837 // activity action Provera da li je na stanju
+  
+  show_opaque_action_definition default
+  xyzwh 663 606.5 2000 101 61
+end
+activitynodecanvas 132805 activitynode_ref 128709 // decision
+  xyz 580.3 667.7 2000
+end
+activityactioncanvas 133829 activityaction_ref 128965 // activity action Provera da li clan ima rezervaciju
+  
+  show_opaque_action_definition default
+  xyzwh 322.6 46.8 2000 101 61
+end
+activitynodecanvas 134213 activitynode_ref 128965 // decision
+  xyz 360.6 134.6 2000
+end
+activityactioncanvas 134597 activityaction_ref 129093 // activity action Prikaz rezervisanih knjiga
+  
+  show_opaque_action_definition default
+  xyzwh 182 186 2000 101 61
+end
+activityactioncanvas 134981 activityaction_ref 129221 // activity action Provera da li postoji rezervacija na ime tog clana
+  
+  show_opaque_action_definition default
+  xyzwh 181.5 289 2000 101 79
+end
+activitynodecanvas 135237 activitynode_ref 129093 // decision
+  xyz 218 390.8 2000
+end
+activityactioncanvas 135493 activityaction_ref 129349 // activity action Odabir rezervacije
+  
+  show_opaque_action_definition default
+  xyzwh 94.4 441.6 2000 101 61
+end
+activitynodecanvas 138949 activitynode_ref 129477 // decision
+  xyz 448 365 2000
+end
+activitynodecanvas 139461 activitynode_ref 129605 // activity_final
+  xyz 522 370 2000
+end
+activityactioncanvas 139973 activityaction_ref 129861 // activity action Pretraga clana
+  
+  show_opaque_action_definition default
+  xyzwh 256.2 501.8 2000 101 61
+end
+activityactioncanvas 140229 activityaction_ref 129989 // activity action Provera da li clan postoji
+  
+  show_opaque_action_definition default
+  xyzwh 257.8 605.2 2000 101 61
+end
+activitynodecanvas 140485 activitynode_ref 129733 // decision
+  xyz 297.2 706.8 2000
+end
+activityactioncanvas 140613 activityaction_ref 130117 // activity action Odabir clana
+  
+  show_opaque_action_definition default
+  xyzwh 125.2 695.8 2005 101 61
+end
+activitynodecanvas 140997 activitynode_ref 129861 // decision
+  xyz 162.2 872.8 2000
+end
+activityactioncanvas 141253 activityaction_ref 130245 // activity action Provera da li clan zadovoljava uslove
+  
+  show_opaque_action_definition default
+  xyzwh 123.2 786.6 2000 103 71
+end
+activityactioncanvas 141637 activityaction_ref 130373 // activity action Izdavanje knjige
+  
+  show_opaque_action_definition default
+  xyzwh 60.8 935 2000 101 61
+end
+activitynodecanvas 142149 activitynode_ref 129989 // activity_final
+  xyz 260 954.8 2000
+end
+activityactioncanvas 143429 activityaction_ref 130629 // activity action Provera da li zeli da se uclani
+  
+  show_opaque_action_definition default
+  xyzwh 327.6 770.8 2000 101 61
+end
+activityactioncanvas 144453 activityaction_ref 130757 // activity action Dodavanje clana
+  
+  show_opaque_action_definition default
+  xyzwh 405 844.2 2000 101 61
+end
+activitynodecanvas 146501 activitynode_ref 130245 // decision
+  xyz 362.2 856.2 2005
+end
+flowcanvas 128965 flow_ref 128325 // <flow>
+  
+  from ref 128709 z 2001 to ref 128581
+   write_horizontally default
+end
+flowcanvas 129477 flow_ref 128581 // <flow>
+  
+  from ref 129093 z 2001 to ref 129349
+   write_horizontally default
+end
+flowcanvas 129733 flow_ref 128709 // Ne
+  decenter_begin 540
+  decenter_end 377
+  
+  from ref 129349 z 2001 label "Ne" xyz 573.5 428.5 3000 to point 587 455
+  line 139845 z 2001 to ref 129605
+   write_horizontally default
+end
+flowcanvas 131525 flow_ref 129221 // Da
+  
+  from ref 129349 z 2001 label "Da" xyz 635 373.5 3000 to point 710 387.4
+  line 131653 z 2001 to ref 130501
+   write_horizontally default
+end
+flowcanvas 132165 flow_ref 129605 // <flow>
+  
+  from ref 128581 z 2001 to ref 129093
+   write_horizontally default
+end
+flowcanvas 132421 flow_ref 129733 // <flow>
+  
+  from ref 130501 z 2001 to ref 132293
+   write_horizontally default
+end
+flowcanvas 132677 flow_ref 129861 // <flow>
+  
+  from ref 132293 z 2001 to ref 132549
+   write_horizontally default
+end
+flowcanvas 132933 flow_ref 129989 // <flow>
+  decenter_end 540
+  
+  from ref 132549 z 2001 to point 713.8 685.2
+  line 137925 z 2001 to ref 132805
+   write_horizontally default
+end
+flowcanvas 133445 flow_ref 130245 // Nije na stanju
+  decenter_end 721
+  
+  from ref 132805 z 2001 label "Nije na stanju" xyz 518.5 578 3000 to point 586.3 476.8
+  line 133573 z 2001 to ref 129605
+   write_horizontally default
+end
+flowcanvas 134085 flow_ref 130373 // <flow>
+  
+  from ref 128069 z 2001 to ref 133829
+   write_horizontally default
+end
+flowcanvas 134341 flow_ref 130501 // <flow>
+  
+  from ref 133829 z 2001 to ref 134213
+   write_horizontally default
+end
+flowcanvas 134469 flow_ref 130629 // Nema rezervaciju
+  decenter_end 243
+  
+  from ref 134213 z 2001 label "Nema rezervaciju" xyz 425 131.5 3000 to ref 128709
+   write_horizontally default
+end
+flowcanvas 134725 flow_ref 130757 // Ima
+  
+  from ref 134213 z 2001 label "Ima" xyz 290 134 3000 to point 230 148
+  line 134853 z 2001 to ref 134597
+   write_horizontally default
+end
+flowcanvas 135109 flow_ref 130885 // <flow>
+  
+  from ref 134597 z 2001 to ref 134981
+   write_horizontally default
+end
+flowcanvas 135365 flow_ref 131013 // <flow>
+  
+  from ref 134981 z 2001 to ref 135237
+   write_horizontally default
+end
+flowcanvas 135621 flow_ref 131141 // Ima rezervaciju
+  
+  from ref 135237 z 2001 label "Ima rezervaciju" xyz 140 386 3000 to point 140.2 405.2
+  line 135749 z 2001 to ref 135493
+   write_horizontally default
+end
+flowcanvas 137285 flow_ref 131781 // Nema rezervaciju
+  decenter_end 145
+  
+  from ref 135237 z 2001 label "Nema rezervaciju" xyz 285.5 385 3000 to point 417.6 404.6
+  line 137797 z 2001 to ref 129605
+   write_horizontally default
+end
+flowcanvas 139077 flow_ref 131909 // <flow>
+  
+  from ref 129605 z 2001 to ref 138949
+   write_horizontally default
+end
+flowcanvas 139205 flow_ref 132037 // Da
+  decenter_end 755
+  
+  from ref 138949 z 2001 label "Da" xyz 443 262 3000 to point 455 164
+  line 139333 z 2001 to ref 128709
+   write_horizontally default
+end
+flowcanvas 139589 flow_ref 132165 // Ne
+  
+  from ref 138949 z 2001 label "Ne" xyz 489 368.5 3000 to ref 139461
+   write_horizontally default
+end
+flowcanvas 140101 flow_ref 132293 // Jeste na stanju
+  decenter_end 367
+  
+  from ref 132805 z 2001 label "Jeste na stanju" xyz 493 663.5 3000 to point 478.6 681.2
+  line 143045 z 2001 to point 477.8 523.2
+  line 143173 z 2001 to ref 139973
+   write_horizontally default
+end
+flowcanvas 140357 flow_ref 132421 // <flow>
+  
+  from ref 139973 z 2001 to ref 140229
+   write_horizontally default
+end
+flowcanvas 140741 flow_ref 132549 // <flow>
+  
+  from ref 140229 z 2001 to ref 140485
+   write_horizontally default
+end
+flowcanvas 140869 flow_ref 132677 // Da
+  
+  from ref 140485 z 2006 label "Da" xyz 254 708 3000 to ref 140613
+   write_horizontally default
+end
+flowcanvas 141381 flow_ref 132805 // <flow>
+  
+  from ref 140613 z 2006 to ref 141253
+   write_horizontally default
+end
+flowcanvas 141509 flow_ref 132933 // <flow>
+  decenter_end 479
+  
+  from ref 141253 z 2001 to ref 140997
+   write_horizontally default
+end
+flowcanvas 141765 flow_ref 133061 // Da
+  
+  from ref 140997 z 2001 label "Da" xyz 129 876 3000 to point 108.2 889.8
+  line 141893 z 2001 to ref 141637
+   write_horizontally default
+end
+flowcanvas 142277 flow_ref 133189 // Ne
+  
+  from ref 140997 z 2001 label "Ne" xyz 221.5 878 3000 to point 272.4 889.8
+  line 142405 z 2001 to ref 142149
+   write_horizontally default
+end
+flowcanvas 142533 flow_ref 133317 // <flow>
+  decenter_begin 345
+  
+  from ref 135493 z 2001 to point 34 460
+  line 142917 z 2001 to point 35.4 819.8
+  line 142661 z 2001 to ref 141253
+   write_horizontally default
+end
+flowcanvas 142789 flow_ref 133445 // <flow>
+  
+  from ref 141637 z 2001 to ref 142149
+   write_horizontally default
+end
+flowcanvas 143813 flow_ref 133573 // Ne postoji
+  
+  from ref 140485 z 2001 label "Ne postoji" xyz 317.5 703.5 3000 to point 374.6 723.6
+  line 143941 z 2001 to ref 143429
+   write_horizontally default
+end
+flowcanvas 145733 flow_ref 134341 // <flow>
+  decenter_end 836
+  
+  from ref 144453 z 2001 to point 449 550
+  line 145861 z 2001 to ref 139973
+   write_horizontally default
+end
+flowcanvas 146757 flow_ref 134597 // <flow>
+  
+  from ref 143429 z 2006 to ref 146501
+   write_horizontally default
+end
+flowcanvas 146885 flow_ref 134725 // Da
+  
+  from ref 146501 z 2006 label "Da" xyz 384 854 3000 to ref 144453
+   write_horizontally default
+end
+flowcanvas 147013 flow_ref 134853 // Ne
+  
+  from ref 146501 z 2006 label "Ne" xyz 351.5 916.5 3000 to point 373.2 963.2
+  line 147141 z 2006 to ref 142149
+   write_horizontally default
+end
+end

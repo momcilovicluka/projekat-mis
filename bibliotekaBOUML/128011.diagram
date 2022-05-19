@@ -2,23 +2,23 @@ format 224
 
 classcanvas 128139 class_ref 128139 // Clan
   simpleclassdiagramsettings end
-  xyz 54.8 207.8 2000
+  xyz 26.8 217.8 2000
 end
 usecasecanvas 128267 usecase_ref 128069 // Pretraga knjiga
-  xyzwh 134.3 197.4 3005 103 34 label_xy 139 205.5
+  xyzwh 353 261 3005 103 34 label_xy 358 269.5
 end
 usecasecanvas 128395 usecase_ref 128325 // rezervisanje knjige
-  xyzwh 587.5 180.8 3005 123 32 label_xy 592 188.5
+  xyzwh 133 245 3005 123 32 label_xy 138 253.5
 end
 usecasecanvas 128523 usecase_ref 128197 // Prikaz detalja knjige
-  xyzwh 346.9 192.4 3005 132 32 label_xy 352 199.5
+  xyzwh 593 261 3005 132 32 label_xy 599 268.5
 end
-simplerelationcanvas 128651 simplerelation_ref 128197
-  from ref 128395 z 3006 stereotype "<<extend>>" xyz 500.5 200.5 3000 to ref 128523
+simplerelationcanvas 128069 simplerelation_ref 136005
+  from ref 128395 z 3006 stereotype "<<include>>" xyz 271 267 3000 to ref 128267
 end
+line 128197 ----
+  from ref 128139 z 3006 to ref 128395
 simplerelationcanvas 128779 simplerelation_ref 128069
-  from ref 128523 z 3006 stereotype "<<extend>>" xyz 259.5 208.5 3000 to ref 128267
+  from ref 128523 z 3006 stereotype "<<extend>>" xyz 492 275 3000 to ref 128267
 end
-line 129291 ----
-  from ref 128139 z 3006 to ref 128267
 end
