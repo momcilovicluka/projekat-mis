@@ -1,97 +1,106 @@
 format 224
 
 usecasecanvas 128011 usecase_ref 128011 // Izmena podataka
-  xyzwh 179.6 68.6 3005 112 35 label_xy 186 77
+  xyzwh 179 68 3005 112 35 label_xy 186 77
 end
 classcanvas 128069 class_ref 128069 // Bibliotekar
   simpleclassdiagramsettings end
   xyz 441.8 257.14 2000
 end
 usecasecanvas 128267 usecase_ref 128139 // Brisanje knjige
-  xyzwh 202.36 165.16 3005 99 34 label_xy 207 170
+  xyzwh 260 126 3005 99 34 label_xy 265 131
 end
 classcanvas 128325 class_ref 128325 // Admin
   simpleclassdiagramsettings end
   xyz 450.82 371.78 2000
 end
 usecasecanvas 128709 usecase_ref 128069 // Pretraga knjiga
-  xyzwh 413.4 172.84 3005 109 42 label_xy 420 185
+  xyzwh 413 172 3005 109 42 label_xy 420 185
 end
 usecasecanvas 128907 usecase_ref 128267 // Produzavanje clanarine
-  xyzwh 725 253.32 3005 157 32 label_xy 733 258
+  xyzwh 725 253 3005 157 32 label_xy 733 258
 end
 usecasecanvas 128965 usecase_ref 128197 // Prikaz detalja knjige
-  xyzwh 399.04 91.24 3005 132 37 label_xy 409 100
+  xyzwh 399 91 3005 132 37 label_xy 409 100
 end
 usecasecanvas 129035 usecase_ref 128395 // Izdavanje opomene
-  xyzwh 56.2 387.24 3005 153 37 label_xy 71 397
+  xyzwh 56 387 3005 153 37 label_xy 71 397
 end
 usecasecanvas 129675 usecase_ref 128523 // Dodavanje knjige
-  xyzwh 274.8 231.68 3005 124 33 label_xy 283 239
+  xyzwh 199 229 3005 124 33 label_xy 219 237
 end
 usecasecanvas 130315 usecase_ref 128453 // Dodavanje clana
-  xyzwh 598.28 376.44 3005 118 33 label_xy 605 381
+  xyzwh 598 376 3005 118 33 label_xy 605 381
 end
 usecasecanvas 130373 usecase_ref 128581 // Brisanje clana
-  xyzwh 750.28 188.44 3005 98 34 label_xy 755 195
+  xyzwh 750 188 3005 98 34 label_xy 755 195
 end
 usecasecanvas 130629 usecase_ref 128709 // Pretraga clanova
-  xyzwh 673.84 304.48 3005 119 34 label_xy 682 312
+  xyzwh 673 304 3005 119 34 label_xy 682 312
 end
 usecasecanvas 130757 usecase_ref 128837 // Odabir clana
-  xyzwh 536.44 228.48 3005 88 32 label_xy 540 235
+  xyzwh 536 228 3005 88 32 label_xy 540 235
 end
 usecasecanvas 130955 usecase_ref 128779 // Izdavanje knjige
-  xyzwh 633.4 134 3005 115 33 label_xy 641 140
+  xyzwh 633 134 3005 115 33 label_xy 641 140
 end
 usecasecanvas 131467 usecase_ref 128907 // Prikaz izdatih knjiga
-  xyzwh 272.4 367.68 3005 131 33 label_xy 274 373
+  xyzwh 272 367 3005 131 33 label_xy 274 373
 end
 usecasecanvas 131723 usecase_ref 129035 // Odabir izdavanja
-  xyzwh 129.6 467.96 3005 114 33 label_xy 134 474
+  xyzwh 129 467 3005 114 33 label_xy 134 474
 end
 usecasecanvas 131979 usecase_ref 129163 // Produzavanje roka
-  xyzwh 89.96 541.12 3005 122 33 label_xy 96 549
+  xyzwh 89 541 3005 122 33 label_xy 96 549
 end
 usecasecanvas 132293 usecase_ref 129093 // prikaz bibliotekara
-  xyzwh 417.72 508.64 3005 121 33 label_xy 422 514
+  xyzwh 417 508 3005 121 33 label_xy 422 514
 end
 usecasecanvas 132363 usecase_ref 129291 // Prikaz rezervisanih knjiga
-  xyzwh 509.64 443 3005 189 35 label_xy 528 450
+  xyzwh 509 443 3005 189 35 label_xy 528 450
 end
 usecasecanvas 132549 usecase_ref 129221 // pretraga bibliotekara
-  xyzwh 283.16 577.16 3005 136 33 label_xy 290 582
+  xyzwh 283 577 3005 136 33 label_xy 290 582
 end
 usecasecanvas 132619 usecase_ref 129419 // Odabir rezervacije
-  xyzwh 589.32 546.76 3005 132 33 label_xy 595 554
+  xyzwh 589 546 3005 132 33 label_xy 595 554
 end
 usecasecanvas 132677 usecase_ref 129349 // odabir bibliotekara
-  xyzwh 325.24 672.72 3005 121 33 label_xy 336 680
+  xyzwh 325 672 3005 121 33 label_xy 336 680
 end
 usecasecanvas 132805 usecase_ref 129477 // brisanje bibliotekara
-  xyzwh 456.76 607.16 3005 130 32 label_xy 462 615
+  xyzwh 456 607 3005 130 32 label_xy 462 615
 end
 usecasecanvas 132933 usecase_ref 129605 // dodavanje bibliotekara
-  xyzwh 272.56 463.88 3005 144 32 label_xy 275 470
+  xyzwh 272 463 3005 144 32 label_xy 275 470
 end
 usecasecanvas 134469 usecase_ref 136133 // Izdavanje rezervisane knjige
-  xyzwh 724.92 462.76 3005 191 49 label_xy 733 479
+  xyzwh 724 462 3005 191 49 label_xy 733 479
+end
+usecasecanvas 134725 usecase_ref 142661 // dodavanjeZanra
+  xyzwh 222 295 3005 103 45 label_xy 235 309
 end
 usecasecanvas 134923 usecase_ref 135947 // Dodavanje autora
-  xyzwh 102 329 3005 122 32 label_xy 108 334
+  xyzwh 204 168 3005 122 32 label_xy 219 175
+end
+usecasecanvas 134981 usecase_ref 142789 // pretragaZanra
+  xyzwh 10 240 3005 95 37 label_xy 20 249
+end
+usecasecanvas 135109 usecase_ref 142917 // odabirZanra
+  xyzwh 41 317 3011 87 37 label_xy 55 327
 end
 usecasecanvas 135563 usecase_ref 136075 // Pretraga autora
-  xyzwh 108 253 3005 110 32 label_xy 113 259
+  xyzwh 35 142 3005 110 32 label_xy 40 148
 end
 usecasecanvas 135819 usecase_ref 136203 // Odabir autora
-  xyzwh 70 174 3005 100 33 label_xy 77 181
+  xyzwh 34 55 3005 100 33 label_xy 41 62
 end
 simplerelationcanvas 128139 simplerelation_ref 128011
   decenter_end 381
   from ref 128011 z 3006 stereotype "<<extend>>" xyz 311 97 3000 to ref 128965
 end
 simplerelationcanvas 128395 simplerelation_ref 128139
-  from ref 128267 z 3006 stereotype "<<extend>>" xyz 317 144 3000 to ref 128965
+  from ref 128267 z 3006 stereotype "<<extend>>" xyz 345 123.5 3000 to ref 128965
 end
 relationcanvas 128453 relation_ref 128069 // <generalisation>
   from ref 128325 z 2001 to ref 128069
@@ -101,7 +110,7 @@ end
 line 128779 ----
   from ref 128069 z 3006 to ref 130757
 simplerelationcanvas 129477 simplerelation_ref 128069
-  from ref 128965 z 3006 stereotype "<<extend>>" xyz 431.5 150.5 3000 to ref 128709
+  from ref 128965 z 3006 stereotype "<<extend>>" xyz 431 150 3000 to ref 128709
 end
 line 129803 ----
   from ref 128325 z 3006 to ref 132933
@@ -118,10 +127,10 @@ end
 line 131595 ----
   from ref 128069 z 3006 to ref 131467
 simplerelationcanvas 131851 simplerelation_ref 129035
-  from ref 131723 z 3006 stereotype "<<extend>>" xyz 222.5 432 3000 to ref 131467
+  from ref 131723 z 3006 stereotype "<<extend>>" xyz 222 432 3000 to ref 131467
 end
 simplerelationcanvas 132107 simplerelation_ref 129163
-  from ref 129035 z 3006 stereotype "<<extend>>" xyz 122 445.5 3000 to ref 131723
+  from ref 129035 z 3006 stereotype "<<extend>>" xyz 122 445 3000 to ref 131723
 end
 simplerelationcanvas 132235 simplerelation_ref 129291
   from ref 131979 z 3006 stereotype "<<extend>>" xyz 126 520 3000 to ref 131723
@@ -131,21 +140,21 @@ line 132421 ----
 line 132491 ----
   from ref 128069 z 3006 to ref 132363
 simplerelationcanvas 133003 simplerelation_ref 129547
-  decenter_begin 588
+  decenter_begin 587
   from ref 132619 z 3006 stereotype "<<extend>>" xyz 604 510 3000 to ref 132363
 end
 simplerelationcanvas 133189 simplerelation_ref 129221
   from ref 132549 z 3006 stereotype "<<extend>>" xyz 377 526 3000 to ref 132293
 end
 simplerelationcanvas 133317 simplerelation_ref 129349
-  decenter_begin 533
+  decenter_begin 532
   from ref 132549 z 3006 stereotype "<<include>>" xyz 336 639 3000 to ref 132677
 end
 simplerelationcanvas 133387 simplerelation_ref 129675
   from ref 130757 z 3006 stereotype "<<include>>" xyz 617 279 3000 to ref 130629
 end
 simplerelationcanvas 133445 simplerelation_ref 129477
-  from ref 132805 z 3006 stereotype "<<extend>>" xyz 423 568.5 3000 to ref 132293
+  from ref 132805 z 3006 stereotype "<<extend>>" xyz 423 568 3000 to ref 132293
 end
 simplerelationcanvas 133515 simplerelation_ref 129803
   from ref 130955 z 3006 stereotype "<<include>>" xyz 565 178 3000 to ref 130757
@@ -154,27 +163,38 @@ simplerelationcanvas 133643 simplerelation_ref 129931
   from ref 128907 z 3006 stereotype "<<extend>>" xyz 638 252 3000 to ref 130757
 end
 simplerelationcanvas 134597 simplerelation_ref 136389
-  from ref 134469 z 3006 stereotype "<<extend>>" xyz 687.5 527 3000 to ref 132619
+  from ref 134469 z 3006 stereotype "<<extend>>" xyz 687 527 3000 to ref 132619
 end
 simplerelationcanvas 134667 simplerelation_ref 130059
   from ref 130373 z 3006 stereotype "<<extend>>" xyz 650 221 3000 to ref 130757
 end
+line 134853 ----
+  from ref 128069 z 3006 to ref 134725
+simplerelationcanvas 135237 simplerelation_ref 142917
+  from ref 134981 z 3006 stereotype "<<extend>>" xyz 117.5 251 3000 to ref 129675
+end
+simplerelationcanvas 135365 simplerelation_ref 143045
+  from ref 135109 z 3012 stereotype "<<extend>>" xyz 35.5 290 3000 to ref 134981
+end
+simplerelationcanvas 135493 simplerelation_ref 143173
+  from ref 134725 z 3006 stereotype "<<extend>>" xyz 129.5 286 3000 to ref 134981
+end
 simplerelationcanvas 135691 simplerelation_ref 136587
-  from ref 135563 z 3006 stereotype "<<extend>>" xyz 208 256.5 3000 to ref 129675
+  from ref 135563 z 3006 stereotype "<<extend>>" xyz 137.5 200.5 3000 to ref 129675
 end
 simplerelationcanvas 135947 simplerelation_ref 136715
-  from ref 135819 z 3006 stereotype "<<extend>>" xyz 102.5 229 3000 to ref 135563
+  from ref 135819 z 3006 stereotype "<<extend>>" xyz 47 114 3000 to ref 135563
 end
 simplerelationcanvas 136075 simplerelation_ref 136843
-  from ref 134923 z 3006 stereotype "<<extend>>" xyz 125 305 3000 to ref 135563
+  from ref 134923 z 3006 stereotype "<<extend>>" xyz 136.5 167.5 3000 to ref 135563
 end
 line 136203 ----
   from ref 128069 z 3006 to ref 134923
 simplerelationcanvas 136331 simplerelation_ref 136971
-  from ref 130315 z 3006 stereotype "<<extend>>" xyz 654.5 356.5 3000 to ref 130629
+  from ref 130315 z 3006 stereotype "<<extend>>" xyz 654 356 3000 to ref 130629
 end
 simplerelationcanvas 136459 simplerelation_ref 137099
-  from ref 129675 z 3006 stereotype "<<extend>>" xyz 356 221 3000 to ref 128709
+  from ref 129675 z 3006 stereotype "<<extend>>" xyz 328.5 215.5 3000 to ref 128709
 end
 simplerelationcanvas 136587 simplerelation_ref 137227
   from ref 132933 z 3006 stereotype "<<extend>>" xyz 309 535 3000 to ref 132549

@@ -1,8 +1,25 @@
-window_sizes 1760 1017 250 1504 861 104
+window_sizes 1294 1008 0 1288 852 104
 cleanlooks_style
+diagrams
+  active  classdiagram_ref 141125 // KlasniDijagram
+    1288 852 100 A0 0 0
+  usecasediagram_ref 128069 // useCaseDiagramBiblAdmin
+    112 96 100 A0 0 0
+  usecasediagram_ref 128011 // useCaseClan
+    112 90 100 A4 0 0
+  activitydiagram_ref 134597 // izdavanjeKnjige
+    112 90 100 A0 0 0
+  activitydiagram_ref 134539 // dodavanjeKnjige
+    112 90 100 A0 192 0
+end
 show_stereotypes
-selected activity_ref 128197 // pretraga knjige
+selected classdiagram_ref 141125 // KlasniDijagram
 open
-  activity_ref 128069 // izdavanjeKnjigeActivity
+  class_ref 128069 // Bibliotekar
+  class_ref 128325 // Admin
+  class_ref 128139 // Clan
+  class_ref 134981 // Autor
+  class_ref 135109 // Rezervacija
+  class_ref 135237 // Izdavanje
 end
 end
