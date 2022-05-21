@@ -2,15 +2,15 @@ format 224
 
 classcanvas 128069 class_ref 128325 // Admin
   classdiagramsettings member_max_width 0 end
-  xyz 352.8 694.6 2000
+  xyz 352.8 694.8 2000
 end
 classcanvas 128197 class_ref 128069 // Bibliotekar
   classdiagramsettings member_max_width 0 end
-  xyz 664.9 690.7 2006
+  xyz 664.7 690.3 2006
 end
 classcanvas 128453 class_ref 128139 // Clan
   classdiagramsettings member_max_width 0 end
-  xyz 364.8 440.4 2000
+  xyz 364.6 440 2000
 end
 classcanvas 128581 class_ref 134853 // Knjiga
   classdiagramsettings member_max_width 0 end
@@ -18,51 +18,51 @@ classcanvas 128581 class_ref 134853 // Knjiga
 end
 classcanvas 128709 class_ref 134981 // Autor
   classdiagramsettings member_max_width 0 end
-  xyz 1105.2 406.8 2000
+  xyz 1105.8 406.6 2000
 end
 classcanvas 129221 class_ref 135109 // Rezervacija
   classdiagramsettings member_max_width 0 end
-  xyz 543.5 577.8 2000
+  xyz 543.3 577.8 2000
 end
 classcanvas 129861 class_ref 135237 // Izdavanje
   classdiagramsettings member_max_width 0 end
-  xyz 524.5 346.2 2000
+  xyz 524.9 346.8 2000
 end
 classcanvas 130629 class_ref 141765 // Zanr
   classdiagramsettings member_max_width 0 end
-  xyz 863.5 602.7 2000
+  xyz 863.5 602.4 2000
 end
 classcanvas 130885 class_ref 141893 // DodavanjeKnjigaForma
   classdiagramsettings member_max_width 0 end
-  xyz 1170.5 786.5 2000
+  xyz 1170.3 786.3 2000
 end
 classcanvas 131013 class_ref 142021 // AutorForma
   classdiagramsettings member_max_width 0 end
-  xyz 1397.5 788.7 2000
+  xyz 1397.3 788.3 2000
 end
 classcanvas 131141 class_ref 142149 // ZanrForma
   classdiagramsettings member_max_width 0 end
-  xyz 1012.2 787.7 2000
+  xyz 1012.5 787.4 2000
 end
 classcanvas 131269 class_ref 142277 // DodavanjeKnjigeKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 1149.2 591.5 2000
+  xyz 1149.9 591.3 2000
 end
 classcanvas 132037 class_ref 142405 // AutorKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 1323.5 412.8 2000
+  xyz 1323.3 412.7 2000
 end
 classcanvas 132165 class_ref 142533 // ZanrKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 788.5 699.6 2000
+  xyz 788.6 699.8 2000
 end
 classcanvas 132549 class_ref 142661 // NoviAutorForma
   classdiagramsettings member_max_width 0 end
-  xyz 1544.5 595.7 2000
+  xyz 1544.9 595.1 2000
 end
 classcanvas 132677 class_ref 142789 // NoviZanrForma
   classdiagramsettings member_max_width 0 end
-  xyz 845.2 807.6 2000
+  xyz 845.8 807.8 2000
 end
 classcanvas 134725 class_ref 142917 // KnjigaForma
   classdiagramsettings member_max_width 0 end
@@ -70,47 +70,47 @@ classcanvas 134725 class_ref 142917 // KnjigaForma
 end
 classcanvas 135493 class_ref 143045 // KnjigaKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 779.5 299.8 2000
+  xyz 779.8 299.8 2000
 end
 classcanvas 135621 class_ref 143173 // DetaljiKnjigeForma
   classdiagramsettings member_max_width 0 end
-  xyz 1109.8 175.9 2000
+  xyz 1109.9 175.3 2000
 end
 classcanvas 135749 class_ref 143301 // IzdavanjeForma
   classdiagramsettings member_max_width 0 end
-  xyz 814.5 167.9 2000
+  xyz 814.9 167.3 2000
 end
 classcanvas 135877 class_ref 143429 // IzdavanjeKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 520.5 175.5 2000
+  xyz 520.9 175.9 2000
 end
 classcanvas 137925 class_ref 143557 // ClanForma
   classdiagramsettings member_max_width 0 end
-  xyz 821.5 63.5 2000
+  xyz 821.9 63.3 2000
 end
 classcanvas 138053 class_ref 143685 // ClanKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 293 72.2 2000
+  xyz 293.8 72.9 2000
 end
 classcanvas 138565 class_ref 143813 // RezervacijaForma
   classdiagramsettings member_max_width 0 end
-  xyz 199.5 489.8 2000
+  xyz 199.9 489 2000
 end
 classcanvas 138693 class_ref 143941 // DetaljiRezervacijeForma
   classdiagramsettings member_max_width 0 end
-  xyz 181.2 375.5 2000
+  xyz 181.5 375.9 2000
 end
 classcanvas 138821 class_ref 144069 // IzdavanjeRezervacijeForma
   classdiagramsettings member_max_width 0 end
-  xyz 171.9 269.7 2000
+  xyz 171.2 269.7 2000
 end
 classcanvas 139205 class_ref 144197 // IzdavanjeRezervacijeKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 147.6 163.4 2000
+  xyz 147.8 163 2000
 end
 classcanvas 139461 class_ref 144325 // RezervacijaKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 105.7 599.6 2000
+  xyz 105.1 599.4 2000
 end
 relationcanvas 128325 relation_ref 128069 // <generalisation>
   from ref 128069 z 2007 to ref 128197
@@ -165,13 +165,13 @@ relationcanvas 132805 relation_ref 142661 // <dependency>
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 132933 relation_ref 142789 // <dependency>
-  from ref 132549 z 2001 to point 1594.1 448.8
+  from ref 132549 z 2001 to point 1594.5 448.8
   line 135365 z 2001 to ref 132037
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 133061 relation_ref 142917 // <association>
-  from ref 131013 z 2001 to point 1594.5 830.5
+  from ref 131013 z 2001 to point 1594.9 830.3
   line 135237 z 2001 to ref 132549
   no_role_a no_role_b
   multiplicity_a_pos 1565 662 3000 multiplicity_b_pos 1499 838 3000
@@ -193,7 +193,7 @@ relationcanvas 134341 relation_ref 143557 // <dependency>
 end
 relationcanvas 134469 relation_ref 143685 // <dependency>
   decenter_end 850
-  from ref 131269 z 2001 to point 1241.2 547.8
+  from ref 131269 z 2001 to point 1241.9 547.9
   line 134597 z 2001 to ref 128581
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -205,7 +205,7 @@ relationcanvas 134853 relation_ref 143813 // <dependency>
 end
 relationcanvas 134981 relation_ref 143941 // <dependency>
   decenter_begin 518
-  from ref 131141 z 2001 to point 1056.6 736.6
+  from ref 131141 z 2001 to point 1056.8 736.8
   line 135109 z 2001 to ref 132165
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -282,8 +282,8 @@ relationcanvas 139717 relation_ref 145989 // <dependency>
 end
 relationcanvas 139845 relation_ref 146117 // <dependency>
   decenter_end 513
-  from ref 139205 z 2001 to point 458 190.6
-  line 139973 z 2001 to point 458 404.8
+  from ref 139205 z 2001 to point 458 190.4
+  line 139973 z 2001 to point 458 404.2
   line 140101 z 2001 to ref 129861
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b

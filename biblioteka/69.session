@@ -1,17 +1,5 @@
-window_sizes 1294 1008 0 1288 852 104
+window_sizes 1920 1017 0 1914 861 104
 cleanlooks_style
-diagrams
-  active  classdiagram_ref 141125 // KlasniDijagram
-    1288 852 100 A0 0 0
-  usecasediagram_ref 128069 // useCaseDiagramBiblAdmin
-    112 96 100 A0 0 0
-  usecasediagram_ref 128011 // useCaseClan
-    112 90 100 A4 0 0
-  activitydiagram_ref 134597 // izdavanjeKnjige
-    112 90 100 A0 0 0
-  activitydiagram_ref 134539 // dodavanjeKnjige
-    112 90 100 A0 192 0
-end
 show_stereotypes
 selected classdiagram_ref 141125 // KlasniDijagram
 open
