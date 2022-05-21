@@ -1,6 +1,6 @@
 format 224
 "biblioteka"
-  revision 6
+  revision 7
   modified_by 69 "Home"
 
 
@@ -1344,10 +1344,6 @@ ${docstring}${members}
 	flow 133445 "<flow>"
 	  on activitynode_ref 129989 // activity_final
 	end
-      end
-
-      activityaction 130501 "Fuck off"
-	opaque_action
       end
 
       activitynode 129989 activity_final ""
@@ -3147,7 +3143,6 @@ ${docstring}${body}
 	    classrelation_ref 146757 // <dependency>
 	  b parent class_ref 135237 // Izdavanje
       end
-
     end
 
     class 143557 "ClanForma"
