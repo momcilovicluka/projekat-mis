@@ -1,0 +1,72 @@
+format 224
+
+classinstancecanvas 128011 classinstance_ref 144139 // AdminF
+  drawing_mode actor  xyz 21 29 2005 life_line_z 2000
+end
+classinstancecanvas 128139 classinstance_ref 144267 // DodavanjeBibliotekaraFormaF
+  xyz 134 25 2010 life_line_z 2000
+end
+classinstancecanvas 128267 classinstance_ref 144395 // DodavanjeBibliotekaraKontrolerF
+  xyz 684 23 2015 life_line_z 2000
+end
+classinstancecanvas 128395 classinstance_ref 128011 // BibliotekarF
+  xyz 511 23 2020 life_line_z 2000
+end
+durationcanvas 129163 classinstance_ref 128139 // DodavanjeBibliotekaraFormaF:DodavanjeBibliotekaraForma
+  xyzwh 304 89 2010 11 28
+end
+durationcanvas 129291 classinstance_ref 128395 // BibliotekarF:Bibliotekar
+  xyzwh 578 89 2010 11 26
+end
+durationcanvas 129547 classinstance_ref 128395 // BibliotekarF:Bibliotekar
+  xyzwh 578 129 2010 11 25
+end
+durationcanvas 129675 classinstance_ref 128139 // DodavanjeBibliotekaraFormaF:DodavanjeBibliotekaraForma
+  xyzwh 304 129 2010 11 26
+end
+durationcanvas 129931 classinstance_ref 128011 // AdminF:Admin
+  xyzwh 60 183 2010 11 26
+end
+durationcanvas 130059 classinstance_ref 128139 // DodavanjeBibliotekaraFormaF:DodavanjeBibliotekaraForma
+  xyzwh 304 181 2010 11 25
+end
+durationcanvas 130315 classinstance_ref 128267 // DodavanjeBibliotekaraKontrolerF:BibliotekarKontroler
+  xyzwh 836 192 2010 11 25
+end
+durationcanvas 130571 classinstance_ref 128267 // DodavanjeBibliotekaraKontrolerF:BibliotekarKontroler
+  xyzwh 836 247 2010 11 27
+end
+durationcanvas 130699 classinstance_ref 128139 // DodavanjeBibliotekaraFormaF:DodavanjeBibliotekaraForma
+  xyzwh 304 247 2010 11 26
+end
+msg 129419 synchronous
+  from durationcanvas_ref 129163
+  to durationcanvas_ref 129291
+  yz 89 2015 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 424 73
+msg 129803 return
+  from durationcanvas_ref 129547
+  to durationcanvas_ref 129675
+  yz 129 2015 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 435 113
+msg 130187 synchronous
+  from durationcanvas_ref 129931
+  to durationcanvas_ref 130059
+  yz 183 2015 msg operation_ref 146117 // "kreirajBibliotekara()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 132 167
+msg 130443 synchronous
+  from durationcanvas_ref 130059
+  to durationcanvas_ref 130315
+  yz 192 2020 msg operation_ref 146245 // "sacuvajBibliotekara(in b : Bibliotekar) : bool [1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 650 172
+msg 130827 return
+  from durationcanvas_ref 130571
+  to durationcanvas_ref 130699
+  yz 247 2015 explicitmsg "true/false"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 425 231
+end

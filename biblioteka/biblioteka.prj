@@ -1,6 +1,6 @@
 format 224
 "biblioteka"
-  revision 12
+  revision 13
   modified_by 11 "Dalibor"
 
 
@@ -4226,6 +4226,35 @@ ${docstring}${body}
 
     classinstance 137611 "ZanrF"
       type class_ref 141765 // Zanr
+      attributes
+        end
+      relations
+        end
+    end
+
+    sequencediagram 154123 "dodavanjeBibliotekaraSekvencija"
+      sequencediagramsettings end
+      overlapping_bars size A0
+    end
+
+    classinstance 144139 "AdminF"
+      type class_ref 128325 // Admin
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 144267 "DodavanjeBibliotekaraFormaF"
+      type class_ref 150853 // DodavanjeBibliotekaraForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 144395 "DodavanjeBibliotekaraKontrolerF"
+      type class_ref 150981 // BibliotekarKontroler
       attributes
         end
       relations
