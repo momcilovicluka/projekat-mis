@@ -7,6 +7,9 @@ end
 usecasecanvas 128267 usecase_ref 128069 // Pretraga knjiga
   xyzwh 353 261 3005 103 34 label_xy 358 269.5
 end
+usecasecanvas 128325 usecase_ref 149445 // Logovanje
+  xyzwh 131 354.5 3005 64 32 label_xy 137 360.5
+end
 usecasecanvas 128395 usecase_ref 128325 // rezervisanje knjige
   xyzwh 133 245 3005 123 32 label_xy 138 253.5
 end
@@ -18,6 +21,9 @@ simplerelationcanvas 128069 simplerelation_ref 136005
 end
 line 128197 ----
   from ref 128139 z 3006 to ref 128395
+simplerelationcanvas 128581 simplerelation_ref 151109
+  from ref 128395 z 3006 stereotype "<<include>>" xyz 144 314 3000 to ref 128325
+end
 simplerelationcanvas 128779 simplerelation_ref 128069
   from ref 128523 z 3006 stereotype "<<extend>>" xyz 492 275 3000 to ref 128267
 end

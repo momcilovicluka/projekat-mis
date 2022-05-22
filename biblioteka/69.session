@@ -1,14 +1,16 @@
-window_sizes 1920 1017 358 1556 861 104
+window_sizes 1920 1017 213 1701 861 104
 cleanlooks_style
 diagrams
-  active  classdiagram_ref 141125 // KlasniDijagram
-    1556 861 90 A0 84 0
+  classdiagram_ref 141125 // KlasniDijagram
+    1560 861 110 A0 60 0
+  usecasediagram_ref 128069 // useCaseDiagramBiblAdmin
+    112 90 119 A0 72 0
+  active  usecasediagram_ref 128011 // useCaseClan
+    1701 861 100 A4 0 0
 end
 show_stereotypes
-selected operation_ref 146245 // sacuvajBibliotekara
+selected usecasediagram_ref 128011 // useCaseClan
 open
-  class_ref 128069 // Bibliotekar
-  class_ref 128325 // Admin
   class_ref 128139 // Clan
   activity_ref 128069 // izdavanjeKnjigeActivity
   class_ref 134853 // Knjiga

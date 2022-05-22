@@ -1,6 +1,6 @@
 format 224
 "biblioteka"
-  revision 8
+  revision 9
   modified_by 69 "Home"
 
 
@@ -280,6 +280,12 @@ ${docstring}${members}
 	  stereotype "include"
 	  on usecase_ref 128069 // Pretraga knjiga
       end
+
+      simplerelation 151109
+	-_->
+	  stereotype "include"
+	  on usecase_ref 149445 // Logovanje
+      end
     end
 
     usecase 128453 "Dodavanje clana"
@@ -444,6 +450,12 @@ ${docstring}${members}
 	  stereotype "include"
 	  on usecase_ref 128709 // Pretraga clanova
       end
+
+      simplerelation 149701
+	-_->
+	  stereotype "include"
+	  on usecase_ref 149445 // Logovanje
+      end
     end
 
     usecase 128965 "prikaz clanova"
@@ -490,6 +502,11 @@ ${docstring}${members}
       
       activitydiagramsettings
        end
+      simplerelation 150725
+	-_->
+	  stereotype "include"
+	  on usecase_ref 149445 // Logovanje
+      end
     end
 
     usecase 129221 "pretraga bibliotekara"
@@ -602,6 +619,12 @@ ${docstring}${members}
 	-_->
 	  stereotype "extend"
 	  on usecase_ref 129221 // pretraga bibliotekara
+      end
+
+      simplerelation 150853
+	-_->
+	  stereotype "include"
+	  on usecase_ref 149445 // Logovanje
       end
     end
 
@@ -3589,6 +3612,75 @@ ${docstring}${members}
 ${docstring}${body}
 "
 	
+      end
+    end
+
+    usecase 149445 "Logovanje"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 149829
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128069 // Pretraga knjiga
+      end
+
+      simplerelation 149957
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128453 // Dodavanje clana
+      end
+
+      simplerelation 150085
+	-_->
+	  stereotype "include"
+	  on usecase_ref 129291 // Prikaz rezervisanih knjiga
+      end
+
+      simplerelation 150213
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128907 // Prikaz izdatih knjiga
+      end
+
+      simplerelation 150341
+	-_->
+	  stereotype "include"
+	  on usecase_ref 142661 // dodavanjeZanra
+      end
+
+      simplerelation 150469
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128523 // Dodavanje knjige
+      end
+
+      simplerelation 150597
+	-_->
+	  stereotype "include"
+	  on usecase_ref 135947 // Dodavanje autora
+      end
+
+      simplerelation 150981
+	-_->
+	  on usecase_ref 128325 // rezervisanje knjige
       end
     end
   end
