@@ -1,7 +1,7 @@
 format 224
 "biblioteka"
-  revision 9
-  modified_by 69 "Home"
+  revision 10
+  modified_by 11 "Dalibor"
 
 
   
@@ -2434,6 +2434,14 @@ ${docstring}${body}
 	    classrelation_ref 143557 // <dependency>
 	  b parent class_ref 142277 // DodavanjeKnjigeKontroler
       end
+
+      classrelation 128139 // <association>
+	relation_ref 128011 // <association>
+      end
+
+      classrelation 130443 // <association>
+	relation_ref 129419 // <association>
+      end
     end
 
     class 142021 "AutorForma"
@@ -2948,6 +2956,10 @@ ${docstring}${body}
 	    classrelation_ref 146245 // <dependency>
 	  b parent class_ref 143045 // KnjigaKontroler
       end
+
+      classrelation 130187 // <association>
+	relation_ref 129291 // <association>
+      end
     end
 
     class 143045 "KnjigaKontroler"
@@ -3168,7 +3180,7 @@ ${docstring}${body}
       end
     end
 
-    class 143557 "ClanForma"
+    class 143557 "PretragaClanForma"
       visibility package stereotype "boundary"
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -3207,7 +3219,7 @@ ${docstring}${body}
 	  a public
 	    python "${type}"
 	    classrelation_ref 147141 // <dependency>
-	  b parent class_ref 143685 // ClanKontroler
+	  b parent class_ref 143685 // PretragaClanKontroler
       end
 
       operation 138693 "izaberiClana"
@@ -3225,7 +3237,7 @@ ${docstring}${body}
       end
     end
 
-    class 143685 "ClanKontroler"
+    class 143685 "PretragaClanKontroler"
       visibility package stereotype "control"
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -3338,6 +3350,10 @@ ${docstring}${body}
 	    python "${comment}${self}${name} = ${value}
 "
 	    classrelation_ref 148165 // <association>
+      end
+
+      classrelation 128907 // <association>
+	relation_ref 128651 // <association>
       end
     end
 
@@ -3475,7 +3491,7 @@ ${docstring}${body}
     end
 
     class 144325 "RezervacijaKontroler"
-      visibility package 
+      visibility package stereotype "control"
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
 ${members}}
@@ -3569,6 +3585,10 @@ ${docstring}${body}
 	    python "${type}"
 	    classrelation_ref 155205 // <dependency>
 	  b parent class_ref 150981 // BibliotekarKontroler
+      end
+
+      classrelation 129675 // <association>
+	relation_ref 129035 // <association>
       end
     end
 
@@ -3682,6 +3702,313 @@ ${docstring}${body}
 	-_->
 	  on usecase_ref 128325 // rezervisanje knjige
       end
+    end
+
+    class 134667 "LogovanjeForma"
+      visibility package stereotype "boundary"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 128011 "prijaviSe"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 128011 // <association>
+	relation 128011 ----
+	  a role_name "" multiplicity "0..1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 128011 // <association>
+	  b role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 128139 // <association>
+      end
+
+      classrelation 128651 // <dependency>
+	relation 128523 -_->
+	  a public
+	    python "${type}"
+	    classrelation_ref 128651 // <dependency>
+	  b parent class_ref 134795 // LogovanjeKontroler
+      end
+
+      classrelation 128779 // <association>
+	relation 128651 ----
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 128779 // <association>
+	  b role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 128907 // <association>
+      end
+
+      classrelation 129035 // <association>
+	relation 128779 ----
+	  a role_name "" multiplicity "0..1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 129035 // <association>
+	  b role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 129163 // <association>
+      end
+
+      classrelation 129931 // <association>
+	relation_ref 129163 // <association>
+      end
+    end
+
+    class 134795 "LogovanjeKontroler"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 128139 "prijava"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "u" explicit_type "string"
+	  param in name "p" explicit_type "string"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 128267 // <dependency>
+	relation 128139 -_->
+	  a public
+	    python "${type}"
+	    classrelation_ref 128267 // <dependency>
+	  b parent class_ref 128069 // Bibliotekar
+      end
+
+      classrelation 128395 // <dependency>
+	relation 128267 -_->
+	  a public
+	    python "${type}"
+	    classrelation_ref 128395 // <dependency>
+	  b parent class_ref 128325 // Admin
+      end
+
+      classrelation 128523 // <dependency>
+	relation 128395 -_->
+	  a public
+	    python "${type}"
+	    classrelation_ref 128523 // <dependency>
+	  b parent class_ref 134667 // LogovanjeForma
+      end
+    end
+
+    class 134923 "ClanForma"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 135051 "BibliotekarForma"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 128395 "izdajKnjigu"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128523 "dodajKnjigu"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 129163 // <association>
+	relation_ref 128779 // <association>
+      end
+
+      classrelation 130059 // <association>
+	relation 129291 ----
+	  a role_name "" multiplicity "0..1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 130059 // <association>
+	  b role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 130187 // <association>
+      end
+
+      classrelation 130315 // <association>
+	relation 129419 ----
+	  a role_name "" multiplicity "0..1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 130315 // <association>
+	  b role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 130443 // <association>
+      end
+    end
+
+    class 135179 "AdminForma"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 128267 "dodajBibliotekara"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 129547 // <association>
+	relation 129035 ----
+	  a role_name "" multiplicity "0..1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 129547 // <association>
+	  b role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 129675 // <association>
+      end
+
+      classrelation 129803 // <association>
+	relation 129163 ----
+	  a role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 129803 // <association>
+	  b role_name "" multiplicity "0..1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 129931 // <association>
+      end
+    end
+
+    sequencediagram 141067 "IzdavanjeKnjigeSekvencija"
+      sequencediagramsettings end
+      overlapping_bars size A4
     end
   end
 end

@@ -1,8 +1,16 @@
 format 224
 
+classcanvas 128011 class_ref 134667 // LogovanjeForma
+  classdiagramsettings member_max_width 0 end
+  xyz 897.9 1049.9 2000
+end
 classcanvas 128069 class_ref 128325 // Admin
   classdiagramsettings member_max_width 0 end
-  xyz 283.7 696.64 2000
+  xyz 283.2 696.14 2000
+end
+classcanvas 128139 class_ref 134795 // LogovanjeKontroler
+  classdiagramsettings member_max_width 0 end
+  xyz 658.9 997.9 2000
 end
 classcanvas 128197 class_ref 128069 // Bibliotekar
   classdiagramsettings member_max_width 0 end
@@ -10,71 +18,79 @@ classcanvas 128197 class_ref 128069 // Bibliotekar
 end
 classcanvas 128453 class_ref 128139 // Clan
   classdiagramsettings member_max_width 0 end
-  xyz 364.76 440.92 2000
+  xyz 364.76 440.42 2000
 end
 classcanvas 128581 class_ref 134853 // Knjiga
   classdiagramsettings member_max_width 0 end
-  xyz 803.8 427.8 2000
+  xyz 800.8 413.8 2000
 end
 classcanvas 128709 class_ref 134981 // Autor
   classdiagramsettings member_max_width 0 end
-  xyz 1105.32 413.12 2000
+  xyz 1105.82 413.62 2000
 end
 classcanvas 129221 class_ref 135109 // Rezervacija
   classdiagramsettings member_max_width 0 end
-  xyz 541.86 578.5 2000
+  xyz 541.86 578 2000
 end
 classcanvas 129861 class_ref 135237 // Izdavanje
   classdiagramsettings member_max_width 0 end
-  xyz 526.78 346.52 2000
+  xyz 526.78 346.02 2000
+end
+classcanvas 130187 class_ref 135051 // BibliotekarForma
+  classdiagramsettings member_max_width 0 end
+  xyz 1075.7 930.5 2000
+end
+classcanvas 130315 class_ref 135179 // AdminForma
+  classdiagramsettings member_max_width 0 end
+  xyz 896.3 938.8 2000
 end
 classcanvas 130629 class_ref 141765 // Zanr
   classdiagramsettings member_max_width 0 end
-  xyz 863.5 602.34 2000
+  xyz 863 602.34 2000
 end
 classcanvas 130885 class_ref 141893 // DodavanjeKnjigaForma
   classdiagramsettings member_max_width 0 end
-  xyz 1170.86 786.06 2000
+  xyz 1171.86 786.06 2000
 end
 classcanvas 131013 class_ref 142021 // AutorForma
   classdiagramsettings member_max_width 0 end
-  xyz 1397.86 788.42 2000
+  xyz 1397.36 788.42 2000
 end
 classcanvas 131141 class_ref 142149 // ZanrForma
   classdiagramsettings member_max_width 0 end
-  xyz 1012.76 787.34 2000
+  xyz 1012.76 787.84 2000
 end
 classcanvas 131269 class_ref 142277 // DodavanjeKnjigeKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 1149.64 597.86 2000
+  xyz 1136.14 612.86 2000
 end
 classcanvas 132037 class_ref 142405 // AutorKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 1322.98 420.92 2000
+  xyz 1322.98 420.42 2000
 end
 classcanvas 132165 class_ref 142533 // ZanrKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 788.42 699.64 2000
+  xyz 788.92 699.64 2000
 end
 classcanvas 132549 class_ref 142661 // NoviAutorForma
   classdiagramsettings member_max_width 0 end
-  xyz 1544.18 595.78 2000
+  xyz 1544.68 595.28 2000
 end
 classcanvas 132677 class_ref 142789 // NoviZanrForma
   classdiagramsettings member_max_width 0 end
-  xyz 844.72 807.64 2000
+  xyz 848.12 817.14 2000
 end
 classcanvas 134725 class_ref 142917 // KnjigaForma
   classdiagramsettings member_max_width 0 end
-  xyz 1125.4 291.2 2000
+  xyz 1125.5 290.8 2000
 end
 classcanvas 135493 class_ref 143045 // KnjigaKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 779.26 299.2 2000
+  xyz 779.76 299.7 2000
 end
 classcanvas 135621 class_ref 143173 // DetaljiKnjigeForma
   classdiagramsettings member_max_width 0 end
-  xyz 1109.32 175.38 2000
+  xyz 1109.32 175.88 2000
 end
 classcanvas 135749 class_ref 143301 // IzdavanjeForma
   classdiagramsettings member_max_width 0 end
@@ -84,50 +100,71 @@ classcanvas 135877 class_ref 143429 // IzdavanjeKontroler
   classdiagramsettings member_max_width 0 end
   xyz 521.68 176.08 2000
 end
-classcanvas 137925 class_ref 143557 // ClanForma
+classcanvas 137925 class_ref 143557 // PretragaClanForma
   classdiagramsettings member_max_width 0 end
-  xyz 821.78 63.66 2000
+  xyz 805.98 56.96 2000
 end
-classcanvas 138053 class_ref 143685 // ClanKontroler
+classcanvas 138053 class_ref 143685 // PretragaClanKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 293.96 72.44 2000
+  xyz 294.76 67.24 2000
 end
 classcanvas 138565 class_ref 143813 // RezervacijaForma
   classdiagramsettings member_max_width 0 end
-  xyz 199.98 489.04 2000
+  xyz 199.48 489.04 2000
 end
 classcanvas 138693 class_ref 143941 // DetaljiRezervacijeForma
   classdiagramsettings member_max_width 0 end
-  xyz 181.76 375.98 2000
+  xyz 181.26 375.48 2000
 end
 classcanvas 138821 class_ref 144069 // IzdavanjeRezervacijeForma
   classdiagramsettings member_max_width 0 end
-  xyz 171.46 269.7 2000
+  xyz 171.46 269.2 2000
 end
 classcanvas 139205 class_ref 144197 // IzdavanjeRezervacijeKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 147.24 163.92 2000
+  xyz 147.74 163.42 2000
 end
 classcanvas 139461 class_ref 144325 // RezervacijaKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 105.18 599.36 2000
+  xyz 106.98 598.96 2000
 end
 classcanvas 140229 class_ref 150853 // DodavanjeBibliotekaraForma
   classdiagramsettings member_max_width 0 end
-  xyz 509.2 722.4 2000
+  xyz 505 722 2000
 end
 classcanvas 140357 class_ref 150981 // BibliotekarKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 479.2 880.7 2000
+  xyz 479.7 880.7 2000
 end
 relationcanvas 128325 relation_ref 128069 // <generalisation>
   from ref 128069 z 2007 to ref 128197
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
+relationcanvas 128523 relation_ref 128139 // <dependency>
+  decenter_begin 703
+  from ref 128139 z 2007 to point 339.6 1032.2
+  line 128651 z 2007 to ref 128197
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128779 relation_ref 128267 // <dependency>
+  decenter_begin 277
+  from ref 128139 z 2001 to point 440.9 1008
+  line 128907 z 2001 to point 436.4 756.7
+  line 129035 z 2001 to ref 128069
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
 relationcanvas 128965 relation_ref 134725 // <aggregation>
-  decenter_begin 218
+  decenter_begin 217
   from ref 128581 z 2001 to ref 128709
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129291 relation_ref 128523 // <dependency>
+  from ref 128011 z 2001 to point 752.5 1088
+  line 132107 z 2001 to ref 128139
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
@@ -136,14 +173,22 @@ relationcanvas 129605 relation_ref 135237 // <association>
   decenter_end 768
   from ref 128453 z 2001 to ref 128581
   no_role_a no_role_b
-  multiplicity_a_pos 786 546 3000 multiplicity_b_pos 470 546 3000
+  multiplicity_a_pos 786 555 3000 multiplicity_b_pos 487 563 3000
 end
 relationcanvas 130245 relation_ref 135365 // <association>
   decenter_begin 458
   decenter_end 418
   from ref 128453 z 2001 to ref 128581
   no_role_a no_role_b
-  multiplicity_a_pos 786 496 3000 multiplicity_b_pos 470 498 3000
+  multiplicity_a_pos 786 493 3000 multiplicity_b_pos 487 505 3000
+end
+relationcanvas 130443 relation_ref 128779 // <association>
+  decenter_begin 683
+  decenter_end 555
+  from ref 128011 z 2001 to point 1140 1094
+  line 131851 z 2001 to ref 130187
+  no_role_a no_role_b
+  multiplicity_a_pos 1111 1008 3000 multiplicity_b_pos 1026 1106 3000
 end
 relationcanvas 130757 relation_ref 141893 // <aggregation>
   decenter_begin 509
@@ -152,35 +197,66 @@ relationcanvas 130757 relation_ref 141893 // <aggregation>
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
+relationcanvas 130955 relation_ref 129035 // <association>
+  decenter_begin 333
+  decenter_end 884
+  from ref 130315 z 2001 to point 811.5 951.5
+  line 131339 z 2001 to point 808 840
+  line 131211 z 2001 to point 680 839.5
+  line 131083 z 2001 to ref 140229
+  no_role_a no_role_b
+  multiplicity_a_pos 649 801 3000 multiplicity_b_pos 878 962 3000
+end
 relationcanvas 131653 relation_ref 142021 // <association>
   from ref 130885 z 2001 to ref 131013
   no_role_a no_role_b
-  multiplicity_a_pos 1367 840 3000 multiplicity_b_pos 1324 838 3000
+  multiplicity_a_pos 1364 849 3000 multiplicity_b_pos 1342 848 3000
 end
 relationcanvas 131781 relation_ref 142149 // <association>
   from ref 130885 z 2001 to ref 131141
   no_role_a no_role_b
-  multiplicity_a_pos 1112 838 3000 multiplicity_b_pos 1154 838 3000
+  multiplicity_a_pos 1118 848 3000 multiplicity_b_pos 1155 848 3000
 end
 relationcanvas 131909 relation_ref 142277 // <dependency>
   from ref 130885 z 2001 to ref 131269
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
+relationcanvas 132235 relation_ref 129163 // <association>
+  from ref 130315 z 2001 to ref 128011
+  no_role_a no_role_b
+  multiplicity_a_pos 940 1029 3000 multiplicity_b_pos 924 997 3000
+end
+relationcanvas 132363 relation_ref 129291 // <association>
+  decenter_begin 713
+  from ref 130187 z 2001 to point 1677.5 976
+  line 132491 z 2001 to point 1677.5 332
+  line 132619 z 2001 to ref 134725
+  no_role_a no_role_b
+  multiplicity_a_pos 1232 342 3000 multiplicity_b_pos 1205 988 3000
+end
+relationcanvas 132747 relation_ref 129419 // <association>
+  decenter_begin 337
+  from ref 130187 z 2001 to point 1251.5 949.5
+  line 132875 z 2001 to ref 130885
+  no_role_a no_role_b
+  multiplicity_a_pos 1221 901 3000 multiplicity_b_pos 1205 961 3000
+end
 relationcanvas 132805 relation_ref 142661 // <dependency>
-  decenter_end 477
+  decenter_end 476
   from ref 132677 z 2001 to ref 132165
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 132933 relation_ref 142789 // <dependency>
-  from ref 132549 z 2001 to point 1594.6 455.7
+  decenter_begin 759
+  from ref 132549 z 2001 to point 1632 454.5
   line 135365 z 2001 to ref 132037
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 133061 relation_ref 142917 // <association>
-  from ref 131013 z 2001 to point 1594.6 830.2
+  from ref 131013 z 2001 to point 1595 830
   line 135237 z 2001 to ref 132549
   no_role_a no_role_b
   multiplicity_a_pos 1565 662 3000 multiplicity_b_pos 1499 838 3000
@@ -189,7 +265,7 @@ relationcanvas 133189 relation_ref 143045 // <association>
   decenter_end 416
   from ref 131141 z 2001 to ref 132677
   no_role_a no_role_b
-  multiplicity_a_pos 948 839 3000 multiplicity_b_pos 996 839 3000
+  multiplicity_a_pos 966 855 3000 multiplicity_b_pos 994 852 3000
 end
 relationcanvas 134213 relation_ref 143429 // <dependency>
   from ref 132165 z 2001 to ref 130629
@@ -202,8 +278,8 @@ relationcanvas 134341 relation_ref 143557 // <dependency>
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 134469 relation_ref 143685 // <dependency>
-  decenter_end 850
-  from ref 131269 z 2001 to point 1241.3 547.9
+  decenter_end 690
+  from ref 131269 z 2001 to point 1241.5 547.5
   line 134597 z 2001 to ref 128581
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -215,7 +291,7 @@ relationcanvas 134853 relation_ref 143813 // <dependency>
 end
 relationcanvas 134981 relation_ref 143941 // <dependency>
   decenter_begin 518
-  from ref 131141 z 2001 to point 1057.9 736.8
+  from ref 131141 z 2001 to point 1057.5 736
   line 135109 z 2001 to ref 132165
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -223,7 +299,7 @@ end
 relationcanvas 136005 relation_ref 144069 // <association>
   from ref 134725 z 2001 to ref 135621
   no_role_a no_role_b
-  multiplicity_a_pos 1139 242 3000 multiplicity_b_pos 1152 274 3000
+  multiplicity_a_pos 1144 254 3000 multiplicity_b_pos 1158 270 3000
 end
 relationcanvas 136133 relation_ref 144197 // <association>
   from ref 135621 z 2001 to ref 135749
@@ -268,7 +344,7 @@ end
 relationcanvas 138949 relation_ref 145477 // <association>
   from ref 138565 z 2001 to ref 138693
   no_role_a no_role_b
-  multiplicity_a_pos 225 442 3000 multiplicity_b_pos 239 472 3000
+  multiplicity_a_pos 232 455 3000 multiplicity_b_pos 246 467 3000
 end
 relationcanvas 139077 relation_ref 145605 // <association>
   from ref 138693 z 2001 to ref 138821
@@ -292,8 +368,8 @@ relationcanvas 139717 relation_ref 145989 // <dependency>
 end
 relationcanvas 139845 relation_ref 146117 // <dependency>
   decenter_end 513
-  from ref 139205 z 2001 to point 458 190.2
-  line 139973 z 2001 to point 458 404.6
+  from ref 139205 z 2001 to point 458 191
+  line 139973 z 2001 to point 458 404
   line 140101 z 2001 to ref 129861
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
