@@ -1,6 +1,6 @@
 format 224
 "biblioteka"
-  revision 10
+  revision 11
   modified_by 11 "Dalibor"
 
 
@@ -14,7 +14,7 @@ format 224
   
   usecasediagramsettings package_name_in_tab no show_context_mode no auto_label_position yes draw_all_relations yes class_drawing_mode actor shadow yes gradient none show_stereotype_properties no end
   
-  sequencediagramsettings show_full_operations_definition no show_class_of_operation no write_horizontally yes instances_drawing_mode natural drawing_language uml draw_all_relations yes shadow yes gradient none show_stereotype_properties no show_class_context_mode no show_msg_context_mode no end
+  sequencediagramsettings show_full_operations_definition no show_class_of_operation no write_horizontally yes instances_drawing_mode class drawing_language uml draw_all_relations yes shadow yes gradient none show_stereotype_properties no show_class_context_mode no show_msg_context_mode no end
   
   collaborationdiagramsettings show_full_operations_definition no show_class_of_operation no show_hierarchical_rank no write_horizontally yes instances_drawing_mode natural drawing_language uml package_name_in_tab no show_class_pack_context_mode no show_msg_context_mode no draw_all_relations yes shadow yes gradient none show_stereotype_properties no end
   
@@ -1204,6 +1204,10 @@ ${docstring}${members}
 	flow 139019 "Nije na stanju"
 	  on activitynode_ref 135819 // merge
 	end
+
+	flow 145547 "na stanju je"
+	  on activityaction_ref 129861 // activity action Pretraga clana
+	end
       end
 
       activitynode 128837 activity_final ""
@@ -1331,6 +1335,10 @@ ${docstring}${members}
 
 	flow 133573 "Ne postoji"
 	  on activityaction_ref 130629 // activity action Provera da li zeli da se uclani
+	end
+
+	flow 145675 "<flow>"
+	  on activitynode_ref 129989 // activity_final
 	end
       end
 
@@ -4008,7 +4016,135 @@ ${docstring}${body}
 
     sequencediagram 141067 "IzdavanjeKnjigeSekvencija"
       sequencediagramsettings end
-      overlapping_bars size A4
+      overlapping_bars size A0
+    end
+
+    classinstance 128011 "BibliotekarF"
+      type class_ref 128069 // Bibliotekar
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128139 "IzdavanjeF"
+      type class_ref 135237 // Izdavanje
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128267 "KnjigaF"
+      type class_ref 134853 // Knjiga
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128395 "RezervacijaF"
+      type class_ref 135109 // Rezervacija
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128523 "ClanF"
+      type class_ref 128139 // Clan
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128651 "RezervacijaFormaF"
+      type class_ref 143813 // RezervacijaForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128779 "RezervacijaKontrolerF"
+      type class_ref 144325 // RezervacijaKontroler
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128907 "IzdavanjeRezervacijeFormaF"
+      type class_ref 144069 // IzdavanjeRezervacijeForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129035 "IzdavanjeRezervacijeKontrolerF"
+      type class_ref 144197 // IzdavanjeRezervacijeKontroler
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129163 "KnjigaFormaF"
+      type class_ref 142917 // KnjigaForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129291 "DetaljiKnjigeFormaF"
+      type class_ref 143173 // DetaljiKnjigeForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129419 "IzdavanjeFormaF"
+      type class_ref 143301 // IzdavanjeForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129547 "PretragaClanaFormaF"
+      type class_ref 143557 // PretragaClanForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129675 "KnjigaKontrolerF"
+      type class_ref 143045 // KnjigaKontroler
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129803 "PretragaClanaKontrolerF"
+      type class_ref 143685 // PretragaClanKontroler
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129931 "IzdavanjeKontrolerF"
+      type class_ref 143429 // IzdavanjeKontroler
+      attributes
+        end
+      relations
+        end
     end
   end
 end

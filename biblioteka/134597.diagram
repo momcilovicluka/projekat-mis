@@ -16,9 +16,6 @@ activityactioncanvas 129093 activityaction_ref 128197 // activity action Provera
   show_opaque_action_definition default
   xyzwh 537.9 292 2000 101 61
 end
-activitynodecanvas 129291 activitynode_ref 135563 // merge
-  xyz 457 515 2000
-end
 activitynodecanvas 129349 activitynode_ref 128453 // decision
   xyz 576.2 370.5 2000
 end
@@ -117,44 +114,14 @@ end
 activitynodecanvas 142149 activitynode_ref 129989 // activity_final
   xyz 261 990.8 2000
 end
-activityactioncanvas 143429 activityaction_ref 130629 // activity action Provera da li zeli da se uclani
-  
-  show_opaque_action_definition default
-  xyzwh 326.6 770.8 2000 101 61
-end
-activityactioncanvas 144453 activityaction_ref 130757 // activity action Dodavanje clana
-  
-  show_opaque_action_definition default
-  xyzwh 423 847.2 2000 101 61
-end
-activitynodecanvas 146501 activitynode_ref 130245 // decision
-  xyz 363.2 856.2 2005
-end
 flowcanvas 128965 flow_ref 128325 // <flow>
   
   from ref 128709 z 2001 to ref 128581
    write_horizontally default
 end
-flowcanvas 129419 flow_ref 137867 // <flow>
-  
-  from ref 129291 z 2001 to ref 139973
-   write_horizontally default
-end
 flowcanvas 129477 flow_ref 128581 // <flow>
   
   from ref 129093 z 2001 to ref 129349
-   write_horizontally default
-end
-flowcanvas 129547 flow_ref 137995 // <flow>
-  
-  from ref 144453 z 2001 to ref 129291
-   write_horizontally default
-end
-flowcanvas 129675 flow_ref 138123 // Na stanju je
-  
-  from ref 132805 z 2001 label "Na stanju je" xyz 512.5 640.5 2001 to point 506 659
-  line 129803 z 2001 to point 505 530
-  line 129931 z 2001 to ref 129291
    write_horizontally default
 end
 flowcanvas 130187 flow_ref 138251 // <flow>
@@ -177,7 +144,7 @@ flowcanvas 130443 flow_ref 138507 // <flow>
 end
 flowcanvas 131525 flow_ref 129221 // Da
   
-  from ref 129349 z 2001 label "Da" xyz 634.5 369.5 2001 to point 709 386
+  from ref 129349 z 2001 label "Da" xyz 634 369 2001 to point 709 386
   line 131653 z 2001 to ref 130501
    write_horizontally default
 end
@@ -193,7 +160,7 @@ flowcanvas 132165 flow_ref 129605 // <flow>
 end
 flowcanvas 132235 flow_ref 138763 // Nema rezervaciju
   
-  from ref 135237 z 2001 label "Nema rezervaciju" xyz 287.5 446.5 2001 to point 228 469
+  from ref 135237 z 2001 label "Nema rezervaciju" xyz 287 446 2001 to point 228 469
   line 132363 z 2001 to ref 131979
    write_horizontally default
 end
@@ -209,7 +176,7 @@ flowcanvas 132677 flow_ref 129861 // <flow>
 end
 flowcanvas 132747 flow_ref 138891 // Ne
   
-  from ref 129349 z 2001 label "Ne" xyz 565.5 426 2001 to point 587 468
+  from ref 129349 z 2001 label "Ne" xyz 565 426 2001 to point 587 468
   line 132875 z 2001 to ref 131979
    write_horizontally default
 end
@@ -226,6 +193,20 @@ flowcanvas 133259 flow_ref 139019 // Nije na stanju
   from ref 132805 z 2001 label "Nije na stanju" xyz 490 510 2001 to point 588 506
   line 133515 z 2001 to point 461 505
   line 133387 z 2001 to ref 131979
+   write_horizontally default
+end
+flowcanvas 133643 flow_ref 145547 // na stanju je
+  decenter_end 736
+  
+  from ref 132805 z 2001 label "na stanju je" xyz 513 637 3000 to point 505 658
+  line 133899 z 2001 to point 502 545
+  line 133771 z 2001 to ref 139973
+   write_horizontally default
+end
+flowcanvas 134027 flow_ref 145675 // <flow>
+  
+  from ref 140485 z 2001 to point 305 999
+  line 134155 z 2001 to ref 142149
    write_horizontally default
 end
 flowcanvas 134085 flow_ref 130373 // <flow>
@@ -274,13 +255,13 @@ end
 flowcanvas 139205 flow_ref 132037 // Da
   decenter_end 648
   
-  from ref 138949 z 2001 label "Da" xyz 437.5 231 2001 to point 458 163
+  from ref 138949 z 2001 label "Da" xyz 437 231 2001 to point 458 163
   line 139333 z 2001 to ref 128709
    write_horizontally default
 end
 flowcanvas 139589 flow_ref 132165 // Ne
   
-  from ref 138949 z 2001 label "Ne" xyz 419 292.5 2001 to ref 139461
+  from ref 138949 z 2001 label "Ne" xyz 419 292 2001 to ref 139461
    write_horizontally default
 end
 flowcanvas 140357 flow_ref 132421 // <flow>
@@ -319,28 +300,6 @@ end
 flowcanvas 142789 flow_ref 133445 // <flow>
   
   from ref 141637 z 2001 to ref 142149
-   write_horizontally default
-end
-flowcanvas 143813 flow_ref 133573 // Ne postoji
-  
-  from ref 140485 z 2001 label "Ne postoji" xyz 316 685 2001 to point 374 705
-  line 143941 z 2001 to ref 143429
-   write_horizontally default
-end
-flowcanvas 146757 flow_ref 134597 // <flow>
-  
-  from ref 143429 z 2006 to ref 146501
-   write_horizontally default
-end
-flowcanvas 146885 flow_ref 134725 // Da
-  
-  from ref 146501 z 2006 label "Da" xyz 393.5 853.5 2006 to ref 144453
-   write_horizontally default
-end
-flowcanvas 147013 flow_ref 134853 // Ne
-  
-  from ref 146501 z 2006 label "Ne" xyz 351.5 942 2006 to point 374 999
-  line 147141 z 2006 to ref 142149
    write_horizontally default
 end
 end

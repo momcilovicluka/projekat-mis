@@ -1,3 +1,449 @@
 format 224
 
+classinstancecanvas 128011 classinstance_ref 128011 // BibliotekarF
+  drawing_mode actor  xyz 22.4 19.4 2005 life_line_z 2005
+end
+classinstancecanvas 128267 classinstance_ref 128267 // KnjigaF
+  xyz 827.4 520.8 2005 life_line_z 2005
+end
+classinstancecanvas 128395 classinstance_ref 128395 // RezervacijaF
+  xyz 1126.1 24.8 2010 life_line_z 2005
+end
+classinstancecanvas 128523 classinstance_ref 128523 // ClanF
+  xyz 1738.9 839.5 2005 life_line_z 2005
+end
+classinstancecanvas 128651 classinstance_ref 128651 // RezervacijaFormaF
+  xyz 197 22.7 2005 life_line_z 2005
+end
+classinstancecanvas 128779 classinstance_ref 128779 // RezervacijaKontrolerF
+  xyz 816.5 22.7 2010 life_line_z 2005
+end
+classinstancecanvas 128907 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF
+  xyz 457.2 169.8 2020 life_line_z 2005
+end
+classinstancecanvas 129035 classinstance_ref 129035 // IzdavanjeRezervacijeKontrolerF
+  xyz 659.9 243.5 2020 life_line_z 2005
+end
+classinstancecanvas 133771 classinstance_ref 128139 // IzdavanjeF
+  xyz 1056 247.4 2020 life_line_z 2005
+end
+fragment 135563 "alt"
+  refer sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
+  form "akoClanImaRezervaciju" xyzwh 53 81 2015 1179 397
+end
+classinstancecanvas 135691 classinstance_ref 129163 // KnjigaFormaF
+  xyz 125 520.2 2010 life_line_z 2005
+end
+classinstancecanvas 135819 classinstance_ref 129291 // DetaljiKnjigeFormaF
+  xyz 352 643.7 2010 life_line_z 2005
+end
+classinstancecanvas 135947 classinstance_ref 129419 // IzdavanjeFormaF
+  xyz 667 702.7 2010 life_line_z 2005
+end
+classinstancecanvas 136075 classinstance_ref 129547 // PretragaClanaFormaF
+  xyz 1150 808.9 2010 life_line_z 2005
+end
+classinstancecanvas 136203 classinstance_ref 129675 // KnjigaKontrolerF
+  xyz 597 520.2 2010 life_line_z 2005
+end
+classinstancecanvas 136331 classinstance_ref 129803 // PretragaClanaKontrolerF
+  xyz 1435 838.9 2010 life_line_z 2005
+end
+classinstancecanvas 136459 classinstance_ref 129931 // IzdavanjeKontrolerF
+  xyz 895 702.2 2015 life_line_z 2005
+end
+fragment 146955 "alt"
+  refer sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
+  form "akoNemaRezervaciju" xyzwh 52 492 2000 1761 782
+end
+durationcanvas 129547 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 97.2 2010 11 27
+end
+durationcanvas 129675 classinstance_ref 128651 // RezervacijaFormaF:RezervacijaForma
+  xyzwh 305 97.4 2010 11 29
+end
+durationcanvas 129931 classinstance_ref 128779 // RezervacijaKontrolerF:RezervacijaKontroler
+  xyzwh 939 105.9 2010 11 50
+end
+durationcanvas 130187 classinstance_ref 128395 // RezervacijaF:Rezervacija
+  xyzwh 1198 109 2010 11 44
+end
+durationcanvas 130571 classinstance_ref 128651 // RezervacijaFormaF:RezervacijaForma
+  xyzwh 305 141.6 2010 11 29
+end
+durationcanvas 131595 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 225.5 2010 11 34
+end
+durationcanvas 131723 classinstance_ref 128651 // RezervacijaFormaF:RezervacijaForma
+  xyzwh 305 231.7 2010 11 30
+end
+durationcanvas 131979 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
+  xyzwh 619 224.5 2010 11 37
+end
+durationcanvas 132235 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 296.1 2010 11 30
+end
+durationcanvas 132363 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
+  xyzwh 619 296.8 2010 11 27
+end
+durationcanvas 133899 classinstance_ref 129035 // IzdavanjeRezervacijeKontrolerF:IzdavanjeRezervacijeKontroler
+  xyzwh 835 309.1 2010 11 44
+end
+durationcanvas 134027 classinstance_ref 133771 // IzdavanjeF:Izdavanje
+  xyzwh 1115 302.7 2010 11 49
+end
+durationcanvas 134411 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
+  xyzwh 619 375.5 2010 11 41
+end
+durationcanvas 134539 classinstance_ref 129035 // IzdavanjeRezervacijeKontrolerF:IzdavanjeRezervacijeKontroler
+  xyzwh 835 375.5 2010 11 41
+end
+durationcanvas 134795 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
+  xyzwh 619 338.8 2010 11 29
+end
+durationcanvas 135179 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
+  xyzwh 619 435.4 2010 11 28
+end
+durationcanvas 135307 classinstance_ref 128651 // RezervacijaFormaF:RezervacijaForma
+  xyzwh 305 431.4 2010 11 29
+end
+durationcanvas 136587 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 586.8 2010 11 27
+end
+durationcanvas 136715 classinstance_ref 135691 // KnjigaFormaF:KnjigaForma
+  xyzwh 203 587 2010 11 51
+end
+durationcanvas 136971 classinstance_ref 136203 // KnjigaKontrolerF:KnjigaKontroler
+  xyzwh 690 592 2010 11 46
+end
+durationcanvas 137227 classinstance_ref 128267 // KnjigaF:Knjiga
+  xyzwh 869 594 2010 11 32
+end
+durationcanvas 138123 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 685.8 2010 11 30
+end
+durationcanvas 138251 classinstance_ref 135691 // KnjigaFormaF:KnjigaForma
+  xyzwh 203 684.6 2010 11 27
+end
+durationcanvas 138507 classinstance_ref 135819 // DetaljiKnjigeFormaF:DetaljiKnjigeForma
+  xyzwh 465 695.6 2010 11 27
+end
+durationcanvas 138763 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 742.6 2010 11 31
+end
+durationcanvas 138891 classinstance_ref 135819 // DetaljiKnjigeFormaF:DetaljiKnjigeForma
+  xyzwh 465 741.6 2010 11 30
+end
+durationcanvas 139147 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
+  xyzwh 763 748.6 2010 11 29
+end
+durationcanvas 139403 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 859 2010 11 47
+end
+durationcanvas 139531 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
+  xyzwh 763 856.2 2010 11 33
+end
+durationcanvas 139787 classinstance_ref 136075 // PretragaClanaFormaF:PretragaClanForma
+  xyzwh 1272 860.8 2010 11 28
+end
+durationcanvas 140043 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 903.2 2010 11 62
+end
+durationcanvas 140171 classinstance_ref 136075 // PretragaClanaFormaF:PretragaClanForma
+  xyzwh 1272 891 2010 11 83
+end
+durationcanvas 140427 classinstance_ref 136331 // PretragaClanaKontrolerF:PretragaClanKontroler
+  xyzwh 1572 890.8 2010 11 84
+end
+durationcanvas 140683 classinstance_ref 128523 // ClanF:Clan
+  xyzwh 1770 891.4 2010 11 79
+end
+durationcanvas 141451 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 989.4 2010 11 40
+end
+durationcanvas 141579 classinstance_ref 136075 // PretragaClanaFormaF:PretragaClanForma
+  xyzwh 1272 985.2 2010 11 39
+end
+durationcanvas 142091 classinstance_ref 136459 // IzdavanjeKontrolerF:IzdavanjeKontroler
+  xyzwh 1006 760 2010 11 31
+end
+durationcanvas 142219 classinstance_ref 133771 // IzdavanjeF:Izdavanje
+  xyzwh 1115 761 2010 11 27
+end
+durationcanvas 142475 classinstance_ref 133771 // IzdavanjeF:Izdavanje
+  xyzwh 1115 803.8 2010 11 27
+end
+durationcanvas 142603 classinstance_ref 136459 // IzdavanjeKontrolerF:IzdavanjeKontroler
+  xyzwh 1006 803.6 2010 11 29
+end
+durationcanvas 143115 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
+  xyzwh 763 810.6 2010 11 25
+end
+durationcanvas 144011 classinstance_ref 136075 // PretragaClanaFormaF:PretragaClanForma
+  xyzwh 1272 1055 2010 11 40
+end
+durationcanvas 144139 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
+  xyzwh 763 1056 2010 11 25
+end
+durationcanvas 145419 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
+  xyzwh 763 1107 2010 11 40
+end
+durationcanvas 145547 classinstance_ref 133771 // IzdavanjeF:Izdavanje
+  xyzwh 1115 1107 2010 11 25
+end
+durationcanvas 145803 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 85 1181 2010 11 40
+end
+durationcanvas 145931 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
+  xyzwh 763 1182 2010 11 30
+end
+durationcanvas 146187 classinstance_ref 136459 // IzdavanjeKontrolerF:IzdavanjeKontroler
+  xyzwh 1006 1199 2010 11 44
+end
+durationcanvas 146443 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
+  xyzwh 763 1217 2010 11 27
+end
+durationcanvas 146699 classinstance_ref 135691 // KnjigaFormaF:KnjigaForma
+  xyzwh 203 1232 2010 11 25
+end
+msg 129803 synchronous
+  from durationcanvas_ref 129547
+  to durationcanvas_ref 129675
+  yz 99 2020 msg operation_ref 138949 // "pretrazi()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 175 85
+msg 130059 synchronous
+  from durationcanvas_ref 129675
+  to durationcanvas_ref 129931
+  yz 106 2020 msg operation_ref 139589 // "pretraziRezervaciju(in kriterijum : string) : Rezervacija [0..1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 568 92
+msg 130315 synchronous
+  from durationcanvas_ref 129931
+  to durationcanvas_ref 130187
+  yz 110 2020 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 1043 96
+msg 130443 return
+  from durationcanvas_ref 130187
+  to durationcanvas_ref 129931
+  yz 140 2020 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 1053 126
+msg 130699 return
+  from durationcanvas_ref 129931
+  to durationcanvas_ref 130571
+  yz 142 2020 explicitmsg "rezervacija"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 597 128
+msg 131851 synchronous
+  from durationcanvas_ref 131595
+  to durationcanvas_ref 131723
+  yz 248 2020 msg operation_ref 139077 // "prikaziRezervaciju()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 145 234
+msg 132107 synchronous
+  from durationcanvas_ref 131723
+  to durationcanvas_ref 131979
+  yz 249 2020 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 445 235
+msg 132491 synchronous
+  from durationcanvas_ref 132235
+  to durationcanvas_ref 132363
+  yz 297 2020 msg operation_ref 139333 // "sacuvajIzdavanje()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 306 282
+msg 134155 synchronous
+  from durationcanvas_ref 133899
+  to durationcanvas_ref 134027
+  yz 310 2020 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 956 296
+msg 134283 return
+  from durationcanvas_ref 134027
+  to durationcanvas_ref 133899
+  yz 339 2020 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 967 325
+msg 134667 synchronous
+  from durationcanvas_ref 134411
+  to durationcanvas_ref 134539
+  yz 376 2020 msg operation_ref 139461 // "sacuvajIzdavanje(in i : Izdavanje) : bool [1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 682 362
+msg 134923 return
+  from durationcanvas_ref 133899
+  to durationcanvas_ref 134795
+  yz 340 2020 explicitmsg "izdavanje"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 709 326
+msg 135051 return
+  from durationcanvas_ref 134539
+  to durationcanvas_ref 134411
+  yz 404 2020 explicitmsg "true/false"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 709 390
+msg 135435 return
+  from durationcanvas_ref 135179
+  to durationcanvas_ref 135307
+  yz 448 2020 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 457 434
+msg 136843 synchronous
+  from durationcanvas_ref 136587
+  to durationcanvas_ref 136715
+  yz 587 2015 msg operation_ref 137029 // "pretrazi()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 123 573
+msg 137099 synchronous
+  from durationcanvas_ref 136715
+  to durationcanvas_ref 136971
+  yz 593 2015 msg operation_ref 137797 // "pronadjiKnjigu(in kriterijum : string) : Knjiga [*]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 408 579
+msg 137355 synchronous
+  from durationcanvas_ref 136971
+  to durationcanvas_ref 137227
+  yz 595 2020 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 762 581
+msg 137483 return
+  from durationcanvas_ref 137227
+  to durationcanvas_ref 136971
+  yz 614 2025 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 774 600
+msg 137611 return
+  from durationcanvas_ref 136971
+  to durationcanvas_ref 136715
+  yz 625 2030 explicitmsg "knjiga"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 436 611
+msg 138379 synchronous
+  from durationcanvas_ref 138123
+  to durationcanvas_ref 138251
+  yz 686 2015 msg operation_ref 137157 // "prikazi()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 126 672
+msg 138635 synchronous
+  from durationcanvas_ref 138251
+  to durationcanvas_ref 138507
+  yz 696 2015 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 314 682
+msg 139019 synchronous
+  from durationcanvas_ref 138763
+  to durationcanvas_ref 138891
+  yz 744 2015 msg operation_ref 137925 // "izdavanje()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 247 730
+msg 139275 synchronous
+  from durationcanvas_ref 138891
+  to durationcanvas_ref 139147
+  yz 750 2015 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 601 736
+msg 139659 synchronous
+  from durationcanvas_ref 139403
+  to durationcanvas_ref 139531
+  yz 861 2015 msg operation_ref 138053 // "izaberiClana()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 375 846
+msg 139915 synchronous
+  from durationcanvas_ref 139531
+  to durationcanvas_ref 139787
+  yz 877 2020 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 953 861
+msg 140299 synchronous
+  from durationcanvas_ref 140043
+  to durationcanvas_ref 140171
+  yz 911 2015 msg operation_ref 138565 // "pretraziClana()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 513 895
+msg 140555 synchronous
+  from durationcanvas_ref 140171
+  to durationcanvas_ref 140427
+  yz 925 2015 msg operation_ref 138821 // "pretraziClana(in kriterijum : string) : Clan [0..1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 1391 913
+msg 140811 synchronous
+  from durationcanvas_ref 140427
+  to durationcanvas_ref 140683
+  yz 931 2015 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 1659 916
+msg 140939 return
+  from durationcanvas_ref 140683
+  to durationcanvas_ref 140427
+  yz 949 2020 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 1670 936
+msg 141067 return
+  from durationcanvas_ref 140427
+  to durationcanvas_ref 140171
+  yz 963 2015 explicitmsg "clan"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 1421 950
+msg 141707 synchronous
+  from durationcanvas_ref 141451
+  to durationcanvas_ref 141579
+  yz 1006 2015 msg operation_ref 138693 // "izaberiClana()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 515 990
+msg 142347 synchronous
+  from durationcanvas_ref 142091
+  to durationcanvas_ref 142219
+  yz 763 2015 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 1043 749
+msg 142731 return
+  from durationcanvas_ref 142475
+  to durationcanvas_ref 142603
+  yz 803 2025 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 1056 789
+msg 143243 return
+  from durationcanvas_ref 142603
+  to durationcanvas_ref 143115
+  yz 815 2015 explicitmsg "izdavanje"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 865 801
+msg 144267 return
+  from durationcanvas_ref 144011
+  to durationcanvas_ref 144139
+  yz 1056 2015 explicitmsg "clan"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 1012 1040
+msg 145675 synchronous
+  from durationcanvas_ref 145419
+  to durationcanvas_ref 145547
+  yz 1107 2015 msg operation_ref 128581 // "dodajClana(in c : Clan) : bool [1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 908 1091
+msg 146059 synchronous
+  from durationcanvas_ref 145803
+  to durationcanvas_ref 145931
+  yz 1182 2015 msg operation_ref 138181 // "sacuvajIzdavanje()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 377 1165
+msg 146315 synchronous
+  from durationcanvas_ref 145931
+  to durationcanvas_ref 146187
+  yz 1199 2020 msg operation_ref 138309 // "cuvajIzdavanje(in i : Izdavanje) : bool [1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 845 1183
+msg 146571 return
+  from durationcanvas_ref 146187
+  to durationcanvas_ref 146443
+  yz 1232 2025 explicitmsg "true/false"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 864 1215
+msg 146827 return
+  from durationcanvas_ref 146443
+  to durationcanvas_ref 146699
+  yz 1233 2030 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 478 1216
 end
