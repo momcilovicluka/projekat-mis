@@ -1,0 +1,530 @@
+format 224
+
+classinstancecanvas 128011 classinstance_ref 128011 // BibliotekarF
+  drawing_mode actor  xyz 21.3 23.4 2005 life_line_z 2010
+end
+classinstancecanvas 128139 classinstance_ref 136459 // DodavanjeKnjigeFormaF
+  xyz 177 23.9 2010 life_line_z 2010
+end
+classinstancecanvas 128267 classinstance_ref 136587 // DodavanjeKnjigeKontrolerF
+  xyz 340.1 1730 2015 life_line_z 2000
+end
+classinstancecanvas 128395 classinstance_ref 136715 // AutorFormaF
+  xyz 490.3 27 2020 life_line_z 2010
+end
+classinstancecanvas 128523 classinstance_ref 136843 // AutorKontrolerF
+  xyz 780.4 226.8 2025 life_line_z 2010
+end
+classinstancecanvas 128651 classinstance_ref 136971 // AutorF
+  xyz 998.7 229.2 2020 life_line_z 2010
+end
+classinstancecanvas 128779 classinstance_ref 137099 // NoviAutorFormaF
+  xyz 617 446.1 2025 life_line_z 2010
+end
+classinstancecanvas 128907 classinstance_ref 137227 // ZanrFormaF
+  xyz 371.9 989.8 2020 life_line_z 2000
+end
+classinstancecanvas 129035 classinstance_ref 137355 // ZanrKontrolerF
+  xyz 748.7 1093 2020 life_line_z 2000
+end
+classinstancecanvas 129163 classinstance_ref 137483 // NoviZanrFormaF
+  xyz 549.9 1307.7 2020 life_line_z 2000
+end
+classinstancecanvas 129291 classinstance_ref 137611 // ZanrF
+  xyz 957.3 1092.1 2005 life_line_z 2000
+end
+classinstancecanvas 129419 classinstance_ref 128267 // KnjigaF
+  xyz 740.6 26.7 2020 life_line_z 2000
+end
+fragment 140683 "alt"
+  refer sequencediagram_ref 147595 // dodavanjeKnjigeSekvencija
+  form "kadaAutorNePostoji" xyzwh 64.9 381 2000 1006 412
+end
+fragment 149899 "alt"
+  refer sequencediagram_ref 147595 // dodavanjeKnjigeSekvencija
+  form "akoZanrNePostoji" xyzwh 63.7 1248.5 2005 993 314
+end
+durationcanvas 132107 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 84 182.8 2010 11 37
+end
+durationcanvas 132235 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
+  xyzwh 315 184.2 2010 11 47
+end
+durationcanvas 132491 classinstance_ref 128395 // AutorFormaF:AutorForma
+  xyzwh 564 192.9 2010 11 37
+end
+durationcanvas 134667 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 86 289.3 2010 11 37
+end
+durationcanvas 134795 classinstance_ref 128395 // AutorFormaF:AutorForma
+  xyzwh 564 289.7 2010 11 37
+end
+durationcanvas 135051 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
+  xyzwh 869 289.3 2010 11 43
+end
+durationcanvas 135307 classinstance_ref 128651 // AutorF:Autor
+  xyzwh 1035 295.5 2010 11 37
+end
+durationcanvas 135563 classinstance_ref 128651 // AutorF:Autor
+  xyzwh 1035 339.2 2010 11 37
+end
+durationcanvas 135691 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
+  xyzwh 869 339.3 2010 11 37
+end
+durationcanvas 135947 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
+  xyzwh 869 395.4 2010 11 37
+end
+durationcanvas 136075 classinstance_ref 128395 // AutorFormaF:AutorForma
+  xyzwh 564 395.5 2010 11 37
+end
+durationcanvas 136331 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 86 492.3 2010 11 57
+end
+durationcanvas 136459 classinstance_ref 128395 // AutorFormaF:AutorForma
+  xyzwh 566 492.7 2010 11 50
+end
+durationcanvas 136715 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
+  xyzwh 715 507.4 2010 11 53
+end
+durationcanvas 136971 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 84 629.3 2010 11 37
+end
+durationcanvas 137099 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
+  xyzwh 715 629.3 2010 11 43
+end
+durationcanvas 138635 classinstance_ref 128651 // AutorF:Autor
+  xyzwh 1035 522.3 2010 11 37
+end
+durationcanvas 138891 classinstance_ref 128651 // AutorF:Autor
+  xyzwh 1035 568.2 2010 11 40
+end
+durationcanvas 139019 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
+  xyzwh 715 565.5 2010 11 37
+end
+durationcanvas 139275 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
+  xyzwh 869 635.9 2010 11 37
+end
+durationcanvas 139531 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
+  xyzwh 869 674.3 2010 11 53
+end
+durationcanvas 139659 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
+  xyzwh 715 675.5 2010 11 37
+end
+durationcanvas 139915 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
+  xyzwh 715 735.2 2010 11 37
+end
+durationcanvas 140043 classinstance_ref 128395 // AutorFormaF:AutorForma
+  xyzwh 564 736.5 2010 11 43
+end
+durationcanvas 140811 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
+  xyzwh 869 822.1 2015 11 37
+end
+durationcanvas 140939 classinstance_ref 128395 // AutorFormaF:AutorForma
+  xyzwh 564 820.6 2015 11 40
+end
+durationcanvas 141195 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
+  xyzwh 315 72.7 2015 11 37
+end
+durationcanvas 141323 classinstance_ref 129419 // KnjigaF:Knjiga
+  xyzwh 784 72.7 2010 11 37
+end
+durationcanvas 141579 classinstance_ref 129419 // KnjigaF:Knjiga
+  xyzwh 782 128 2010 11 43
+end
+durationcanvas 141707 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
+  xyzwh 315 123.8 2015 11 40
+end
+durationcanvas 142475 classinstance_ref 129419 // KnjigaF:Knjiga
+  xyzwh 784 943.9 2010 11 43
+end
+durationcanvas 142603 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
+  xyzwh 315 942.8 2015 11 37
+end
+durationcanvas 142859 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 86 1032.7 2015 11 37
+end
+durationcanvas 142987 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
+  xyzwh 315 1034.9 2015 11 47
+end
+durationcanvas 143243 classinstance_ref 128907 // ZanrFormaF:ZanrForma
+  xyzwh 439 1042.9 2010 11 37
+end
+durationcanvas 143499 classinstance_ref 128907 // ZanrFormaF:ZanrForma
+  xyzwh 439 1076.8 2010 11 43
+end
+durationcanvas 143627 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
+  xyzwh 317 1076.8 2015 11 43
+end
+durationcanvas 143883 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 84 1133.8 2015 11 40
+end
+durationcanvas 144011 classinstance_ref 128907 // ZanrFormaF:ZanrForma
+  xyzwh 441 1134.7 2010 11 47
+end
+durationcanvas 144267 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 84 853.7 2015 11 40
+end
+durationcanvas 144395 classinstance_ref 128395 // AutorFormaF:AutorForma
+  xyzwh 566 855.5 2015 11 37
+end
+durationcanvas 145675 classinstance_ref 128395 // AutorFormaF:AutorForma
+  xyzwh 564 905.5 2015 11 37
+end
+durationcanvas 145803 classinstance_ref 129419 // KnjigaF:Knjiga
+  xyzwh 784 904.2 2010 11 37
+end
+durationcanvas 146059 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
+  xyzwh 831 1146 2010 11 50
+end
+durationcanvas 146315 classinstance_ref 129291 // ZanrF:Zanr
+  xyzwh 988 1159.9 2010 11 37
+end
+durationcanvas 146571 classinstance_ref 129291 // ZanrF:Zanr
+  xyzwh 988 1202.8 2010 11 37
+end
+durationcanvas 146699 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
+  xyzwh 831 1202.7 2010 11 37
+end
+durationcanvas 146955 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
+  xyzwh 831 1253.8 2010 11 40
+end
+durationcanvas 147083 classinstance_ref 128907 // ZanrFormaF:ZanrForma
+  xyzwh 441 1256.7 2010 11 43
+end
+durationcanvas 147339 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 84 1355.3 2015 11 37
+end
+durationcanvas 147467 classinstance_ref 128907 // ZanrFormaF:ZanrForma
+  xyzwh 441 1358.1 2010 11 40
+end
+durationcanvas 147723 classinstance_ref 129163 // NoviZanrFormaF:NoviZanrForma
+  xyzwh 641 1357.9 2010 11 40
+end
+durationcanvas 147979 classinstance_ref 129291 // ZanrF:Zanr
+  xyzwh 988 1362.7 2010 11 37
+end
+durationcanvas 148235 classinstance_ref 129291 // ZanrF:Zanr
+  xyzwh 988 1406.7 2010 11 43
+end
+durationcanvas 148363 classinstance_ref 129163 // NoviZanrFormaF:NoviZanrForma
+  xyzwh 641 1403.7 2010 11 40
+end
+durationcanvas 148619 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 84 1442.7 2015 11 37
+end
+durationcanvas 148747 classinstance_ref 129163 // NoviZanrFormaF:NoviZanrForma
+  xyzwh 641 1443.2 2010 11 50
+end
+durationcanvas 149003 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
+  xyzwh 831 1455.6 2010 11 37
+end
+durationcanvas 149259 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
+  xyzwh 831 1489.8 2010 11 37
+end
+durationcanvas 149387 classinstance_ref 129163 // NoviZanrFormaF:NoviZanrForma
+  xyzwh 641 1491.9 2010 11 53
+end
+durationcanvas 149643 classinstance_ref 128907 // ZanrFormaF:ZanrForma
+  xyzwh 441 1503.7 2010 11 40
+end
+durationcanvas 150027 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
+  xyzwh 831 1582.7 2010 11 37
+end
+durationcanvas 150155 classinstance_ref 128907 // ZanrFormaF:ZanrForma
+  xyzwh 439 1582.7 2010 11 37
+end
+durationcanvas 150411 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 84 1635.5 2020 11 37
+end
+durationcanvas 150539 classinstance_ref 128907 // ZanrFormaF:ZanrForma
+  xyzwh 439 1634.4 2010 11 47
+end
+durationcanvas 151051 classinstance_ref 129419 // KnjigaF:Knjiga
+  xyzwh 784 1644.2 2010 11 37
+end
+durationcanvas 151691 classinstance_ref 129419 // KnjigaF:Knjiga
+  xyzwh 782 1687.1 2010 11 43
+end
+durationcanvas 151819 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
+  xyzwh 315 1686.7 2020 11 43
+end
+durationcanvas 152075 classinstance_ref 128011 // BibliotekarF:Bibliotekar
+  xyzwh 86 1788.8 2020 11 32
+end
+durationcanvas 152203 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
+  xyzwh 315 1787.7 2020 11 34
+end
+durationcanvas 152459 classinstance_ref 128267 // DodavanjeKnjigeKontrolerF:DodavanjeKnjigeKontroler
+  xyzwh 495 1799.9 2010 11 30
+end
+durationcanvas 152715 classinstance_ref 128267 // DodavanjeKnjigeKontrolerF:DodavanjeKnjigeKontroler
+  xyzwh 495 1855.5 2010 11 44
+end
+durationcanvas 152843 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
+  xyzwh 315 1854.4 2020 11 30
+end
+msg 132363 synchronous
+  from durationcanvas_ref 132107
+  to durationcanvas_ref 132235
+  yz 196 2015 msg operation_ref 135493 // "dodajAutora()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 167 180
+msg 132619 synchronous
+  from durationcanvas_ref 132235
+  to durationcanvas_ref 132491
+  yz 205 2015 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 423 189
+msg 134923 synchronous
+  from durationcanvas_ref 134667
+  to durationcanvas_ref 134795
+  yz 303 2015 msg operation_ref 137285 // "pretraziAutora()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 285 288
+msg 135179 synchronous
+  from durationcanvas_ref 134795
+  to durationcanvas_ref 135051
+  yz 303 2020 msg operation_ref 137413 // "pronadjiAutora(in kriterijum : string) : Autor [*]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 683 284
+msg 135435 synchronous
+  from durationcanvas_ref 135051
+  to durationcanvas_ref 135307
+  yz 310 2025 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 938 294
+msg 135819 return
+  from durationcanvas_ref 135563
+  to durationcanvas_ref 135691
+  yz 351 2015 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 949 335
+msg 136203 return
+  from durationcanvas_ref 135947
+  to durationcanvas_ref 136075
+  yz 407 2015 explicitmsg "null"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 713 388
+msg 136587 synchronous
+  from durationcanvas_ref 136331
+  to durationcanvas_ref 136459
+  yz 505 2015 msg operation_ref 135877 // "dodajAutora()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 291 489
+msg 136843 synchronous
+  from durationcanvas_ref 136459
+  to durationcanvas_ref 136715
+  yz 517 2020 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 631 500
+msg 137227 synchronous
+  from durationcanvas_ref 136971
+  to durationcanvas_ref 137099
+  yz 643 2015 msg operation_ref 136517 // "sacuvajAutora()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 361 628
+msg 138763 synchronous
+  from durationcanvas_ref 136715
+  to durationcanvas_ref 138635
+  yz 536 2015 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 930 513
+msg 139147 return
+  from durationcanvas_ref 138891
+  to durationcanvas_ref 139019
+  yz 579 2015 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 785 559
+msg 139403 synchronous
+  from durationcanvas_ref 137099
+  to durationcanvas_ref 139275
+  yz 647 2015 msg operation_ref 136901 // "sacuvaj(in a : Autor) : bool [1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 772 631
+msg 139787 return
+  from durationcanvas_ref 139531
+  to durationcanvas_ref 139659
+  yz 690 2015 explicitmsg "true/false"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 771 674
+msg 140171 return
+  from durationcanvas_ref 139915
+  to durationcanvas_ref 140043
+  yz 747 2015 explicitmsg "autor"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 633 731
+msg 141067 return
+  from durationcanvas_ref 140811
+  to durationcanvas_ref 140939
+  yz 835 2020 explicitmsg "autor"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 709 819
+msg 141451 synchronous
+  from durationcanvas_ref 141195
+  to durationcanvas_ref 141323
+  yz 84 2020 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 663 68
+msg 141835 return
+  from durationcanvas_ref 141579
+  to durationcanvas_ref 141707
+  yz 139 2020 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 433 124
+msg 142731 return
+  from durationcanvas_ref 142475
+  to durationcanvas_ref 142603
+  yz 956 2020 explicitmsg "true/false"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 422 940
+msg 143115 synchronous
+  from durationcanvas_ref 142859
+  to durationcanvas_ref 142987
+  yz 1046 2020 msg operation_ref 135621 // "dodajZanr()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 173 1031
+msg 143371 synchronous
+  from durationcanvas_ref 142987
+  to durationcanvas_ref 143243
+  yz 1055 2020 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 355 1040
+msg 143755 return
+  from durationcanvas_ref 143499
+  to durationcanvas_ref 143627
+  yz 1090 2020 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 374 1076
+msg 144139 synchronous
+  from durationcanvas_ref 143883
+  to durationcanvas_ref 144011
+  yz 1150 2020 msg operation_ref 137541 // "pretraziZanr()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 229 1135
+msg 144523 synchronous
+  from durationcanvas_ref 144267
+  to durationcanvas_ref 144395
+  yz 869 3005 msg operation_ref 136261 // "izaberiAutora()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 286 854
+msg 145931 synchronous
+  from durationcanvas_ref 145675
+  to durationcanvas_ref 145803
+  yz 917 2020 msg operation_ref 128197 // "dodajAutora(in a : Autor [1..*]) : bool"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 613 900
+msg 146187 synchronous
+  from durationcanvas_ref 144011
+  to durationcanvas_ref 146059
+  yz 1158 2015 msg operation_ref 137669 // "pronadjiZanr(in kriterijum : string) : Zanr [*]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 608 1139
+msg 146443 synchronous
+  from durationcanvas_ref 146059
+  to durationcanvas_ref 146315
+  yz 1173 2015 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 903 1155
+msg 146827 return
+  from durationcanvas_ref 146571
+  to durationcanvas_ref 146699
+  yz 1216 2015 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 912 1199
+msg 147211 return
+  from durationcanvas_ref 146955
+  to durationcanvas_ref 147083
+  yz 1270 2015 explicitmsg "null"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 633 1255
+msg 147595 synchronous
+  from durationcanvas_ref 147339
+  to durationcanvas_ref 147467
+  yz 1370 2020 msg operation_ref 136005 // "dodajZanr()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 234 1356
+msg 147851 synchronous
+  from durationcanvas_ref 147467
+  to durationcanvas_ref 147723
+  yz 1372 2015 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 523 1358
+msg 148107 synchronous
+  from durationcanvas_ref 147723
+  to durationcanvas_ref 147979
+  yz 1375 2020 explicitmsg "create()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 913 1358
+msg 148491 return
+  from durationcanvas_ref 148235
+  to durationcanvas_ref 148363
+  yz 1418 2015 explicitmsg "void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 816 1403
+msg 148875 synchronous
+  from durationcanvas_ref 148619
+  to durationcanvas_ref 148747
+  yz 1455 2020 msg operation_ref 136645 // "sacuvajZanr()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 328 1440
+msg 149131 synchronous
+  from durationcanvas_ref 148747
+  to durationcanvas_ref 149003
+  yz 1468 2025 msg operation_ref 136773 // "sacuvaj(in z : Zanr) : bool [1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 714 1453
+msg 149515 return
+  from durationcanvas_ref 149259
+  to durationcanvas_ref 149387
+  yz 1501 2015 explicitmsg "true/false"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 715 1487
+msg 149771 return
+  from durationcanvas_ref 149387
+  to durationcanvas_ref 149643
+  yz 1519 2020 explicitmsg "zanr"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 534 1504
+msg 150283 return
+  from durationcanvas_ref 150027
+  to durationcanvas_ref 150155
+  yz 1595 2015 explicitmsg "zanr"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 629 1580
+msg 150667 synchronous
+  from durationcanvas_ref 150411
+  to durationcanvas_ref 150539
+  yz 1647 2025 msg operation_ref 136389 // "izaberiZanr()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 230 1632
+msg 151179 synchronous
+  from durationcanvas_ref 150539
+  to durationcanvas_ref 151051
+  yz 1657 2015 msg operation_ref 135365 // "dodajZanr(in z : Zanr) : bool [1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 590 1642
+msg 151947 return
+  from durationcanvas_ref 151691
+  to durationcanvas_ref 151819
+  yz 1700 2025 explicitmsg "true/false"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 534 1686
+msg 152331 synchronous
+  from durationcanvas_ref 152075
+  to durationcanvas_ref 152203
+  yz 1793 2025 msg operation_ref 135749 // "kreirajKnjigu()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 167 1777
+msg 152587 synchronous
+  from durationcanvas_ref 152203
+  to durationcanvas_ref 152459
+  yz 1805 2025 msg operation_ref 136133 // "sacuvajKnjigu(in k : Knjiga) : bool [1]"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 367 1789
+msg 152971 return
+  from durationcanvas_ref 152715
+  to durationcanvas_ref 152843
+  yz 1858 2025 explicitmsg "true/false"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 384 1842
+end

@@ -70,7 +70,7 @@ classcanvas 132037 class_ref 142405 // AutorKontroler
 end
 classcanvas 132165 class_ref 142533 // ZanrKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 788.92 699.64 2000
+  xyz 788.92 696.64 2000
 end
 classcanvas 132549 class_ref 142661 // NoviAutorForma
   classdiagramsettings member_max_width 0 end
@@ -143,27 +143,27 @@ relationcanvas 128325 relation_ref 128069 // <generalisation>
 end
 relationcanvas 128523 relation_ref 128139 // <dependency>
   decenter_begin 703
-  from ref 128139 z 2007 to point 339.6 1032.2
+  from ref 128139 z 2007 to point 339 1032
   line 128651 z 2007 to ref 128197
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 128779 relation_ref 128267 // <dependency>
   decenter_begin 277
-  from ref 128139 z 2001 to point 440.9 1008
-  line 128907 z 2001 to point 436.4 756.7
+  from ref 128139 z 2001 to point 440 1008
+  line 128907 z 2001 to point 436 756
   line 129035 z 2001 to ref 128069
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 128965 relation_ref 134725 // <aggregation>
-  decenter_begin 217
+  decenter_begin 216
   from ref 128581 z 2001 to ref 128709
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 129291 relation_ref 128523 // <dependency>
-  from ref 128011 z 2001 to point 752.5 1088
+  from ref 128011 z 2001 to point 752 1088
   line 132107 z 2001 to ref 128139
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -200,9 +200,9 @@ end
 relationcanvas 130955 relation_ref 129035 // <association>
   decenter_begin 333
   decenter_end 884
-  from ref 130315 z 2001 to point 811.5 951.5
+  from ref 130315 z 2001 to point 811 951
   line 131339 z 2001 to point 808 840
-  line 131211 z 2001 to point 680 839.5
+  line 131211 z 2001 to point 680 839
   line 131083 z 2001 to ref 140229
   no_role_a no_role_b
   multiplicity_a_pos 649 801 3000 multiplicity_b_pos 878 962 3000
@@ -228,16 +228,16 @@ relationcanvas 132235 relation_ref 129163 // <association>
   multiplicity_a_pos 940 1029 3000 multiplicity_b_pos 924 997 3000
 end
 relationcanvas 132363 relation_ref 129291 // <association>
-  decenter_begin 713
-  from ref 130187 z 2001 to point 1677.5 976
-  line 132491 z 2001 to point 1677.5 332
+  decenter_begin 712
+  from ref 130187 z 2001 to point 1677 976
+  line 132491 z 2001 to point 1677 332
   line 132619 z 2001 to ref 134725
   no_role_a no_role_b
   multiplicity_a_pos 1232 342 3000 multiplicity_b_pos 1205 988 3000
 end
 relationcanvas 132747 relation_ref 129419 // <association>
   decenter_begin 337
-  from ref 130187 z 2001 to point 1251.5 949.5
+  from ref 130187 z 2001 to point 1251 949
   line 132875 z 2001 to ref 130885
   no_role_a no_role_b
   multiplicity_a_pos 1221 901 3000 multiplicity_b_pos 1205 961 3000
@@ -250,7 +250,7 @@ relationcanvas 132805 relation_ref 142661 // <dependency>
 end
 relationcanvas 132933 relation_ref 142789 // <dependency>
   decenter_begin 759
-  from ref 132549 z 2001 to point 1632 454.5
+  from ref 132549 z 2001 to point 1632 454
   line 135365 z 2001 to ref 132037
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -278,8 +278,8 @@ relationcanvas 134341 relation_ref 143557 // <dependency>
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 134469 relation_ref 143685 // <dependency>
-  decenter_end 690
-  from ref 131269 z 2001 to point 1241.5 547.5
+  decenter_end 689
+  from ref 131269 z 2001 to point 1241 547
   line 134597 z 2001 to ref 128581
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -291,7 +291,7 @@ relationcanvas 134853 relation_ref 143813 // <dependency>
 end
 relationcanvas 134981 relation_ref 143941 // <dependency>
   decenter_begin 518
-  from ref 131141 z 2001 to point 1057.5 736
+  from ref 131141 z 2001 to point 1057 736
   line 135109 z 2001 to ref 132165
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b

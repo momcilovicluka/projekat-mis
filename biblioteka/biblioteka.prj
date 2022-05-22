@@ -1,6 +1,6 @@
 format 224
 "biblioteka"
-  revision 11
+  revision 12
   modified_by 11 "Dalibor"
 
 
@@ -4141,6 +4141,91 @@ ${docstring}${body}
 
     classinstance 129931 "IzdavanjeKontrolerF"
       type class_ref 143429 // IzdavanjeKontroler
+      attributes
+        end
+      relations
+        end
+    end
+
+    sequencediagram 147595 "dodavanjeKnjigeSekvencija"
+      sequencediagramsettings end
+      overlapping_bars size A0
+    end
+
+    classinstance 136459 "DodavanjeKnjigeFormaF"
+      type class_ref 141893 // DodavanjeKnjigaForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 136587 "DodavanjeKnjigeKontrolerF"
+      type class_ref 142277 // DodavanjeKnjigeKontroler
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 136715 "AutorFormaF"
+      type class_ref 142021 // AutorForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 136843 "AutorKontrolerF"
+      type class_ref 142405 // AutorKontroler
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 136971 "AutorF"
+      type class_ref 134981 // Autor
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 137099 "NoviAutorFormaF"
+      type class_ref 142661 // NoviAutorForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 137227 "ZanrFormaF"
+      type class_ref 142149 // ZanrForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 137355 "ZanrKontrolerF"
+      type class_ref 142533 // ZanrKontroler
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 137483 "NoviZanrFormaF"
+      type class_ref 142789 // NoviZanrForma
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 137611 "ZanrF"
+      type class_ref 141765 // Zanr
       attributes
         end
       relations
