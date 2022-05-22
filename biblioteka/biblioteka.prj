@@ -1,6 +1,6 @@
 format 224
 "biblioteka"
-  revision 7
+  revision 8
   modified_by 69 "Home"
 
 
@@ -3491,6 +3491,104 @@ ${docstring}${body}
 	    python "${type}"
 	    classrelation_ref 148293 // <dependency>
 	  b parent class_ref 135109 // Rezervacija
+      end
+    end
+
+    class 150853 "DodavanjeBibliotekaraForma"
+      visibility package stereotype "boundary"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 146117 "kreirajBibliotekara"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 154949 // <association>
+	relation 152645 ----
+	  a role_name "" multiplicity "0..1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 154949 // <association>
+	  b role_name "" multiplicity "1" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    python "${comment}${self}${name} = ${value}
+"
+	    classrelation_ref 155077 // <association>
+      end
+
+      classrelation 155205 // <dependency>
+	relation 152773 -_->
+	  a public
+	    python "${type}"
+	    classrelation_ref 155205 // <dependency>
+	  b parent class_ref 150981 // BibliotekarKontroler
+      end
+    end
+
+    class 150981 "BibliotekarKontroler"
+      visibility package stereotype "control"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 155077 // <association>
+	relation_ref 152645 // <association>
+      end
+
+      classrelation 155333 // <dependency>
+	relation 152901 -_->
+	  a public
+	    python "${type}"
+	    classrelation_ref 155333 // <dependency>
+	  b parent class_ref 128069 // Bibliotekar
+      end
+
+      operation 146245 "sacuvajBibliotekara"
+	public explicit_return_type "bool"
+	multiplicity "1"
+	nparams 1
+	  param in name "b" type class_ref 128069 // Bibliotekar
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
       end
     end
   end
