@@ -1,15 +1,12 @@
 window_sizes 1920 1017 213 1701 861 104
 cleanlooks_style
 diagrams
-  classdiagram_ref 141125 // KlasniDijagram
-    1560 861 110 A0 60 0
-  usecasediagram_ref 128069 // useCaseDiagramBiblAdmin
-    112 90 119 A0 72 0
-  active  usecasediagram_ref 128011 // useCaseClan
-    1701 861 100 A4 0 0
+  active  classdiagram_ref 147781 // packageDijagram
+    1701 861 139 A0 0 0
 end
 show_stereotypes
-selected usecasediagram_ref 128011 // useCaseClan
+selected 
+  package_ref 128453 // KlaseSaAtributima
 open
   class_ref 128139 // Clan
   activity_ref 128069 // izdavanjeKnjigeActivity
@@ -31,8 +28,8 @@ open
   class_ref 143173 // DetaljiKnjigeForma
   class_ref 143301 // IzdavanjeForma
   class_ref 143429 // IzdavanjeKontroler
-  class_ref 143557 // ClanForma
-  class_ref 143685 // ClanKontroler
+  class_ref 143557 // PretragaClanForma
+  class_ref 143685 // PretragaClanKontroler
   class_ref 143813 // RezervacijaForma
   class_ref 143941 // DetaljiRezervacijeForma
   class_ref 144069 // IzdavanjeRezervacijeForma

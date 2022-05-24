@@ -1,7 +1,7 @@
 format 224
 "biblioteka"
-  revision 13
-  modified_by 11 "Dalibor"
+  revision 14
+  modified_by 69 "Luka"
 
 
   
@@ -4260,5 +4260,34 @@ ${docstring}${body}
       relations
         end
     end
+
+    classdiagram 147781 "packageDijagram"
+      classdiagramsettings member_max_width 0 end
+      size A0
+    end
+
+    class 157509 "GUIFramework"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
   end
+
+  package_ref 128069 // GUIFramework
+
+  package_ref 128197 // KontrolKlase
+
+  package_ref 128325 // KlaseZaRadSaBazom
+
+  package_ref 128453 // KlaseSaAtributima
 end

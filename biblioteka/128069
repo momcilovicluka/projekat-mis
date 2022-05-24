@@ -1,0 +1,46 @@
+format 224
+"GUIFramework" // GUIFramework
+  revision 1
+  modified_by 69 "Luka"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  simplerelation 157637
+    -_->
+      stereotype "import"
+      on 
+      package_ref 128325 // KlaseZaRadSaBazom
+  end
+
+  simplerelation 157765
+    -_->
+      stereotype "import"
+      on 
+      package_ref 128197 // KontrolKlase
+  end
+end
