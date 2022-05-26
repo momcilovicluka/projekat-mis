@@ -1,16 +1,16 @@
 window_sizes 1920 1001 0 1914 819 128
 
 diagrams
-  sequencediagram_ref 147595 // dodavanjeKnjigeSekvencija
-    1539 819 139 A0 1848 0
   classdiagram_ref 141125 // KlasniDijagram
-    114 98 100 A0 269 295
-  active  sequencediagram_ref 154123 // dodavanjeBibliotekaraSekvencija
+    1080 655 100 A0 462 131
+  activitydiagram_ref 134597 // izdavanjeKnjige
+    114 98 100 A0 468 0
+  active  sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
     1914 819 100 A0 0 0
 end
 show_stereotypes
-selected sequencediagram_ref 154123 // dodavanjeBibliotekaraSekvencija
+selected sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
 open
-  usecaseview_ref 128069 // bibliotekaUseCase
+  activity_ref 128069 // izdavanjeKnjigeActivity
 end
 end
