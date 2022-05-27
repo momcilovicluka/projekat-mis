@@ -1,23 +1,18 @@
 package guiFramework;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JList;
-import java.awt.BorderLayout;
-
-import javax.swing.DefaultListModel;
-import javax.swing.JButton;
-import javax.swing.JTextField;
-import javax.swing.JMenuItem;
-import javax.swing.JLabel;
-import java.awt.Font;
-import java.awt.event.ActionListener;
-import java.util.List;
-import java.awt.event.ActionEvent;
-import javax.swing.border.LineBorder;
 import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JTextField;
 import javax.swing.UIManager;
+import java.awt.Toolkit;
 
 public class RezervacijaForma {
 
@@ -52,8 +47,9 @@ public class RezervacijaForma {
 	 */
 	private void initialize() {
 		frmRezervacijaforma = new JFrame();
+		frmRezervacijaforma.setIconImage(Toolkit.getDefaultToolkit().getImage(RezervacijaForma.class.getResource("/guiFramework/book-stack.png")));
 		frmRezervacijaforma.setResizable(false);
-		frmRezervacijaforma.setTitle("RezervacijaForma");
+		frmRezervacijaforma.setTitle("Pretraga rezervacija");
 		frmRezervacijaforma.setBounds(100, 100, 424, 399);
 		frmRezervacijaforma.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmRezervacijaforma.getContentPane().setLayout(null);
@@ -77,7 +73,7 @@ public class RezervacijaForma {
 		frmRezervacijaforma.getContentPane().add(tfPretragaRezervacija);
 		tfPretragaRezervacija.setColumns(10);
 
-		JList lstRezervacije = new JList();
+		JList<String> lstRezervacije = new JList<String>();
 		lstRezervacije.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lstRezervacije.setBackground(Color.WHITE);
 		lstRezervacije.setBorder(UIManager.getBorder("MenuBar.border"));

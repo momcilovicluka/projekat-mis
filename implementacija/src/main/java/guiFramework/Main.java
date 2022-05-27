@@ -9,6 +9,7 @@ import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
+import java.awt.Toolkit;
 
 public class Main {
 
@@ -44,8 +45,9 @@ public class Main {
 	 */
 	private void initialize() {
 		frmBiblioteka = new JFrame();
+		frmBiblioteka.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("/guiFramework/book-stack.png")));
 		frmBiblioteka.setResizable(false);
-		frmBiblioteka.setTitle("Biblioteka");
+		frmBiblioteka.setTitle("Biblioteka - LogIn");
 		frmBiblioteka.setBounds(100, 100, 389, 260);
 		frmBiblioteka.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
