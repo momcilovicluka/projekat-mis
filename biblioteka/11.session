@@ -1,12 +1,10 @@
-window_sizes 1920 1001 0 1914 819 128
+window_sizes 1920 1001 314 1600 819 128
 
 diagrams
-  classdiagram_ref 141125 // KlasniDijagram
-    1080 655 100 A0 462 131
+  active  classdiagram_ref 141125 // KlasniDijagram
+    1600 819 100 A0 360 93
   activitydiagram_ref 134597 // izdavanjeKnjige
     114 98 100 A0 468 0
-  active  sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
-    1914 819 100 A0 0 0
 end
 show_stereotypes
 selected sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija

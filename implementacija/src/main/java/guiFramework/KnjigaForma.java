@@ -6,6 +6,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextArea;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.JButton;
 import javax.swing.JList;
 import java.awt.Toolkit;
@@ -43,6 +45,13 @@ public class KnjigaForma {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		try {
+			UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+				| UnsupportedLookAndFeelException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		frmPretragaKnjiga = new JFrame();
 		frmPretragaKnjiga.setTitle("Pretraga knjiga");
 		frmPretragaKnjiga.setIconImage(Toolkit.getDefaultToolkit().getImage(KnjigaForma.class.getResource("/guiFramework/book-stack.png")));

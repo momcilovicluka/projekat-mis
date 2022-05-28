@@ -12,6 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 import java.awt.Toolkit;
 
 public class RezervacijaForma {
@@ -46,8 +48,16 @@ public class RezervacijaForma {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		try {
+			UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+				| UnsupportedLookAndFeelException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		frmRezervacijaforma = new JFrame();
-		frmRezervacijaforma.setIconImage(Toolkit.getDefaultToolkit().getImage(RezervacijaForma.class.getResource("/guiFramework/book-stack.png")));
+		frmRezervacijaforma.setIconImage(Toolkit.getDefaultToolkit()
+				.getImage(RezervacijaForma.class.getResource("/guiFramework/book-stack.png")));
 		frmRezervacijaforma.setResizable(false);
 		frmRezervacijaforma.setTitle("Pretraga rezervacija");
 		frmRezervacijaforma.setBounds(100, 100, 424, 399);
@@ -60,29 +70,28 @@ public class RezervacijaForma {
 			}
 		});
 		btnOdaberi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnOdaberi.setBounds(152, 321, 105, 21);
+		btnOdaberi.setBounds(152, 321, 105, 31);
 		frmRezervacijaforma.getContentPane().add(btnOdaberi);
 
-		JButton btnPretrazi = new JButton("Pretrazi");
+		JButton btnPretrazi = new JButton("Pretraži");
 		btnPretrazi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnPretrazi.setBounds(303, 10, 95, 24);
+		btnPretrazi.setBounds(307, 10, 95, 21);
 		frmRezervacijaforma.getContentPane().add(btnPretrazi);
 
 		tfPretragaRezervacija = new JTextField();
-		tfPretragaRezervacija.setBounds(164, 10, 129, 24);
+		tfPretragaRezervacija.setBounds(171, 10, 129, 21);
 		frmRezervacijaforma.getContentPane().add(tfPretragaRezervacija);
 		tfPretragaRezervacija.setColumns(10);
 
 		JList<String> lstRezervacije = new JList<String>();
 		lstRezervacije.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lstRezervacije.setBackground(Color.WHITE);
 		lstRezervacije.setBorder(UIManager.getBorder("MenuBar.border"));
 		lstRezervacije.setBounds(10, 44, 388, 267);
 		frmRezervacijaforma.getContentPane().add(lstRezervacije);
 
-		JLabel lb = new JLabel("Pretrazi rezervacije:");
+		JLabel lb = new JLabel("Pretraži rezervacije:");
 		lb.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lb.setBounds(10, 10, 157, 21);
+		lb.setBounds(7, 10, 157, 21);
 		frmRezervacijaforma.getContentPane().add(lb);
 	}
 }

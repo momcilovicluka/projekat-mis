@@ -9,6 +9,8 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
 public class DetaljiKnjigeForma {
@@ -42,6 +44,13 @@ public class DetaljiKnjigeForma {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		try {
+			UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+				| UnsupportedLookAndFeelException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		frmDetaljiKnjige = new JFrame();
 		frmDetaljiKnjige.setIconImage(Toolkit.getDefaultToolkit().getImage(DetaljiKnjigeForma.class.getResource("/guiFramework/book-stack.png")));
 		frmDetaljiKnjige.setTitle("Detalji knjige");

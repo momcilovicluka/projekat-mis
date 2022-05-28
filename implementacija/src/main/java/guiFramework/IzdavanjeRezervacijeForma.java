@@ -7,6 +7,8 @@ import java.awt.Toolkit;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 public class IzdavanjeRezervacijeForma {
 
@@ -39,6 +41,13 @@ public class IzdavanjeRezervacijeForma {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		try {
+			UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+				| UnsupportedLookAndFeelException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		frmIzdavanjeRezervisaneKnjige = new JFrame();
 		frmIzdavanjeRezervisaneKnjige.setTitle("Izdavanje rezervisane knjige");
 		frmIzdavanjeRezervisaneKnjige.setIconImage(Toolkit.getDefaultToolkit().getImage(IzdavanjeRezervacijeForma.class.getResource("/guiFramework/book-stack.png")));

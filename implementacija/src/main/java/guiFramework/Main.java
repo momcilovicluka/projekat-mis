@@ -3,6 +3,8 @@ package guiFramework;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.GroupLayout;
@@ -44,6 +46,13 @@ public class Main {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		try {
+			UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+				| UnsupportedLookAndFeelException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		frmBiblioteka = new JFrame();
 		frmBiblioteka.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("/guiFramework/book-stack.png")));
 		frmBiblioteka.setResizable(false);
@@ -60,51 +69,56 @@ public class Main {
 		JLabel lbPassword = new JLabel("Password:");
 		lbPassword.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 
-		JLabel lblNewLabel = new JLabel("Biblioteka");
-		lblNewLabel.setFont(new Font("Segoe UI", Font.PLAIN, 30));
+		JLabel lblNewLabel = new JLabel("BIBLIOTEKA");
+		lblNewLabel.setFont(new Font("Segoe UI", Font.BOLD, 30));
 
 		JButton btnLogin = new JButton("Login");
 		btnLogin.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
 		pfPassword = new JPasswordField();
 		GroupLayout groupLayout = new GroupLayout(frmBiblioteka.getContentPane());
-		groupLayout
-				.setHorizontalGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-						.addGroup(groupLayout.createSequentialGroup().addGap(76).addGroup(groupLayout
-								.createParallelGroup(Alignment.LEADING).addGroup(groupLayout
-										.createParallelGroup(Alignment.LEADING)
-										.addGroup(groupLayout.createSequentialGroup().addGap(
-												63).addComponent(btnLogin, GroupLayout.PREFERRED_SIZE, 98,
-														GroupLayout.PREFERRED_SIZE))
-										.addGroup(
-												groupLayout.createSequentialGroup()
-														.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-																.addComponent(lbUsername, GroupLayout.PREFERRED_SIZE,
-																		86, GroupLayout.PREFERRED_SIZE)
-																.addGroup(groupLayout.createSequentialGroup().addGap(2)
-																		.addComponent(lbPassword)))
-														.addGap(18)
-														.addGroup(groupLayout
-																.createParallelGroup(Alignment.LEADING, false)
-																.addComponent(pfPassword).addComponent(tfUsername,
-																		GroupLayout.DEFAULT_SIZE, 119,
-																		Short.MAX_VALUE))))
-								.addGroup(groupLayout.createSequentialGroup().addGap(46).addComponent(lblNewLabel)))
-								.addContainerGap(76, Short.MAX_VALUE)));
-		groupLayout.setVerticalGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-				.addGroup(groupLayout.createSequentialGroup().addGap(32)
-						.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
-						.addGap(18)
-						.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
-								.addComponent(tfUsername, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-										GroupLayout.PREFERRED_SIZE)
-								.addComponent(lbUsername))
-						.addGap(10)
-						.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE).addComponent(lbPassword)
-								.addComponent(pfPassword, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-										GroupLayout.PREFERRED_SIZE))
-						.addGap(18).addComponent(btnLogin, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
-						.addContainerGap(32, Short.MAX_VALUE)));
+		groupLayout.setHorizontalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(groupLayout.createSequentialGroup()
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addGroup(groupLayout.createSequentialGroup()
+							.addGap(76)
+							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+								.addGroup(groupLayout.createSequentialGroup()
+									.addGap(63)
+									.addComponent(btnLogin, GroupLayout.PREFERRED_SIZE, 98, GroupLayout.PREFERRED_SIZE))
+								.addGroup(groupLayout.createSequentialGroup()
+									.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+										.addComponent(lbUsername, GroupLayout.PREFERRED_SIZE, 86, GroupLayout.PREFERRED_SIZE)
+										.addGroup(groupLayout.createSequentialGroup()
+											.addGap(2)
+											.addComponent(lbPassword)))
+									.addGap(18)
+									.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
+										.addComponent(pfPassword)
+										.addComponent(tfUsername, GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)))))
+						.addGroup(groupLayout.createSequentialGroup()
+							.addGap(102)
+							.addComponent(lblNewLabel)))
+					.addContainerGap(76, Short.MAX_VALUE))
+		);
+		groupLayout.setVerticalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(groupLayout.createSequentialGroup()
+					.addGap(32)
+					.addComponent(lblNewLabel, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE)
+					.addGap(18)
+					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(tfUsername, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(lbUsername))
+					.addGap(10)
+					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lbPassword)
+						.addComponent(pfPassword, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addGap(18)
+					.addComponent(btnLogin, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(32, Short.MAX_VALUE))
+		);
 		frmBiblioteka.getContentPane().setLayout(groupLayout);
 	}
 }
