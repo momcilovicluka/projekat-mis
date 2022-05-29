@@ -102,7 +102,7 @@ public class DodavanjeKnjigeForma {
 		frmDodavanjeKnjige.getContentPane().add(tfIzdavac);
 
 		JSpinner spinBrStrana = new JSpinner();
-		spinBrStrana.setModel(new SpinnerNumberModel(new Integer(0), new Integer(0), null, new Integer(1)));
+		spinBrStrana.setModel(new SpinnerNumberModel(Integer.valueOf(0), Integer.valueOf(0), null, Integer.valueOf(1)));
 		spinBrStrana.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		spinBrStrana.setBounds(112, 45, 85, 25);
 		frmDodavanjeKnjige.getContentPane().add(spinBrStrana);

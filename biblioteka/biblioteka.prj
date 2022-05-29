@@ -1,7 +1,7 @@
 format 224
 "biblioteka"
-  revision 14
-  modified_by 69 "Luka"
+  revision 17
+  modified_by 11 "Dalibor"
 
 
   
@@ -727,6 +727,17 @@ ${docstring}${members}
 "
 	    classrelation_ref 136261 // <association>
 	  association_type class_ref 135237 // Izdavanje
+      end
+
+      attribute 128523 "IDC"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
       end
     end
 
@@ -1972,6 +1983,18 @@ ${docstring}${body}
 "
 	
       end
+
+      attribute 128267 "IDK"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
     end
 
     class 134981 "Autor"
@@ -2037,6 +2060,18 @@ ${docstring}${members}
 
       classrelation 135237 // <association>
 	relation_ref 134853 // <association>
+      end
+
+      attribute 128139 "IDA"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
       end
     end
 
@@ -2342,6 +2377,18 @@ ${members}};
 
       classrelation 142917 // <aggregation>
 	relation_ref 141893 // <aggregation>
+      end
+
+      attribute 128395 "IDZ"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
       end
     end
 
@@ -4262,7 +4309,7 @@ ${docstring}${body}
     end
 
     classdiagram 147781 "packageDijagram"
-      classdiagramsettings member_max_width 0 end
+      classdiagramsettings draw_all_relations no member_max_width 0 end
       size A0
     end
 
@@ -4281,13 +4328,27 @@ ${docstring}${members}
       mysql_decl ""
       
     end
+
+    class 141707 "Korisnik"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
   end
 
   package_ref 128069 // GUIFramework
 
   package_ref 128197 // KontrolKlase
 
-  package_ref 128325 // KlaseZaRadSaBazom
+  package_ref 128325 // KlaseZaSaCSV
 
   package_ref 128453 // KlaseSaAtributima
 end

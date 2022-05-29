@@ -1,7 +1,7 @@
 format 224
-"KlaseZaRadSaBazom" // KlaseZaRadSaBazom
-  revision 1
-  modified_by 69 "Luka"
+"KlaseZaSaCSV" // KlaseZaSaCSV
+  revision 2
+  modified_by 11 "Dalibor"
   // class settings
   
   classdiagramsettings member_max_width 0 end

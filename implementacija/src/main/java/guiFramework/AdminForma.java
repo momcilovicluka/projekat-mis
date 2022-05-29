@@ -48,15 +48,26 @@ public class AdminForma {
 			e.printStackTrace();
 		}
 		frmBibliotekaAdmin = new JFrame();
-		frmBibliotekaAdmin.setIconImage(Toolkit.getDefaultToolkit().getImage(AdminForma.class.getResource("/guiFramework/book-stack.png")));
+		frmBibliotekaAdmin.setIconImage(
+				Toolkit.getDefaultToolkit().getImage(AdminForma.class.getResource("/guiFramework/book-stack.png")));
 		frmBibliotekaAdmin.setTitle("Biblioteka - Admin");
-		frmBibliotekaAdmin.setBounds(100, 100, 280, 143);
+		frmBibliotekaAdmin.setBounds(100, 100, 280, 330);
 		frmBibliotekaAdmin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmBibliotekaAdmin.getContentPane().setLayout(null);
 
 		JButton btnDodavanje = new JButton("Dodavanje bibliotekara");
 		btnDodavanje.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnDodavanje.setBounds(16, 12, 233, 82);
+		btnDodavanje.setBounds(16, 11, 233, 82);
 		frmBibliotekaAdmin.getContentPane().add(btnDodavanje);
+
+		JButton btnIzdavanjeKnjige = new JButton("Izdavanje knjige");
+		btnIzdavanjeKnjige.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		btnIzdavanjeKnjige.setBounds(16, 104, 233, 82);
+		frmBibliotekaAdmin.getContentPane().add(btnIzdavanjeKnjige);
+
+		JButton btnDodavanjeClana = new JButton("Dodavanje člana");
+		btnDodavanjeClana.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		btnDodavanjeClana.setBounds(16, 197, 233, 82);
+		frmBibliotekaAdmin.getContentPane().add(btnDodavanjeClana);
 	}
 }

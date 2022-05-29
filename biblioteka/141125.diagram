@@ -14,19 +14,19 @@ classcanvas 128139 class_ref 134795 // LogovanjeKontroler
 end
 classcanvas 128197 class_ref 128069 // Bibliotekar
   classdiagramsettings member_max_width 0 end
-  xyz 284.66 857.92 2006
+  xyz 284.66 853.92 2006
 end
 classcanvas 128453 class_ref 128139 // Clan
   classdiagramsettings member_max_width 0 end
-  xyz 364.76 440.42 2000
+  xyz 364.76 441.42 2000
 end
 classcanvas 128581 class_ref 134853 // Knjiga
   classdiagramsettings member_max_width 0 end
-  xyz 800.8 413.8 2000
+  xyz 805.8 395.8 2000
 end
 classcanvas 128709 class_ref 134981 // Autor
   classdiagramsettings member_max_width 0 end
-  xyz 1105.82 413.62 2000
+  xyz 1099.82 411.62 2000
 end
 classcanvas 129221 class_ref 135109 // Rezervacija
   classdiagramsettings member_max_width 0 end
@@ -34,7 +34,7 @@ classcanvas 129221 class_ref 135109 // Rezervacija
 end
 classcanvas 129861 class_ref 135237 // Izdavanje
   classdiagramsettings member_max_width 0 end
-  xyz 526.78 346.02 2000
+  xyz 527.78 346.02 2000
 end
 classcanvas 130187 class_ref 135051 // BibliotekarForma
   classdiagramsettings member_max_width 0 end
@@ -46,7 +46,7 @@ classcanvas 130315 class_ref 135179 // AdminForma
 end
 classcanvas 130629 class_ref 141765 // Zanr
   classdiagramsettings member_max_width 0 end
-  xyz 863 602.34 2000
+  xyz 872 619.34 2000
 end
 classcanvas 130885 class_ref 141893 // DodavanjeKnjigaForma
   classdiagramsettings member_max_width 0 end
@@ -62,7 +62,7 @@ classcanvas 131141 class_ref 142149 // ZanrForma
 end
 classcanvas 131269 class_ref 142277 // DodavanjeKnjigeKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 1136.14 612.86 2000
+  xyz 1129.14 612.86 2000
 end
 classcanvas 132037 class_ref 142405 // AutorKontroler
   classdiagramsettings member_max_width 0 end
@@ -173,14 +173,14 @@ relationcanvas 129605 relation_ref 135237 // <association>
   decenter_end 768
   from ref 128453 z 2001 to ref 128581
   no_role_a no_role_b
-  multiplicity_a_pos 786 555 3000 multiplicity_b_pos 487 563 3000
+  multiplicity_a_pos 789 551 3000 multiplicity_b_pos 486 581 3000
 end
 relationcanvas 130245 relation_ref 135365 // <association>
   decenter_begin 458
   decenter_end 418
   from ref 128453 z 2001 to ref 128581
   no_role_a no_role_b
-  multiplicity_a_pos 786 493 3000 multiplicity_b_pos 487 505 3000
+  multiplicity_a_pos 789 483 3000 multiplicity_b_pos 486 515 3000
 end
 relationcanvas 130443 relation_ref 128779 // <association>
   decenter_begin 683
@@ -278,7 +278,7 @@ relationcanvas 134341 relation_ref 143557 // <dependency>
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 134469 relation_ref 143685 // <dependency>
-  decenter_end 689
+  decenter_end 801
   from ref 131269 z 2001 to point 1241 547
   line 134597 z 2001 to ref 128581
   no_role_a no_role_b

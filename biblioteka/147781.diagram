@@ -2,27 +2,20 @@ format 224
 
 packagecanvas 128197 
   package_ref 128069 // GUIFramework
-  name_in_tab yes color blue  xyzwh 170 97.6 2000 201 124
+  name_in_tab yes color blue  xyzwh 121 136 2000 235 124
 end
 packagecanvas 128325 
   package_ref 128453 // KlaseSaAtributima
-  name_in_tab yes color blue  xyzwh 491.4 287 2000 241 118
-end
-packagecanvas 128453 
-  package_ref 128325 // KlaseZaRadSaBazom
-  name_in_tab yes color blue  xyzwh 130.4 291.8 2000 283 112
+  name_in_tab yes color blue  xyzwh 825 146 2000 291 118
 end
 packagecanvas 128581 
   package_ref 128197 // KontrolKlase
-  name_in_tab yes show_context_mode no show_stereotype_properties no color blue  xyzwh 525.4 105.6 2000 173 109
-end
-simplerelationcanvas 128709 simplerelation_ref 157637
-  from ref 128197 z 2001 stereotype "<<import>>" xyz 242.5 243.5 3000 to ref 128453
+  name_in_tab yes show_context_mode no show_stereotype_properties no color blue  xyzwh 476 145 2000 205 109
 end
 simplerelationcanvas 128837 simplerelation_ref 157765
-  from ref 128197 z 2001 stereotype "<<import>>" xyz 420.5 158.5 3000 to ref 128581
+  from ref 128197 z 2001 stereotype "<<import>>" xyz 371 197.5 3000 to ref 128581
 end
 simplerelationcanvas 128965 simplerelation_ref 157893
-  from ref 128581 z 2001 stereotype "<<import>>" xyz 585 248.5 3000 to ref 128325
+  from ref 128581 z 2001 stereotype "<<import>>" xyz 713 188.5 3000 to ref 128325
 end
 end

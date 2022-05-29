@@ -1,7 +1,7 @@
 format 224
 "GUIFramework" // GUIFramework
-  revision 1
-  modified_by 69 "Luka"
+  revision 2
+  modified_by 11 "Dalibor"
   // class settings
   
   classdiagramsettings member_max_width 0 end
@@ -34,7 +34,7 @@ format 224
     -_->
       stereotype "import"
       on 
-      package_ref 128325 // KlaseZaRadSaBazom
+      package_ref 128325 // KlaseZaSaCSV
   end
 
   simplerelation 157765
@@ -42,5 +42,11 @@ format 224
       stereotype "import"
       on 
       package_ref 128197 // KontrolKlase
+  end
+
+  simplerelation 143755
+    -_->
+      on 
+      package_ref 128453 // KlaseSaAtributima
   end
 end
