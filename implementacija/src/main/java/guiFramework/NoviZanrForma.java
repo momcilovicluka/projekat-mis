@@ -25,6 +25,7 @@ public class NoviZanrForma {
 			public void run() {
 				try {
 					NoviZanrForma window = new NoviZanrForma();
+					window.frmNoviAutor.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					window.frmNoviAutor.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();

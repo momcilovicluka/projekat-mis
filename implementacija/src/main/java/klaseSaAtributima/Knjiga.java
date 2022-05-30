@@ -1,7 +1,11 @@
 package klaseSaAtributima;
 
 public class Knjiga {
-	private static int brojId = 0;
+	private static int brojId;
+
+	static {
+		brojId = 0;
+	}
 
 	private int idk;
 	private String naziv;
@@ -21,8 +25,8 @@ public class Knjiga {
 		this.setZanr(zanr);
 		this.setIzdavac(izdavac);
 		this.setBrojStrana(brojStrana);
-		this.setBrojNaStanju(brojNaStanju);
 		this.setUkupanBroj(ukupanBroj);
+		this.setBrojNaStanju(brojNaStanju);
 	}
 
 	public Knjiga(int idk, String naziv, Autor autor, Zanr zanr, String izdavac, int brojStrana, int brojNaStanju,
@@ -99,7 +103,7 @@ public class Knjiga {
 	}
 
 	public void setBrojNaStanju(int brojNaStanju) {
-		if (brojNaStanju < 0)
+		if (brojNaStanju < 0 || brojNaStanju > this.ukupanBroj)
 			throw new IllegalArgumentException("Prosleđen broj na stanju je nedozvoljen!");
 
 		this.brojNaStanju = brojNaStanju;
@@ -112,6 +116,31 @@ public class Knjiga {
 	}
 
 	private static int noviId() {
-		return brojId++;
+		Knjiga.brojId++;
+		return brojId - 1;
+	}
+
+	public String toStringFile() {
+		StringBuilder stringZaFile = new StringBuilder();
+		String separator = ",";
+
+		stringZaFile.append(this.getIdk());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getNaziv());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getAutor().getIdA());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getBrojStrana());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getIzdavac());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getBrojNaStanju());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getUkupanBroj());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getZanr().getIdZ());
+		stringZaFile.append("\n");
+
+		return stringZaFile.toString();
 	}
 }

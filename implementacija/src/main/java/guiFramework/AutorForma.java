@@ -8,9 +8,14 @@ import java.awt.Font;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+
+import klaseSaAtributima.Autor;
+
 import javax.swing.JButton;
 import javax.swing.JList;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class AutorForma {
 
@@ -24,6 +29,7 @@ public class AutorForma {
 			public void run() {
 				try {
 					AutorForma window = new AutorForma();
+					window.frmAutor.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					window.frmAutor.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -77,11 +83,23 @@ public class AutorForma {
 		frmAutor.getContentPane().add(listAutor);
 
 		JButton lblDodajAutora = new JButton("Dodaj autora");
+		lblDodajAutora.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new NoviAutorForma();
+				NoviAutorForma.main(null);
+			}
+		});
 		lblDodajAutora.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblDodajAutora.setBounds(7, 237, 148, 23);
 		frmAutor.getContentPane().add(lblDodajAutora);
 
 		JButton lblIzaberiAutora = new JButton("Izaberi autora");
+		lblIzaberiAutora.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				DodavanjeKnjigeForma.autor = (Autor) listAutor.getSelectedValue();
+				frmAutor.dispose();
+			}
+		});
 		lblIzaberiAutora.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblIzaberiAutora.setBounds(231, 237, 148, 23);
 		frmAutor.getContentPane().add(lblIzaberiAutora);

@@ -8,5 +8,4 @@ public class ZanrKontroler {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }

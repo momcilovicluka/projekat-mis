@@ -1,16 +1,20 @@
 package guiFramework;
 
 import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import java.awt.Font;
+import javax.swing.JList;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.JButton;
-import javax.swing.JList;
-import java.awt.Toolkit;
+
+import klaseSaAtributima.Zanr;
 
 public class ZanrForma {
 
@@ -24,6 +28,7 @@ public class ZanrForma {
 			public void run() {
 				try {
 					ZanrForma window = new ZanrForma();
+					window.frmZanr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					window.frmZanr.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -78,11 +83,23 @@ public class ZanrForma {
 		frmZanr.getContentPane().add(listZanr);
 
 		JButton lblDodajZanr = new JButton("Dodaj žanr");
+		lblDodajZanr.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new NoviZanrForma();
+				NoviAutorForma.main(null);
+			}
+		});
 		lblDodajZanr.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblDodajZanr.setBounds(7, 231, 137, 23);
 		frmZanr.getContentPane().add(lblDodajZanr);
 
 		JButton btnIzaberiZanr = new JButton("Izaberi žanr");
+		btnIzaberiZanr.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				DodavanjeKnjigeForma.zanr = (Zanr) listZanr.getSelectedValue();
+				frmZanr.dispose();
+			}
+		});
 		btnIzaberiZanr.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnIzaberiZanr.setBounds(242, 231, 137, 23);
 		frmZanr.getContentPane().add(btnIzaberiZanr);
