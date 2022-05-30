@@ -1,12 +1,15 @@
-window_sizes 1920 1017 213 1701 861 104
+window_sizes 1920 1017 327 1587 861 104
 cleanlooks_style
 diagrams
-  active  classdiagram_ref 147781 // packageDijagram
-    1701 861 139 A0 0 0
+  classdiagram_ref 147781 // packageDijagram
+    1701 861 138 A0 0 0
+  sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
+    1269 688 100 A0 0 0
+  active  classdiagram_ref 141125 // KlasniDijagram
+    1587 861 100 A0 348 201
 end
 show_stereotypes
-selected 
-  package_ref 128453 // KlaseSaAtributima
+selected classdiagram_ref 141125 // KlasniDijagram
 open
   class_ref 128139 // Clan
   activity_ref 128069 // izdavanjeKnjigeActivity

@@ -25,8 +25,8 @@ public class Knjiga {
 		this.setZanr(zanr);
 		this.setIzdavac(izdavac);
 		this.setBrojStrana(brojStrana);
-		this.setBrojNaStanju(brojNaStanju);
 		this.setUkupanBroj(ukupanBroj);
+		this.setBrojNaStanju(brojNaStanju);
 	}
 
 	public int getIdk() {
@@ -97,7 +97,7 @@ public class Knjiga {
 	}
 
 	public void setBrojNaStanju(int brojNaStanju) {
-		if (brojNaStanju < 0)
+		if (brojNaStanju < 0 || brojNaStanju > this.ukupanBroj)
 			throw new IllegalArgumentException("Prosleđen broj na stanju je nedozvoljen!");
 
 		this.brojNaStanju = brojNaStanju;
