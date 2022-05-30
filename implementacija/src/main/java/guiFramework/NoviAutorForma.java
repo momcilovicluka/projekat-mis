@@ -27,6 +27,7 @@ public class NoviAutorForma {
 			public void run() {
 				try {
 					NoviAutorForma window = new NoviAutorForma();
+					window.frmNoviAutor.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					window.frmNoviAutor.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
