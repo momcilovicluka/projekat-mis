@@ -6,19 +6,19 @@ classcanvas 128011 class_ref 134667 // LogovanjeForma
 end
 classcanvas 128069 class_ref 128325 // Admin
   classdiagramsettings member_max_width 0 end
-  xyz 283.2 696.14 2000
+  xyz 282.2 699.14 2000
 end
 classcanvas 128139 class_ref 134795 // LogovanjeKontroler
   classdiagramsettings member_max_width 0 end
-  xyz 658.9 997.9 2000
+  xyz 613.9 1001.9 2000
 end
 classcanvas 128197 class_ref 128069 // Bibliotekar
   classdiagramsettings member_max_width 0 end
-  xyz 284.66 853.92 2006
+  xyz 277.66 853.92 2006
 end
 classcanvas 128453 class_ref 128139 // Clan
   classdiagramsettings member_max_width 0 end
-  xyz 364.76 441.42 2000
+  xyz 368.76 488.42 2000
 end
 classcanvas 128581 class_ref 134853 // Knjiga
   classdiagramsettings member_max_width 0 end
@@ -79,6 +79,10 @@ end
 classcanvas 132677 class_ref 142789 // NoviZanrForma
   classdiagramsettings member_max_width 0 end
   xyz 848.12 817.14 2000
+end
+classcanvas 133003 class_ref 141707 // Korisnik
+  classdiagramsettings member_max_width 0 end
+  xyz 90 736 2000
 end
 classcanvas 134725 class_ref 142917 // KnjigaForma
   classdiagramsettings member_max_width 0 end
@@ -141,21 +145,6 @@ relationcanvas 128325 relation_ref 128069 // <generalisation>
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
 end
-relationcanvas 128523 relation_ref 128139 // <dependency>
-  decenter_begin 703
-  from ref 128139 z 2007 to point 339 1032
-  line 128651 z 2007 to ref 128197
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
-relationcanvas 128779 relation_ref 128267 // <dependency>
-  decenter_begin 277
-  from ref 128139 z 2001 to point 440 1008
-  line 128907 z 2001 to point 436 756
-  line 129035 z 2001 to ref 128069
-  no_role_a no_role_b
-  no_multiplicity_a no_multiplicity_b
-end
 relationcanvas 128965 relation_ref 134725 // <aggregation>
   decenter_begin 216
   from ref 128581 z 2001 to ref 128709
@@ -163,7 +152,7 @@ relationcanvas 128965 relation_ref 134725 // <aggregation>
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 129291 relation_ref 128523 // <dependency>
-  from ref 128011 z 2001 to point 752 1088
+  from ref 128011 z 2001 to point 744 1086
   line 132107 z 2001 to ref 128139
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -173,14 +162,14 @@ relationcanvas 129605 relation_ref 135237 // <association>
   decenter_end 768
   from ref 128453 z 2001 to ref 128581
   no_role_a no_role_b
-  multiplicity_a_pos 789 551 3000 multiplicity_b_pos 486 581 3000
+  multiplicity_a_pos 789 551 3000 multiplicity_b_pos 450 562 3000
 end
 relationcanvas 130245 relation_ref 135365 // <association>
   decenter_begin 458
   decenter_end 418
   from ref 128453 z 2001 to ref 128581
   no_role_a no_role_b
-  multiplicity_a_pos 789 483 3000 multiplicity_b_pos 486 515 3000
+  multiplicity_a_pos 789 482 3000 multiplicity_b_pos 450 528 3000
 end
 relationcanvas 130443 relation_ref 128779 // <association>
   decenter_begin 683
@@ -261,11 +250,27 @@ relationcanvas 133061 relation_ref 142917 // <association>
   no_role_a no_role_b
   multiplicity_a_pos 1565 662 3000 multiplicity_b_pos 1499 838 3000
 end
+relationcanvas 133131 relation_ref 135947 // <generalisation>
+  from ref 133003 z 2001 to ref 128069
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
 relationcanvas 133189 relation_ref 143045 // <association>
   decenter_end 416
   from ref 131141 z 2001 to ref 132677
   no_role_a no_role_b
   multiplicity_a_pos 966 855 3000 multiplicity_b_pos 994 852 3000
+end
+relationcanvas 133515 relation_ref 142603 // <dependency>
+  from ref 128139 z 2001 to point 140 1016
+  line 133643 z 2001 to ref 133003
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 133771 relation_ref 142731 // <generalisation>
+  from ref 133003 z 2001 to ref 128453
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 134213 relation_ref 143429 // <dependency>
   from ref 132165 z 2001 to ref 130629
@@ -278,7 +283,7 @@ relationcanvas 134341 relation_ref 143557 // <dependency>
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 134469 relation_ref 143685 // <dependency>
-  decenter_end 801
+  decenter_end 800
   from ref 131269 z 2001 to point 1241 547
   line 134597 z 2001 to ref 128581
   no_role_a no_role_b

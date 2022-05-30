@@ -1,6 +1,6 @@
 format 224
 "biblioteka"
-  revision 17
+  revision 20
   modified_by 11 "Dalibor"
 
 
@@ -84,49 +84,6 @@ ${docstring}${members}
       explicit_switch_type ""
       mysql_decl ""
       
-      attribute 129221 "ime"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 129349 "prezime"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 129477 "username"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 129605 "password"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
     end
 
     class 128325 "Admin"
@@ -150,50 +107,6 @@ ${docstring}${members}
 	    python "${type}"
 	    classrelation_ref 128069 // <generalisation>
 	  b parent class_ref 128069 // Bibliotekar
-      end
-
-      attribute 129733 "ime"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 129861 "prezime"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 129989 "username"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 130117 "password"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
       end
     end
 
@@ -647,50 +560,6 @@ ${docstring}${members}
       explicit_switch_type ""
       mysql_decl ""
       
-      attribute 130245 "ime"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 130373 "prezime"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 130501 "username"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 130629 "password"
-	private explicit_type "string"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
       classrelation 135493 // <association>
 	relation_ref 134981 // <association>
       end
@@ -3308,7 +3177,7 @@ ${docstring}${members}
       
       operation 138821 "pretraziClana"
 	public return_type class_ref 128139 // Clan
-	multiplicity "0..1"
+	multiplicity "*"
 	nparams 1
 	  param in name "kriterijum" explicit_type "string"
 	
@@ -3565,7 +3434,7 @@ ${docstring}${members}
 
       operation 139589 "pretraziRezervaciju"
 	public return_type class_ref 135109 // Rezervacija
-	multiplicity "0..1"
+	multiplicity "*"
 	nparams 1
 	  param in name "kriterijum" explicit_type "string"
 	
@@ -3865,7 +3734,8 @@ ${docstring}${members}
       mysql_decl ""
       
       operation 128139 "prijava"
-	public explicit_return_type ""
+	public return_type class_ref 141707 // Korisnik
+	multiplicity "1"
 	nparams 2
 	  param in name "u" explicit_type "string"
 	  param in name "p" explicit_type "string"
@@ -3902,6 +3772,13 @@ ${docstring}${body}
 	    python "${type}"
 	    classrelation_ref 128523 // <dependency>
 	  b parent class_ref 134667 // LogovanjeForma
+      end
+
+      classrelation 143627 // <dependency>
+	relation 142603 -_->
+	  a public
+	    classrelation_ref 143627 // <dependency>
+	  b parent class_ref 141707 // Korisnik
       end
     end
 
@@ -4330,17 +4207,85 @@ ${docstring}${members}
     end
 
     class 141707 "Korisnik"
-      visibility package 
+      visibility package stereotype "actor"
       cpp_decl ""
-      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
-${members}}
-"
+      java_decl ""
       php_decl ""
       python_2_2 python_decl ""
       idl_decl ""
       explicit_switch_type ""
       mysql_decl ""
       
+      attribute 135051 "ime"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 135179 "prezime"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 135307 "username"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 135435 "password"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 136971 // <generalisation>
+	relation 135947 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 136971 // <generalisation>
+	  b parent class_ref 128325 // Admin
+      end
+
+      classrelation 137099 // <dependency>
+	relation 136075 -_->
+	  a public
+	    classrelation_ref 137099 // <dependency>
+	  b parent class_ref 128139 // Clan
+      end
+
+      classrelation 143755 // <generalisation>
+	relation 142731 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 143755 // <generalisation>
+	  b parent class_ref 128139 // Clan
+      end
     end
   end
 

@@ -1,4 +1,4 @@
-package controllers;
+package kontrolKlase;
 
 public class IzdavanjeRezervacijeKontroler {
 

@@ -25,6 +25,12 @@ public class Knjiga {
 		this.setUkupanBroj(ukupanBroj);
 	}
 
+	public Knjiga(int idk, String naziv, Autor autor, Zanr zanr, String izdavac, int brojStrana, int brojNaStanju,
+			int ukupanBroj) throws IllegalArgumentException {
+		this(naziv, autor, zanr, izdavac, brojStrana, brojNaStanju, ukupanBroj);
+		this.idk = idk;
+	}
+
 	public int getIdk() {
 		return idk;
 	}
