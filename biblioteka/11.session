@@ -4,14 +4,14 @@ diagrams
   activitydiagram_ref 134597 // izdavanjeKnjige
     114 98 100 A0 420 0
   active  classdiagram_ref 141125 // KlasniDijagram
-    1578 819 100 A0 326 341
+    1578 819 100 A0 24 312
 end
 show_stereotypes
 selected 
-  package_ref 129 // biblioteka
+package_ref 129 // biblioteka
 open
   class_ref 128139 // Clan
   
-  package_ref 128197 // KontrolKlase
+package_ref 128197 // KontrolKlase
 end
 end

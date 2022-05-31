@@ -6,14 +6,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import klaseSaAtributima.Autor;
 
 public class AutorKontroler {
-	public static List<Autor> pronadjiAutora(String pretraga)
+	public static Map<Integer, Autor> pronadjiAutora(String pretraga)
 			throws ParseException, IllegalArgumentException, FileNotFoundException, IOException {
 		if (pretraga == null)
 			return null;
@@ -22,7 +22,7 @@ public class AutorKontroler {
 			throw new IllegalArgumentException("Polje za pretragu ne sme biti prazno!");
 
 		try (BufferedReader br = new BufferedReader(new FileReader("res/autori.csv"))) {
-			List<Autor> autori = new ArrayList<Autor>();
+			Map<Integer, Autor> autori = new HashMap<Integer, Autor>();
 			String line = "";
 
 			while ((line = br.readLine()) != null) {
@@ -37,7 +37,7 @@ public class AutorKontroler {
 				SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd");
 				Date datumRodjenja = formatter.parse(tokens[3].trim());
 
-				autori.add(new Autor(idA, ime, prezime, datumRodjenja));
+				autori.put(idA, new Autor(idA, ime, prezime, datumRodjenja));
 			}
 
 			return autori;
