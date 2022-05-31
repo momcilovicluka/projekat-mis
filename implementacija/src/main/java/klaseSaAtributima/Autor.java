@@ -18,6 +18,13 @@ public class Autor {
 		this.setDatumRodjenja(datumRodjenja);
 	}
 
+	public Autor(int idA, String ime, String prezime, Date datumRodjenja) {
+		this.idA = idA;
+		this.setIme(ime);
+		this.setPrezime(prezime);
+		this.setDatumRodjenja(datumRodjenja);
+	}
+
 	public int getIdA() {
 		return idA;
 	}

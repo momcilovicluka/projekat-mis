@@ -9,6 +9,11 @@ public class Clan extends Korisnik {
 		this.idc = noviId();
 	}
 
+	public Clan(int idC, String ime, String prezime, String username, String password) throws IllegalArgumentException {
+		super(ime, prezime, username, password);
+		this.idc = idC;
+	}
+
 	public int getIdc() {
 		return idc;
 	}

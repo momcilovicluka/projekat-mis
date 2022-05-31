@@ -12,6 +12,11 @@ public class Zanr {
 		this.setNaziv(naziv);
 	}
 
+	public Zanr(int idZ, String naziv) {
+		this.setNaziv(naziv);
+		this.idZ = idZ;
+	}
+
 	private static int noviId() {
 		return brojId++;
 	}

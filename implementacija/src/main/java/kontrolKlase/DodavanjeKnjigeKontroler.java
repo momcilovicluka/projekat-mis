@@ -18,6 +18,5 @@ public class DodavanjeKnjigeKontroler {
 			e.printStackTrace();
 			return false;
 		}
-
 	}
 }
