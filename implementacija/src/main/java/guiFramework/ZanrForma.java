@@ -86,7 +86,7 @@ public class ZanrForma {
 		lblDodajZanr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new NoviZanrForma();
-				NoviAutorForma.main(null);
+				NoviZanrForma.main(null);
 			}
 		});
 		lblDodajZanr.setFont(new Font("Segoe UI", Font.PLAIN, 18));

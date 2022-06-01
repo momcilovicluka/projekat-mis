@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,6 +37,18 @@ public class ZanrKontroler {
 			}
 
 			return zanrovi;
+		}
+	}
+
+	public static boolean sacuvajZanr(Zanr z) {
+		try {
+			if (pronadjiZanr("").values().toString().contains(z.getNaziv()))
+				return false;
+			Files.write(Paths.get("res/zanrovi.csv"), z.toStringFile().getBytes(), StandardOpenOption.APPEND);
+			return true;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return false;
 		}
 	}
 }

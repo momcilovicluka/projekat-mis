@@ -1,7 +1,17 @@
 package klaseSaAtributima;
 
+import kontrolKlase.ZanrKontroler;
+
 public class Zanr {
 	private static int brojId = 0;
+
+	static {
+		try {
+			Zanr.brojId = ZanrKontroler.pronadjiZanr("").keySet().size();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 	private int idZ;
 	private String naziv;
@@ -38,5 +48,17 @@ public class Zanr {
 			throw new IllegalArgumentException("Naziv žanra ne sme biti prazan!");
 
 		this.naziv = naziv;
+	}
+
+	public String toStringFile() {
+		StringBuilder stringZaFile = new StringBuilder();
+		String separator = ",";
+
+		stringZaFile.append(this.getIdZ());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getNaziv());
+		stringZaFile.append("\n");
+
+		return stringZaFile.toString();
 	}
 }

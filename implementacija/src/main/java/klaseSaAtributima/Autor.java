@@ -1,9 +1,21 @@
 package klaseSaAtributima;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import kontrolKlase.AutorKontroler;
+import kontrolKlase.ZanrKontroler;
 
 public class Autor {
 	private static int brojId = 0;
+
+	static {
+		try {
+			Autor.brojId = AutorKontroler.pronadjiAutora("").keySet().size();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 	private int idA;
 	private String ime;
@@ -63,5 +75,21 @@ public class Autor {
 
 	private static int noviId() {
 		return brojId++;
+	}
+
+	public String toStringFile() {
+		StringBuilder stringZaFile = new StringBuilder();
+		String separator = ",";
+
+		stringZaFile.append(this.getIdA());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getIme());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getPrezime());
+		stringZaFile.append(separator);
+		stringZaFile.append(new SimpleDateFormat("yyyy-mm-dd").format(this.getDatumRodjenja()));
+		stringZaFile.append("\n");
+
+		return stringZaFile.toString();
 	}
 }

@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import klaseSaAtributima.Clan;
-import klaseSaAtributima.Knjiga;
 
 public class ClanKontroler {
 	public static Map<Integer, Clan> pretraziClana(String pretraga)
