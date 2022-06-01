@@ -12,7 +12,7 @@ public class DodavanjeKnjigeKontroler {
 		// PrintWriter append = new PrintWriter(new BufferedWriter(new
 		// FileWriter("Knjige.csv", true)))
 		try {
-			Files.write(Paths.get("res/Knjige.csv"), k.toStringFile().getBytes(), StandardOpenOption.APPEND);
+			Files.write(Paths.get("res/knjige.csv"), k.toStringFile().getBytes(), StandardOpenOption.APPEND);
 			return true;
 		} catch (IOException e) {
 			e.printStackTrace();

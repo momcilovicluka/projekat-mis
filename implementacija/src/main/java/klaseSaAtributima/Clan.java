@@ -25,4 +25,22 @@ public class Clan extends Korisnik {
 	private static int noviId() {
 		return brojId++;
 	}
+
+	public String toStringFile() {
+		StringBuilder stringZaFile = new StringBuilder();
+		String separator = ",";
+
+		stringZaFile.append(this.getIdc());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getIme());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getPrezime());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getUsername());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getPassword());
+		stringZaFile.append("\n");
+
+		return stringZaFile.toString();
+	}
 }
