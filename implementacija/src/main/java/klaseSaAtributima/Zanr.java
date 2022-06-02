@@ -61,4 +61,9 @@ public class Zanr {
 
 		return stringZaFile.toString();
 	}
+
+	@Override
+	public String toString() {
+		return "[" + idZ + "] " + naziv;
+	}
 }
