@@ -15,9 +15,6 @@ public class ZanrKontroler {
 		if (pretraga == null)
 			return null;
 
-		if ("".equals(pretraga))
-			throw new IllegalArgumentException("Polje za pretragu ne može biti prazno!");
-
 		try (BufferedReader br = new BufferedReader(new FileReader("res/zanrovi.txt"))) {
 			Map<Integer, Zanr> zanrovi = new HashMap<Integer, Zanr>();
 			String line = "";

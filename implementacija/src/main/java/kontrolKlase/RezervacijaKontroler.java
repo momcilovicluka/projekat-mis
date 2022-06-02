@@ -19,9 +19,6 @@ public class RezervacijaKontroler {
 		if (pretraga == null)
 			return null;
 
-		if ("".equals(pretraga))
-			throw new IllegalArgumentException("Polje za pretragu ne sme biti prazno!");
-
 		try (BufferedReader br = new BufferedReader(new FileReader("res/rezervacije.csv"))) {
 			String line = "";
 			List<Rezervacija> rezervacije = new ArrayList<Rezervacija>();
@@ -32,8 +29,9 @@ public class RezervacijaKontroler {
 
 				String[] tokens = line.split(",");
 
-				Knjiga knjiga = KnjigaKontroler.pronadjiKnjigu(tokens[0].trim());
-				Clan clan = ClanKontroler.pretraziClana(tokens[1].trim());
+				Knjiga knjiga = KnjigaKontroler.pronadjiKnjigu(tokens[0].trim())
+						.get(Integer.parseInt(tokens[0].trim()));
+				Clan clan = ClanKontroler.pretraziClana(tokens[1].trim()).get(Integer.parseInt(tokens[1].trim()));
 
 				SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd");
 				Date datumRezervisanja = formatter.parse(tokens[2].trim());

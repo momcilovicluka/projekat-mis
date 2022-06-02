@@ -18,9 +18,6 @@ public class KnjigaKontroler {
 		if (pretraga == null)
 			return null;
 
-		if ("".equals(pretraga))
-			throw new IllegalArgumentException("Polje za pretragu ne sme biti prazno!");
-
 		try (BufferedReader br = new BufferedReader(new FileReader("res/knjige.txt"))) {
 			String line = "";
 			Map<Integer, Knjiga> knjige = new HashMap<Integer, Knjiga>();

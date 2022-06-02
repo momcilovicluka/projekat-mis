@@ -18,9 +18,6 @@ public class AutorKontroler {
 		if (pretraga == null)
 			return null;
 
-		if ("".equals(pretraga))
-			throw new IllegalArgumentException("Polje za pretragu ne sme biti prazno!");
-
 		try (BufferedReader br = new BufferedReader(new FileReader("res/autori.csv"))) {
 			Map<Integer, Autor> autori = new HashMap<Integer, Autor>();
 			String line = "";

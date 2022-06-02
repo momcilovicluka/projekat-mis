@@ -15,9 +15,6 @@ public class ClanKontroler {
 		if (pretraga == null)
 			return null;
 
-		if ("".equals(pretraga))
-			throw new IllegalArgumentException("Polje za pretragu ne sme biti prazno!");
-
 		try (BufferedReader br = new BufferedReader(new FileReader("res/korisnici.csv"))) {
 			Map<Integer, Clan> clanovi = new HashMap<Integer, Clan>();
 			String line = "";
