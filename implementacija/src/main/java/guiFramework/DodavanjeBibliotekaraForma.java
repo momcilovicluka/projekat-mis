@@ -11,6 +11,8 @@ import javax.swing.JButton;
 import java.awt.Color;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class DodavanjeBibliotekaraForma {
 
@@ -28,6 +30,7 @@ public class DodavanjeBibliotekaraForma {
 			public void run() {
 				try {
 					DodavanjeBibliotekaraForma window = new DodavanjeBibliotekaraForma();
+					window.frmNoviBibliotekar.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					window.frmNoviBibliotekar.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -87,13 +90,6 @@ public class DodavanjeBibliotekaraForma {
 		tfPrezime.setBounds(122, 41, 96, 19);
 		frmNoviBibliotekar.getContentPane().add(tfPrezime);
 
-		JButton btnSacuvaj = new JButton("Sačuvaj");
-		btnSacuvaj.setBorderPainted(false);
-		btnSacuvaj.setBackground(new Color(246, 245, 245));
-		btnSacuvaj.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnSacuvaj.setBounds(77, 133, 103, 21);
-		frmNoviBibliotekar.getContentPane().add(btnSacuvaj);
-
 		JLabel lblUsername = new JLabel("Username:");
 		lblUsername.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblUsername.setBounds(31, 70, 89, 19);
@@ -115,5 +111,15 @@ public class DodavanjeBibliotekaraForma {
 		tfPassword.setColumns(10);
 		tfPassword.setBounds(122, 104, 96, 19);
 		frmNoviBibliotekar.getContentPane().add(tfPassword);
+		
+		JButton btnSacuvaj = new JButton("Sačuvaj");
+		btnSacuvaj.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		btnSacuvaj.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		btnSacuvaj.setBounds(79, 130, 96, 23);
+		frmNoviBibliotekar.getContentPane().add(btnSacuvaj);
 	}
 }

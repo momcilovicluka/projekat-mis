@@ -3,6 +3,9 @@ package kontrolKlase;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
@@ -34,6 +37,16 @@ public class ClanKontroler {
 			}
 
 			return clanovi;
+		}
+	}
+
+	public static boolean sacuvajClana(Clan c) {
+		try {
+			Files.write(Paths.get("res/korisnici.csv"), c.toStringFile().getBytes(), StandardOpenOption.APPEND);
+			return true;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return false;
 		}
 	}
 }

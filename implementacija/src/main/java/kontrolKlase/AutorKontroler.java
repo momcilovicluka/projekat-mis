@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -38,6 +41,16 @@ public class AutorKontroler {
 			}
 
 			return autori;
+		}
+	}
+
+	public static boolean sacuvajAutora(Autor a) {
+		try {
+			Files.write(Paths.get("res/autori.csv"), a.toStringFile().getBytes(), StandardOpenOption.APPEND);
+			return true;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return false;
 		}
 	}
 }

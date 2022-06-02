@@ -8,6 +8,8 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class AdminForma {
 
@@ -21,6 +23,7 @@ public class AdminForma {
 			public void run() {
 				try {
 					AdminForma window = new AdminForma();
+					window.frmBibliotekaAdmin.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					window.frmBibliotekaAdmin.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -56,6 +59,12 @@ public class AdminForma {
 		frmBibliotekaAdmin.getContentPane().setLayout(null);
 
 		JButton btnDodavanje = new JButton("Dodavanje bibliotekara");
+		btnDodavanje.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new DodavanjeBibliotekaraForma();
+				DodavanjeBibliotekaraForma.main(null);
+			}
+		});
 		btnDodavanje.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnDodavanje.setBounds(16, 11, 233, 82);
 		frmBibliotekaAdmin.getContentPane().add(btnDodavanje);

@@ -2,14 +2,18 @@ window_sizes 1920 1017 327 1587 861 104
 cleanlooks_style
 diagrams
   classdiagram_ref 147781 // packageDijagram
-    1701 861 138 A0 0 0
+    1701 861 137 A0 0 0
   sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
     1269 688 100 A0 0 0
-  active  classdiagram_ref 141125 // KlasniDijagram
+  classdiagram_ref 141125 // KlasniDijagram
     1587 861 100 A0 348 201
+  active  sequencediagram_ref 147595 // dodavanjeKnjigeSekvencija
+    1587 861 100 A0 1440 0
+  sequencediagram_ref 154123 // dodavanjeBibliotekaraSekvencija
+    112 90 100 A0 0 0
 end
 show_stereotypes
-selected classdiagram_ref 141125 // KlasniDijagram
+selected sequencediagram_ref 147595 // dodavanjeKnjigeSekvencija
 open
   class_ref 128139 // Clan
   activity_ref 128069 // izdavanjeKnjigeActivity

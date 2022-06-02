@@ -1,4 +1,4 @@
-package kontrolKlase;
+Spackage kontrolKlase;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
