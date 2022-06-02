@@ -65,16 +65,31 @@ public class AdminForma {
 				DodavanjeBibliotekaraForma.main(null);
 			}
 		});
+
 		btnDodavanje.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnDodavanje.setBounds(16, 11, 233, 82);
 		frmBibliotekaAdmin.getContentPane().add(btnDodavanje);
 
 		JButton btnIzdavanjeKnjige = new JButton("Izdavanje knjige");
+		btnIzdavanjeKnjige.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new KnjigaForma();
+				KnjigaForma.main(null);
+			}
+		});
+
 		btnIzdavanjeKnjige.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnIzdavanjeKnjige.setBounds(16, 104, 233, 82);
 		frmBibliotekaAdmin.getContentPane().add(btnIzdavanjeKnjige);
 
-		JButton btnDodavanjeClana = new JButton("Dodavanje člana");
+		JButton btnDodavanjeClana = new JButton("Dodavanje knjige");
+		btnDodavanjeClana.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new DodavanjeKnjigeForma();
+				DodavanjeKnjigeForma.main(null);
+			}
+		});
+
 		btnDodavanjeClana.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnDodavanjeClana.setBounds(16, 197, 233, 82);
 		frmBibliotekaAdmin.getContentPane().add(btnDodavanjeClana);

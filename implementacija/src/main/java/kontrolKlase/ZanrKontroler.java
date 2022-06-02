@@ -13,8 +13,7 @@ import java.util.Map;
 import klaseSaAtributima.Zanr;
 
 public class ZanrKontroler {
-	public static Map<Integer, Zanr> pronadjiZanr(String pretraga)
-			throws FileNotFoundException, IOException, IllegalArgumentException {
+	public static Map<Integer, Zanr> pronadjiZanr(String pretraga) throws FileNotFoundException, IOException {
 		if (pretraga == null)
 			return null;
 
@@ -23,7 +22,7 @@ public class ZanrKontroler {
 			String line = "";
 
 			while ((line = br.readLine()) != null) {
-				if (!line.contains(pretraga))
+				if (!line.toLowerCase().contains(pretraga.toLowerCase()))
 					continue;
 
 				String[] tokens = line.split(",");

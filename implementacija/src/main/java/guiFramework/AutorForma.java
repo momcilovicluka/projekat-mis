@@ -89,6 +89,7 @@ public class AutorForma {
 				NoviAutorForma.main(null);
 			}
 		});
+
 		lblDodajAutora.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblDodajAutora.setBounds(7, 237, 148, 23);
 		frmAutor.getContentPane().add(lblDodajAutora);
@@ -100,6 +101,7 @@ public class AutorForma {
 				frmAutor.dispose();
 			}
 		});
+
 		lblIzaberiAutora.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblIzaberiAutora.setBounds(231, 237, 148, 23);
 		frmAutor.getContentPane().add(lblIzaberiAutora);

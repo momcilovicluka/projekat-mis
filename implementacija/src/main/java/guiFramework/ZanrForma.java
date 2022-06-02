@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.ListSelectionModel;
 import javax.swing.UIManager;
@@ -71,17 +72,12 @@ public class ZanrForma {
 
 		JLabel lblPretrazi = new JLabel("Pretraži:");
 		lblPretrazi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lblPretrazi.setBounds(7, 12, 75, 18);
+		lblPretrazi.setBounds(7, 12, 66, 18);
 		frmZanr.getContentPane().add(lblPretrazi);
 
-		JTextArea taUnos = new JTextArea();
-		taUnos.setBounds(78, 13, 190, 22);
-		frmZanr.getContentPane().add(taUnos);
-
-		JButton btnPretrazi = new JButton("Pretraži");
-		btnPretrazi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnPretrazi.setBounds(275, 13, 104, 23);
-		frmZanr.getContentPane().add(btnPretrazi);
+		JTextArea tfPretraga = new JTextArea();
+		tfPretraga.setBounds(78, 12, 190, 22);
+		frmZanr.getContentPane().add(tfPretraga);
 
 		JButton btnDodajZanr = new JButton("Dodaj žanr");
 		btnDodajZanr.addActionListener(new ActionListener() {
@@ -90,6 +86,7 @@ public class ZanrForma {
 				NoviZanrForma.main(null);
 			}
 		});
+
 		btnDodajZanr.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnDodajZanr.setBounds(7, 231, 137, 23);
 		frmZanr.getContentPane().add(btnDodajZanr);
@@ -102,15 +99,17 @@ public class ZanrForma {
 
 		JList<Zanr> listZanr;
 		DefaultListModel<Zanr> listModel = new DefaultListModel<Zanr>();
+
 		try {
 			listModel.addAll(ZanrKontroler.pronadjiZanr("").values());
 		} catch (IllegalArgumentException | IOException e1) {
 			e1.printStackTrace();
 		}
+
 		listZanr = new JList<Zanr>(listModel);
 		listZanr.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		listZanr.setLayoutOrientation(JList.HORIZONTAL_WRAP);
 		listZanr.setVisibleRowCount(-1);
+
 		listZanr.addListSelectionListener(new ListSelectionListener() {
 
 			@Override
@@ -119,8 +118,27 @@ public class ZanrForma {
 					btnIzaberiZanr.setEnabled(true);
 			}
 		});
+
 		listZanr.setBounds(7, 40, 372, 187);
 		frmZanr.getContentPane().add(listZanr);
+
+		JButton btnPretrazi = new JButton("Pretraži");
+		btnPretrazi.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String pretraga = tfPretraga.getText().trim();
+
+				try {
+					listModel.clear();
+					listModel.addAll(ZanrKontroler.pronadjiZanr(pretraga).values());
+				} catch (IllegalArgumentException | IOException e1) {
+					JOptionPane.showMessageDialog(frmZanr, "Došlo je do greške!", "Greška", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		btnPretrazi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		btnPretrazi.setBounds(275, 12, 104, 23);
+		frmZanr.getContentPane().add(btnPretrazi);
 
 		btnIzaberiZanr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

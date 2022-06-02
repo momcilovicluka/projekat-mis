@@ -26,6 +26,7 @@ public class KnjigaForma {
 			public void run() {
 				try {
 					KnjigaForma window = new KnjigaForma();
+					window.frmPretragaKnjiga.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					window.frmPretragaKnjiga.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -52,31 +53,33 @@ public class KnjigaForma {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+
 		frmPretragaKnjiga = new JFrame();
 		frmPretragaKnjiga.setTitle("Pretraga knjiga");
-		frmPretragaKnjiga.setIconImage(Toolkit.getDefaultToolkit().getImage(KnjigaForma.class.getResource("/guiFramework/book-stack.png")));
+		frmPretragaKnjiga.setIconImage(
+				Toolkit.getDefaultToolkit().getImage(KnjigaForma.class.getResource("/guiFramework/book-stack.png")));
 		frmPretragaKnjiga.setBounds(100, 100, 433, 300);
 		frmPretragaKnjiga.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmPretragaKnjiga.getContentPane().setLayout(null);
-		
+
 		JLabel lbKnjige = new JLabel("Pretrazi knjige:");
 		lbKnjige.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lbKnjige.setBounds(8, 8, 114, 25);
+		lbKnjige.setBounds(8, 8, 120, 25);
 		frmPretragaKnjiga.getContentPane().add(lbKnjige);
-		
+
 		JTextArea taPretragaKnjige = new JTextArea();
 		taPretragaKnjige.setBounds(130, 11, 166, 22);
 		frmPretragaKnjiga.getContentPane().add(taPretragaKnjige);
-		
+
 		JButton btnPretrazi = new JButton("Pretrazi");
 		btnPretrazi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnPretrazi.setBounds(304, 10, 103, 23);
 		frmPretragaKnjiga.getContentPane().add(btnPretrazi);
-		
+
 		JList<String> listKnjige = new JList<String>();
 		listKnjige.setBounds(8, 47, 401, 178);
 		frmPretragaKnjiga.getContentPane().add(listKnjige);
-		
+
 		JButton btnOdaberi = new JButton("Odaberi");
 		btnOdaberi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -85,6 +88,7 @@ public class KnjigaForma {
 				DetaljiKnjigeForma.main(null);
 			}
 		});
+
 		btnOdaberi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnOdaberi.setBounds(157, 230, 103, 23);
 		frmPretragaKnjiga.getContentPane().add(btnOdaberi);

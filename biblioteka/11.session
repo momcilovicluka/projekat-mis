@@ -1,14 +1,11 @@
-window_sizes 1920 1001 336 1578 819 128
+window_sizes 1920 985 336 1578 803 128
 
 diagrams
-  activitydiagram_ref 134597 // izdavanjeKnjige
+  active  activitydiagram_ref 134597 // izdavanjeKnjige
     114 98 100 A0 420 0
-  active  classdiagram_ref 141125 // KlasniDijagram
-    1578 819 100 A0 24 312
 end
 show_stereotypes
-selected 
-package_ref 129 // biblioteka
+selected sequencediagram_ref 147595 // dodavanjeKnjigeSekvencija
 open
   class_ref 128139 // Clan
   

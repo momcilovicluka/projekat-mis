@@ -136,8 +136,6 @@ public class Main {
 				try {
 					korisnik = LogovanjeKontroler.prijava(username, password);
 
-					System.err.println(korisnik);
-
 					if (korisnik == null)
 						throw new IllegalArgumentException("Taj korisnik ne postoji!");
 
