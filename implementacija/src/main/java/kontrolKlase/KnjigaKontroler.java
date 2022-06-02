@@ -18,7 +18,7 @@ public class KnjigaKontroler {
 		if (pretraga == null)
 			return null;
 
-		try (BufferedReader br = new BufferedReader(new FileReader("res/knjige.txt"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("res/knjige.csv"))) {
 			String line = "";
 			Map<Integer, Knjiga> knjige = new HashMap<Integer, Knjiga>();
 

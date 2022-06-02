@@ -6,12 +6,20 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextArea;
+import javax.swing.ListSelectionModel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+
+import klaseSaAtributima.Knjiga;
+import kontrolKlase.KnjigaKontroler;
+
+import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JList;
 import java.awt.Toolkit;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.text.ParseException;
 import java.awt.event.ActionEvent;
 
 public class KnjigaForma {
@@ -76,7 +84,16 @@ public class KnjigaForma {
 		btnPretrazi.setBounds(304, 10, 103, 23);
 		frmPretragaKnjiga.getContentPane().add(btnPretrazi);
 
-		JList<String> listKnjige = new JList<String>();
+		JList<Knjiga> listKnjige;
+		DefaultListModel<Knjiga> listModel = new DefaultListModel<Knjiga>();
+		try {
+			listModel.addAll(KnjigaKontroler.pronadjiKnjigu("").values());
+		} catch (IllegalArgumentException | IOException | ParseException e1) {
+			e1.printStackTrace();
+		}
+		listKnjige = new JList<Knjiga>(listModel);
+		listKnjige.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		listKnjige.setVisibleRowCount(-1);
 		listKnjige.setBounds(8, 47, 401, 178);
 		frmPretragaKnjiga.getContentPane().add(listKnjige);
 

@@ -5,10 +5,10 @@ public abstract class Korisnik {
 
 	public Korisnik(String ime, String prezime, String username, String password) {
 		super();
-		this.ime = ime;
-		this.prezime = prezime;
-		this.username = username;
-		this.password = password;
+		this.setIme(ime);
+		this.setPrezime(prezime);
+		this.setUsername(username);
+		this.setPassword(password);
 	}
 
 	public String getIme() {
@@ -53,5 +53,23 @@ public abstract class Korisnik {
 			throw new IllegalArgumentException("Password ne sme biti prazan!");
 
 		this.password = password;
+	}
+
+	public String toStringFile() {
+		StringBuilder stringZaFile = new StringBuilder();
+		String separator = ",";
+
+		stringZaFile.append(this.getIme());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getPrezime());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getUsername());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getPassword());
+		stringZaFile.append(separator);
+		stringZaFile.append("k");
+		stringZaFile.append("\n");
+
+		return stringZaFile.toString();
 	}
 }

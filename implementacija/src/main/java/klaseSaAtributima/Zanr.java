@@ -7,7 +7,7 @@ public class Zanr {
 
 	static {
 		try {
-			Zanr.brojId = ZanrKontroler.pronadjiZanr("").keySet().size();
+			Zanr.brojId = ZanrKontroler.pronadjiZanr("").values().size();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

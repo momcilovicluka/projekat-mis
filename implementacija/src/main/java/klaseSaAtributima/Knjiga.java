@@ -35,6 +35,23 @@ public class Knjiga {
 		this.idk = idk;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("[").append(idk).append("] ");
+		if (naziv != null)
+			builder.append(naziv).append("( ");
+		if (autor != null)
+			builder.append(autor).append(" ), ");
+		if (zanr != null)
+			builder.append(zanr).append(", ");
+		if (izdavac != null)
+			builder.append(izdavac).append(", ");
+		builder.append("brStrana: ").append(brojStrana).append(", brNaStanju:").append(brojNaStanju)
+				.append(", ukupanBroj:").append(ukupanBroj);
+		return builder.toString();
+	}
+
 	public int getIdk() {
 		return idk;
 	}

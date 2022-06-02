@@ -5,6 +5,7 @@ public class Bibliotekar extends Korisnik {
 		super(ime, prezime, username, password);
 	}
 
+	@Override
 	public String toStringFile() {
 		StringBuilder stringZaFile = new StringBuilder();
 		String separator = ",";
@@ -16,6 +17,8 @@ public class Bibliotekar extends Korisnik {
 		stringZaFile.append(this.getUsername());
 		stringZaFile.append(separator);
 		stringZaFile.append(this.getPassword());
+		stringZaFile.append(separator);
+		stringZaFile.append("b");
 		stringZaFile.append("\n");
 
 		return stringZaFile.toString();

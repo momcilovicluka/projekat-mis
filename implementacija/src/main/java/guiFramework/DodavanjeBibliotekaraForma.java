@@ -1,24 +1,29 @@
 package guiFramework;
 
 import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import java.awt.Font;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import java.awt.Toolkit;
-import javax.swing.JButton;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+
+import klaseSaAtributima.Bibliotekar;
+import kontrolKlase.BibliotekarKontroler;
+import kontrolKlase.ZanrKontroler;
 
 public class DodavanjeBibliotekaraForma {
 
 	private JFrame frmNoviBibliotekar;
 	private JTextField tfIme;
 	private JTextField tfPrezime;
-	private JTextField textField;
+	private JTextField tfUsername;
 	private JTextField tfPassword;
 
 	/**
@@ -94,11 +99,11 @@ public class DodavanjeBibliotekaraForma {
 		lblUsername.setBounds(31, 70, 89, 19);
 		frmNoviBibliotekar.getContentPane().add(lblUsername);
 
-		textField = new JTextField();
-		textField.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		textField.setColumns(10);
-		textField.setBounds(122, 74, 96, 19);
-		frmNoviBibliotekar.getContentPane().add(textField);
+		tfUsername = new JTextField();
+		tfUsername.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		tfUsername.setColumns(10);
+		tfUsername.setBounds(122, 74, 96, 19);
+		frmNoviBibliotekar.getContentPane().add(tfUsername);
 
 		JLabel lblPassword = new JLabel("Password:");
 		lblPassword.setFont(new Font("Segoe UI", Font.PLAIN, 18));
@@ -114,7 +119,24 @@ public class DodavanjeBibliotekaraForma {
 		JButton btnSacuvaj = new JButton("Sačuvaj");
 		btnSacuvaj.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				try {
+					String ime = tfIme.getText();
+					String prezime = tfPrezime.getText();
+					String username = tfUsername.getText();
+					String password = tfPassword.getText();
 
+					Bibliotekar b = new Bibliotekar(ime, prezime, username, password);
+					boolean dodat = BibliotekarKontroler.sacuvajBibliotekara(b);
+					if (dodat)
+						JOptionPane.showMessageDialog(frmNoviBibliotekar, "Bibliotekar je uspešno dodat", "Uspeh",
+								JOptionPane.INFORMATION_MESSAGE);
+					else
+						JOptionPane.showMessageDialog(frmNoviBibliotekar, "Bibliotekar nije dodat", "Greška",
+								JOptionPane.WARNING_MESSAGE);
+				} catch (Exception ex) {
+					JOptionPane.showMessageDialog(frmNoviBibliotekar, ex.getMessage(), "Greska",
+							JOptionPane.ERROR_MESSAGE);
+				}
 			}
 		});
 		btnSacuvaj.setFont(new Font("Segoe UI", Font.PLAIN, 18));

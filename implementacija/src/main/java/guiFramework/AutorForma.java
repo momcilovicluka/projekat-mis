@@ -57,6 +57,7 @@ public class AutorForma {
 			e.printStackTrace();
 		}
 		frmAutor = new JFrame();
+		frmAutor.setResizable(false);
 		frmAutor.setIconImage(
 				Toolkit.getDefaultToolkit().getImage(AutorForma.class.getResource("/guiFramework/book-stack.png")));
 		frmAutor.setTitle("Pretraga autora");

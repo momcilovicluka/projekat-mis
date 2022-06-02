@@ -36,6 +36,19 @@ public class Autor {
 		this.setDatumRodjenja(datumRodjenja);
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("[").append(idA).append("] ");
+		if (ime != null)
+			builder.append(ime).append(", ");
+		if (prezime != null)
+			builder.append(prezime).append(", ");
+		if (datumRodjenja != null)
+			builder.append(datumRodjenja);
+		return builder.toString();
+	}
+
 	public int getIdA() {
 		return idA;
 	}
