@@ -5,13 +5,24 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+
+import klaseSaAtributima.Admin;
+import klaseSaAtributima.Bibliotekar;
+import klaseSaAtributima.Korisnik;
+import kontrolKlase.LogovanjeKontroler;
+
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.awt.event.ActionEvent;
 
 public class Main {
 
@@ -50,14 +61,14 @@ public class Main {
 			UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
 				| UnsupportedLookAndFeelException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 		frmBiblioteka = new JFrame();
 		frmBiblioteka.setIconImage(
 				Toolkit.getDefaultToolkit().getImage(Main.class.getResource("/guiFramework/book-stack.png")));
 		frmBiblioteka.setResizable(false);
-		frmBiblioteka.setTitle("Biblioteka - LogIn");
+		frmBiblioteka.setTitle("Biblioteka - Login");
 		frmBiblioteka.setBounds(100, 100, 389, 260);
 		frmBiblioteka.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -74,6 +85,7 @@ public class Main {
 		lblNewLabel.setFont(new Font("Segoe UI", Font.BOLD, 30));
 
 		JButton btnLogin = new JButton("Login");
+
 		btnLogin.setFont(new Font("Tahoma", Font.PLAIN, 14));
 
 		pfPassword = new JPasswordField();
@@ -112,5 +124,44 @@ public class Main {
 						.addGap(18).addComponent(btnLogin, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
 						.addContainerGap(32, Short.MAX_VALUE)));
 		frmBiblioteka.getContentPane().setLayout(groupLayout);
+
+		btnLogin.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Dobar");
+				String username = tfUsername.getText().trim();
+				String password = String.valueOf(pfPassword.getPassword()).trim();
+
+				Korisnik korisnik;
+				try {
+					korisnik = LogovanjeKontroler.prijava(username, password);
+
+					System.err.println(korisnik);
+
+					if (korisnik == null)
+						throw new IllegalArgumentException("Taj korisnik ne postoji!");
+
+					if (korisnik instanceof Admin) {
+						frmBiblioteka.setVisible(false);
+
+						new AdminForma();
+						AdminForma.main(null);
+					} else if (korisnik instanceof Bibliotekar) {
+						frmBiblioteka.setVisible(false);
+
+						new BibliotekarForma();
+						BibliotekarForma.main(null);
+					}
+
+					frmBiblioteka.dispose();
+				} catch (IllegalArgumentException e1) {
+					JOptionPane.showMessageDialog(frmBiblioteka, e1.getMessage(), "Pogrešan unos",
+							JOptionPane.WARNING_MESSAGE);
+				} catch (IOException e1) {
+					JOptionPane.showMessageDialog(frmBiblioteka, "Došlo je do greške!", "Greška",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
 	}
 }

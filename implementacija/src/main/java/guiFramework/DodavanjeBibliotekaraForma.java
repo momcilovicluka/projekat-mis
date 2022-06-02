@@ -8,7 +8,6 @@ import java.awt.Font;
 import javax.swing.JTextField;
 import java.awt.Toolkit;
 import javax.swing.JButton;
-import java.awt.Color;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import java.awt.event.ActionListener;
@@ -111,11 +110,11 @@ public class DodavanjeBibliotekaraForma {
 		tfPassword.setColumns(10);
 		tfPassword.setBounds(122, 104, 96, 19);
 		frmNoviBibliotekar.getContentPane().add(tfPassword);
-		
+
 		JButton btnSacuvaj = new JButton("Sačuvaj");
 		btnSacuvaj.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+
 			}
 		});
 		btnSacuvaj.setFont(new Font("Segoe UI", Font.PLAIN, 18));

@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import kontrolKlase.AutorKontroler;
-import kontrolKlase.ZanrKontroler;
 
 public class Autor {
 	private static int brojId = 0;
