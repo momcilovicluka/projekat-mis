@@ -1,10 +1,16 @@
 package klaseSaAtributima;
 
+import kontrolKlase.KnjigaKontroler;
+
 public class Knjiga {
 	private static int brojId;
 
 	static {
-		brojId = 0;
+		try {
+			Knjiga.brojId = KnjigaKontroler.pronadjiKnjigu("").keySet().size();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	private int idk;

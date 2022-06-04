@@ -101,6 +101,7 @@ public class KnjigaForma {
 		btnOdaberi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frmPretragaKnjiga.setVisible(false);
+				DetaljiKnjigeForma.knjiga = listKnjige.getSelectedValue();
 				new DetaljiKnjigeForma();
 				DetaljiKnjigeForma.main(null);
 			}

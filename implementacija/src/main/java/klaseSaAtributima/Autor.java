@@ -45,7 +45,7 @@ public class Autor {
 		if (prezime != null)
 			builder.append(prezime).append(", ");
 		if (datumRodjenja != null)
-			builder.append(datumRodjenja);
+			builder.append(new SimpleDateFormat("yyyy-mm-dd").format(this.getDatumRodjenja()));
 		return builder.toString();
 	}
 

@@ -1,21 +1,27 @@
 package guiFramework;
 
 import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.text.ParseException;
 
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import java.awt.Font;
+import javax.swing.JList;
 import javax.swing.JTextArea;
+import javax.swing.ListSelectionModel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 
 import klaseSaAtributima.Autor;
-
-import javax.swing.JButton;
-import javax.swing.JList;
-import java.awt.Toolkit;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import kontrolKlase.AutorKontroler;
 
 public class AutorForma {
 
@@ -70,18 +76,50 @@ public class AutorForma {
 		lblPretrazi.setBounds(8, 11, 71, 23);
 		frmAutor.getContentPane().add(lblPretrazi);
 
-		JTextArea taUnos = new JTextArea();
-		taUnos.setBounds(76, 11, 192, 23);
-		frmAutor.getContentPane().add(taUnos);
+		JTextArea tfUnos = new JTextArea();
+		tfUnos.setBounds(76, 11, 192, 23);
+		frmAutor.getContentPane().add(tfUnos);
+
+		JButton btnIzaberiAutora = new JButton("Izaberi autora");
+
+		JList<Autor> listAutor;
+		DefaultListModel<Autor> listModel = new DefaultListModel<Autor>();
+		try {
+			listModel.addAll(AutorKontroler.pronadjiAutora("").values());
+		} catch (IllegalArgumentException | ParseException | IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		listAutor = new JList<Autor>(listModel);
+		listAutor.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+		listAutor.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		listAutor.setVisibleRowCount(-1);
+		listAutor.addListSelectionListener(new ListSelectionListener() {
+			@Override
+			public void valueChanged(ListSelectionEvent e) {
+				if (listAutor.getSelectedIndex() != -1)
+					btnIzaberiAutora.setEnabled(true);
+			}
+		});
+		listAutor.setBounds(8, 40, 372, 187);
+		frmAutor.getContentPane().add(listAutor);
 
 		JButton btnPretrazi = new JButton("Pretraži");
 		btnPretrazi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnPretrazi.setBounds(275, 11, 104, 23);
+		btnPretrazi.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String pretraga = tfUnos.getText().trim();
+				listModel.clear();
+				try {
+					listModel.addAll(AutorKontroler.pronadjiAutora(pretraga).values());
+				} catch (IllegalArgumentException | ParseException | IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		frmAutor.getContentPane().add(btnPretrazi);
-
-		JList<?> listAutor = new JList<Object>();
-		listAutor.setBounds(8, 40, 372, 187);
-		frmAutor.getContentPane().add(listAutor);
 
 		JButton lblDodajAutora = new JButton("Dodaj autora");
 		lblDodajAutora.addActionListener(new ActionListener() {
@@ -95,17 +133,15 @@ public class AutorForma {
 		lblDodajAutora.setBounds(7, 237, 148, 23);
 		frmAutor.getContentPane().add(lblDodajAutora);
 
-		JButton lblIzaberiAutora = new JButton("Izaberi autora");
-		lblIzaberiAutora.addActionListener(new ActionListener() {
+		btnIzaberiAutora.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				DodavanjeKnjigeForma.autor = (Autor) listAutor.getSelectedValue();
 				frmAutor.dispose();
 			}
 		});
-
-		lblIzaberiAutora.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lblIzaberiAutora.setBounds(231, 237, 148, 23);
-		frmAutor.getContentPane().add(lblIzaberiAutora);
+		btnIzaberiAutora.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		btnIzaberiAutora.setBounds(231, 237, 148, 23);
+		frmAutor.getContentPane().add(btnIzaberiAutora);
 	}
 
 }

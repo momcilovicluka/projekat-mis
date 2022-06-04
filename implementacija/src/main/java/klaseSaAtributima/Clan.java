@@ -1,7 +1,18 @@
 package klaseSaAtributima;
 
+import kontrolKlase.ClanKontroler;
+
 public class Clan extends Korisnik {
 	private static int brojId = 0;
+
+	static {
+		try {
+			Clan.brojId = ClanKontroler.pretraziClana("").keySet().size();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	private int idc;
 
 	public Clan(String ime, String prezime, String username, String password) throws IllegalArgumentException {
