@@ -198,7 +198,7 @@ end
 flowcanvas 133643 flow_ref 145547 // na stanju je
   decenter_end 736
   
-  from ref 132805 z 2001 label "na stanju je" xyz 513 637 3000 to point 505 658
+  from ref 132805 z 2001 label "na stanju je" xyz 513 637 2001 to point 505 658
   line 133899 z 2001 to point 502 545
   line 133771 z 2001 to ref 139973
    write_horizontally default

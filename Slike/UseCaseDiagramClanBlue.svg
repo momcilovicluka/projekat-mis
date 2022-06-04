@@ -21,19 +21,19 @@
 </g>
 <g>
 	<ellipse fill="#cbcbcb" stroke="none" cx="666" cy="94" rx="65" ry="15" />
-	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="663" cy="91" rx="65" ry="15" />
+	<ellipse fill="#e0ffff" stroke="black" stroke-width="1" stroke-opacity="1" cx="663" cy="91" rx="65" ry="15" />
 </g>
 <g>
 	<ellipse fill="#cbcbcb" stroke="none" cx="201" cy="78" rx="60" ry="15" />
-	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="198" cy="75" rx="60" ry="15" />
+	<ellipse fill="#e0ffff" stroke="black" stroke-width="1" stroke-opacity="1" cx="198" cy="75" rx="60" ry="15" />
 </g>
 <g>
 	<ellipse fill="#cbcbcb" stroke="none" cx="411" cy="95" rx="50" ry="16" />
-	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="408" cy="92" rx="50" ry="16" />
+	<ellipse fill="#e0ffff" stroke="black" stroke-width="1" stroke-opacity="1" cx="408" cy="92" rx="50" ry="16" />
 </g>
 <g>
 	<ellipse fill="#cbcbcb" stroke="none" cx="170" cy="187" rx="31" ry="15" />
-	<ellipse fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" cx="167" cy="184" rx="31" ry="15" />
+	<ellipse fill="#e0ffff" stroke="black" stroke-width="1" stroke-opacity="1" cx="167" cy="184" rx="31" ry="15" />
 </g>
 <g>
 	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="604" y="91">Prikaz detalja knjige</text>

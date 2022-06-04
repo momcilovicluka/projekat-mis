@@ -1,91 +1,91 @@
 format 224
 
 activitynodecanvas 128011 activitynode_ref 134539 // initial_node
-  xyz 579.6 19.6 2000
+  xyz 116.6 24.6 2000
 end
 activityactioncanvas 128139 activityaction_ref 134539 // activity action Unos podataka o knjizi: ime knjige, broj stranica, povez
   
   show_opaque_action_definition default
-  xyzwh 532.8 122.8 2000 115 85
+  xyzwh 68.8 126.8 2000 115 85
 end
 activityactioncanvas 128197 activityaction_ref 143813 // activity action Pretraga liste zanrova
   
   show_opaque_action_definition default
-  xyzwh 550 853 2000 100 60
+  xyzwh 87 858 2000 101 61
 end
 activityactioncanvas 128395 activityaction_ref 134667 // activity action Provera validnosti podataka
   
   show_opaque_action_definition default
-  xyzwh 538 239 2000 105 63
+  xyzwh 75 244 2000 105 63
 end
 activityactioncanvas 128453 activityaction_ref 143941 // activity action Provera da li zanr postoji u sistemu
   
   show_opaque_action_definition default
-  xyzwh 551 945 2000 100 60
+  xyzwh 87 950 2000 101 61
 end
 activitynodecanvas 128651 activitynode_ref 134667 // merge
-  xyz 576.6 69.4 2005
+  xyz 113.6 74.4 2005
 end
 activitynodecanvas 128709 activitynode_ref 143429 // merge
-  xyz 583 790 2000
+  xyz 120 795 2000
 end
 activitynodecanvas 128779 activitynode_ref 134795 // decision
-  xyz 578 334.4 2000
+  xyz 115 339.4 2000
 end
 activitynodecanvas 128965 activitynode_ref 143557 // decision
-  xyz 587 1046 2000
+  xyz 125 1052 2000
 end
 activityactioncanvas 129221 activityaction_ref 144069 // activity action Dodavanje novog zanra
   
   show_opaque_action_definition default
-  xyzwh 691 1035 2000 100 60
+  xyzwh 228 1040 2000 101 61
 end
 activityactioncanvas 129349 activityaction_ref 144197 // activity action Odabir zanra
   
   show_opaque_action_definition default
-  xyzwh 550 1133 2000 100 60
+  xyzwh 87 1138 2000 101 61
 end
 activityactioncanvas 129675 activityaction_ref 134795 // activity action Pretraga liste autora
   
   show_opaque_action_definition default
-  xyzwh 542.2 455.2 2000 101 61
+  xyzwh 78.2 460.2 2000 101 61
 end
 activityactioncanvas 129931 activityaction_ref 134923 // activity action Provera da li autor postoji u sistemu
   
   show_opaque_action_definition default
-  xyzwh 543.4 544.8 2000 101 65
+  xyzwh 80.4 548.8 2000 101 65
 end
 activitynodecanvas 130443 activitynode_ref 134923 // decision
-  xyz 582.1 632.8 2000
+  xyz 120.1 637.8 2000
 end
 activityactioncanvas 130699 activityaction_ref 135051 // activity action Dodavanje novog autora
   
   show_opaque_action_definition default
-  xyzwh 655.4 618.4 2000 101 61
+  xyzwh 192.4 623.4 2000 101 61
 end
 activitynodecanvas 131979 activitynode_ref 135051 // merge
-  xyz 578 400.4 2005
+  xyz 115 405.4 2005
 end
 activityactioncanvas 133387 activityaction_ref 135307 // activity action Odabir autora
   
   show_opaque_action_definition default
-  xyzwh 548.2 699.8 2000 95 57
+  xyzwh 85.2 704.8 2000 95 57
 end
 activityactioncanvas 133643 activityaction_ref 135435 // activity action Provera da li knjiga vec postoji u sistemu
   
   show_opaque_action_definition default
-  xyzwh 541.8 1249.6 2000 119 71
+  xyzwh 78.8 1253.6 2000 119 71
 end
 activitynodecanvas 133899 activitynode_ref 135179 // decision
-  xyz 588.4 1359.6 2000
+  xyz 125.4 1364.6 2000
 end
 activitynodecanvas 134155 activitynode_ref 135307 // activity_final
-  xyz 700.6 1451.2 2000
+  xyz 236.6 1456.2 2000
 end
 activityactioncanvas 134539 activityaction_ref 135563 // activity action Unos knjige u sistem
   
   show_opaque_action_definition default
-  xyzwh 550.4 1432.6 2000 101 61
+  xyzwh 87.4 1437.6 2000 101 61
 end
 flowcanvas 128523 flow_ref 134667 // <flow>
   
@@ -124,20 +124,20 @@ flowcanvas 129163 flow_ref 135051 // <flow>
 end
 flowcanvas 129291 flow_ref 135179 // nisu validni
   
-  from ref 128779 z 2006 label "nisu validni" xyz 624 326 2006 to point 715 350
-  line 129419 z 2006 to point 713 84
+  from ref 128779 z 2006 label "nisu validni" xyz 161 331 2006 to point 253 356
+  line 129419 z 2006 to point 251 90
   line 129547 z 2006 to ref 128651
    write_horizontally default
 end
 flowcanvas 129477 flow_ref 141893 // <flow>
   
-  from ref 129221 z 2001 to point 737 806
+  from ref 129221 z 2001 to point 275 811
   line 129605 z 2001 to ref 128709
    write_horizontally default
 end
 flowcanvas 129861 flow_ref 142021 // Ne
   
-  from ref 128965 z 2001 label "Ne" xyz 645 1050 2001 to ref 129221
+  from ref 128965 z 2001 label "Ne" xyz 182 1056 2001 to ref 129221
    write_horizontally default
 end
 flowcanvas 130059 flow_ref 135435 // <flow>
@@ -147,7 +147,7 @@ flowcanvas 130059 flow_ref 135435 // <flow>
 end
 flowcanvas 130117 flow_ref 142149 // Da
   
-  from ref 128965 z 2001 label "Da" xyz 601.5 1097 2001 to ref 129349
+  from ref 128965 z 2001 label "Da" xyz 137 1102 2001 to ref 129349
    write_horizontally default
 end
 flowcanvas 130245 flow_ref 142277 // <flow>
@@ -168,7 +168,7 @@ end
 flowcanvas 130827 flow_ref 135691 // ne
   decenter_begin 458
   
-  from ref 130443 z 2001 label "ne" xyz 620.5 629 2001 to ref 130699
+  from ref 130443 z 2001 label "ne" xyz 157 634 2001 to ref 130699
    write_horizontally default
 end
 flowcanvas 132235 flow_ref 136203 // <flow>
@@ -179,19 +179,19 @@ end
 flowcanvas 132363 flow_ref 136331 // <flow>
   decenter_end 620
   
-  from ref 130699 z 2001 to point 778 646
-  line 133131 z 2001 to point 777 420
+  from ref 130699 z 2001 to point 315 651
+  line 133131 z 2001 to point 315 426
   line 132747 z 2001 to ref 131979
    write_horizontally default
 end
 flowcanvas 133003 flow_ref 136459 // validni su
   
-  from ref 128779 z 2006 label "validni su" xyz 606 377 2006 to ref 131979
+  from ref 128779 z 2006 label "validni su" xyz 143 382 2006 to ref 131979
    write_horizontally default
 end
 flowcanvas 133515 flow_ref 136587 // da
   
-  from ref 130443 z 2001 label "da" xyz 605.5 672 2001 to ref 133387
+  from ref 130443 z 2001 label "da" xyz 142 677 2001 to ref 133387
    write_horizontally default
 end
 flowcanvas 134027 flow_ref 136843 // <flow>
@@ -201,7 +201,7 @@ flowcanvas 134027 flow_ref 136843 // <flow>
 end
 flowcanvas 134667 flow_ref 137099 // ne postoji
   
-  from ref 133899 z 2001 label "ne postoji" xyz 610 1400 2001 to ref 134539
+  from ref 133899 z 2001 label "ne postoji" xyz 146 1406 2001 to ref 134539
    write_horizontally default
 end
 flowcanvas 134795 flow_ref 137227 // <flow>
@@ -211,7 +211,7 @@ flowcanvas 134795 flow_ref 137227 // <flow>
 end
 flowcanvas 134923 flow_ref 137355 // postoji
   
-  from ref 133899 z 2001 label "postoji" xyz 639.5 1354 2001 to point 710 1376
+  from ref 133899 z 2001 label "postoji" xyz 175 1359 2001 to point 248 1381
   line 135051 z 2001 to ref 134155
    write_horizontally default
 end

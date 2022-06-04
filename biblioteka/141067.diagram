@@ -1,22 +1,22 @@
 format 224
 
 classinstancecanvas 128011 classinstance_ref 128011 // BibliotekarF
-  drawing_mode actor  xyz 22.4 19.4 2005 life_line_z 2005
+  drawing_mode actor  xyz 22.9 18.9 2005 life_line_z 2005
 end
 classinstancecanvas 128267 classinstance_ref 128267 // KnjigaF
-  xyz 827.4 520.8 2005 life_line_z 2005
+  xyz 827.4 521.3 2005 life_line_z 2005
 end
 classinstancecanvas 128395 classinstance_ref 128395 // RezervacijaF
-  xyz 1126.1 24.8 2010 life_line_z 2005
+  xyz 1126.6 25.3 2010 life_line_z 2005
 end
 classinstancecanvas 128523 classinstance_ref 128523 // ClanF
-  xyz 1738.9 839.5 2005 life_line_z 2005
+  xyz 1738.4 839.5 2005 life_line_z 2005
 end
 classinstancecanvas 128651 classinstance_ref 128651 // RezervacijaFormaF
-  xyz 197 22.7 2005 life_line_z 2005
+  xyz 198 23.2 2005 life_line_z 2005
 end
 classinstancecanvas 128779 classinstance_ref 128779 // RezervacijaKontrolerF
-  xyz 816.5 22.7 2010 life_line_z 2005
+  xyz 816 23.2 2010 life_line_z 2005
 end
 classinstancecanvas 128907 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF
   xyz 457.2 169.8 2020 life_line_z 2005
@@ -25,186 +25,186 @@ classinstancecanvas 129035 classinstance_ref 129035 // IzdavanjeRezervacijeKontr
   xyz 659.9 243.5 2020 life_line_z 2005
 end
 classinstancecanvas 133771 classinstance_ref 128139 // IzdavanjeF
-  xyz 1056 247.4 2020 life_line_z 2005
+  xyz 1056 246.9 2020 life_line_z 2005
 end
 fragment 135563 "alt"
   refer sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
-  form "akoClanImaRezervaciju" xyzwh 53 81 2015 1179 397
+  form "akoClanImaRezervaciju" xyzwh 53 81.5 2015 1179 397
 end
 classinstancecanvas 135691 classinstance_ref 129163 // KnjigaFormaF
-  xyz 125 520.2 2010 life_line_z 2005
+  xyz 126 520.2 2010 life_line_z 2005
 end
 classinstancecanvas 135819 classinstance_ref 129291 // DetaljiKnjigeFormaF
-  xyz 352 643.7 2010 life_line_z 2005
+  xyz 352.5 643.7 2010 life_line_z 2005
 end
 classinstancecanvas 135947 classinstance_ref 129419 // IzdavanjeFormaF
-  xyz 667 702.7 2010 life_line_z 2005
+  xyz 667.5 703.2 2010 life_line_z 2005
 end
 classinstancecanvas 136075 classinstance_ref 129547 // PretragaClanaFormaF
-  xyz 1150 808.9 2010 life_line_z 2005
+  xyz 1150.5 809.4 2010 life_line_z 2005
 end
 classinstancecanvas 136203 classinstance_ref 129675 // KnjigaKontrolerF
   xyz 597 520.2 2010 life_line_z 2005
 end
 classinstancecanvas 136331 classinstance_ref 129803 // PretragaClanaKontrolerF
-  xyz 1435 838.9 2010 life_line_z 2005
+  xyz 1435 839.4 2010 life_line_z 2005
 end
 classinstancecanvas 136459 classinstance_ref 129931 // IzdavanjeKontrolerF
-  xyz 895 702.2 2015 life_line_z 2005
+  xyz 895.5 702.2 2015 life_line_z 2005
 end
 fragment 146955 "alt"
   refer sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
-  form "akoNemaRezervaciju" xyzwh 52 492 2000 1761 782
+  form "akoNemaRezervaciju" xyzwh 53 492 2000 1761 782
 end
 durationcanvas 129547 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 97.2 2010 11 27
+  xyzwh 72 97 2010 11 27
 end
 durationcanvas 129675 classinstance_ref 128651 // RezervacijaFormaF:RezervacijaForma
-  xyzwh 305 97.4 2010 11 29
+  xyzwh 289 97.5 2010 11 29
 end
 durationcanvas 129931 classinstance_ref 128779 // RezervacijaKontrolerF:RezervacijaKontroler
-  xyzwh 939 105.9 2010 11 50
+  xyzwh 922 104.5 2010 11 50
 end
 durationcanvas 130187 classinstance_ref 128395 // RezervacijaF:Rezervacija
-  xyzwh 1198 109 2010 11 44
+  xyzwh 1188 109 2010 11 44
 end
 durationcanvas 130571 classinstance_ref 128651 // RezervacijaFormaF:RezervacijaForma
-  xyzwh 305 141.6 2010 11 29
+  xyzwh 289 141.5 2010 11 29
 end
 durationcanvas 131595 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 225.5 2010 11 34
+  xyzwh 72 224.5 2010 11 34
 end
 durationcanvas 131723 classinstance_ref 128651 // RezervacijaFormaF:RezervacijaForma
-  xyzwh 305 231.7 2010 11 30
+  xyzwh 289 230.5 2010 11 30
 end
 durationcanvas 131979 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
-  xyzwh 619 224.5 2010 11 37
+  xyzwh 595 224 2010 11 37
 end
 durationcanvas 132235 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 296.1 2010 11 30
+  xyzwh 72 296 2010 11 30
 end
 durationcanvas 132363 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
-  xyzwh 619 296.8 2010 11 27
+  xyzwh 595 296.5 2010 11 27
 end
 durationcanvas 133899 classinstance_ref 129035 // IzdavanjeRezervacijeKontrolerF:IzdavanjeRezervacijeKontroler
-  xyzwh 835 309.1 2010 11 44
+  xyzwh 811 309 2010 11 44
 end
 durationcanvas 134027 classinstance_ref 133771 // IzdavanjeF:Izdavanje
-  xyzwh 1115 302.7 2010 11 49
+  xyzwh 1107 302 2010 11 49
 end
 durationcanvas 134411 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
-  xyzwh 619 375.5 2010 11 41
+  xyzwh 595 375.5 2010 11 41
 end
 durationcanvas 134539 classinstance_ref 129035 // IzdavanjeRezervacijeKontrolerF:IzdavanjeRezervacijeKontroler
-  xyzwh 835 375.5 2010 11 41
+  xyzwh 811 375.5 2010 11 41
 end
 durationcanvas 134795 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
-  xyzwh 619 338.8 2010 11 29
+  xyzwh 595 338 2010 11 29
 end
 durationcanvas 135179 classinstance_ref 128907 // IzdavanjeRezervacijeFormaF:IzdavanjeRezervacijeForma
-  xyzwh 619 435.4 2010 11 28
+  xyzwh 595 435 2010 11 28
 end
 durationcanvas 135307 classinstance_ref 128651 // RezervacijaFormaF:RezervacijaForma
-  xyzwh 305 431.4 2010 11 29
+  xyzwh 289 431.5 2010 11 29
 end
 durationcanvas 136587 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 586.8 2010 11 27
+  xyzwh 72 586.5 2010 11 27
 end
 durationcanvas 136715 classinstance_ref 135691 // KnjigaFormaF:KnjigaForma
-  xyzwh 203 587 2010 11 51
+  xyzwh 190 587 2010 11 51
 end
 durationcanvas 136971 classinstance_ref 136203 // KnjigaKontrolerF:KnjigaKontroler
-  xyzwh 690 592 2010 11 46
+  xyzwh 675 592 2010 11 46
 end
 durationcanvas 137227 classinstance_ref 128267 // KnjigaF:Knjiga
-  xyzwh 869 594 2010 11 32
+  xyzwh 861 593.5 2010 11 32
 end
 durationcanvas 138123 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 685.8 2010 11 30
+  xyzwh 72 684.5 2010 11 30
 end
 durationcanvas 138251 classinstance_ref 135691 // KnjigaFormaF:KnjigaForma
-  xyzwh 203 684.6 2010 11 27
+  xyzwh 190 684.5 2010 11 27
 end
 durationcanvas 138507 classinstance_ref 135819 // DetaljiKnjigeFormaF:DetaljiKnjigeForma
-  xyzwh 465 695.6 2010 11 27
+  xyzwh 444 695 2010 11 27
 end
 durationcanvas 138763 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 742.6 2010 11 31
+  xyzwh 72 742.5 2010 11 31
 end
 durationcanvas 138891 classinstance_ref 135819 // DetaljiKnjigeFormaF:DetaljiKnjigeForma
-  xyzwh 465 741.6 2010 11 30
+  xyzwh 444 740.5 2010 11 30
 end
 durationcanvas 139147 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
-  xyzwh 763 748.6 2010 11 29
+  xyzwh 748 748 2010 11 29
 end
 durationcanvas 139403 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 859 2010 11 47
+  xyzwh 72 859 2010 11 47
 end
 durationcanvas 139531 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
-  xyzwh 763 856.2 2010 11 33
+  xyzwh 748 856 2010 11 33
 end
 durationcanvas 139787 classinstance_ref 136075 // PretragaClanaFormaF:PretragaClanForma
-  xyzwh 1272 860.8 2010 11 28
+  xyzwh 1250 859.5 2010 11 28
 end
 durationcanvas 140043 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 903.2 2010 11 62
+  xyzwh 72 902.5 2010 11 62
 end
 durationcanvas 140171 classinstance_ref 136075 // PretragaClanaFormaF:PretragaClanForma
-  xyzwh 1272 891 2010 11 83
+  xyzwh 1250 891 2010 11 83
 end
 durationcanvas 140427 classinstance_ref 136331 // PretragaClanaKontrolerF:PretragaClanKontroler
-  xyzwh 1572 890.8 2010 11 84
+  xyzwh 1549 889.5 2010 11 84
 end
 durationcanvas 140683 classinstance_ref 128523 // ClanF:Clan
-  xyzwh 1770 891.4 2010 11 79
+  xyzwh 1764 891 2010 11 79
 end
 durationcanvas 141451 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 989.4 2010 11 40
+  xyzwh 72 989 2010 11 40
 end
 durationcanvas 141579 classinstance_ref 136075 // PretragaClanaFormaF:PretragaClanForma
-  xyzwh 1272 985.2 2010 11 39
+  xyzwh 1250 985 2010 11 39
 end
 durationcanvas 142091 classinstance_ref 136459 // IzdavanjeKontrolerF:IzdavanjeKontroler
-  xyzwh 1006 760 2010 11 31
+  xyzwh 990 760.5 2010 11 31
 end
 durationcanvas 142219 classinstance_ref 133771 // IzdavanjeF:Izdavanje
-  xyzwh 1115 761 2010 11 27
+  xyzwh 1107 761 2010 11 27
 end
 durationcanvas 142475 classinstance_ref 133771 // IzdavanjeF:Izdavanje
-  xyzwh 1115 803.8 2010 11 27
+  xyzwh 1107 804 2010 11 27
 end
 durationcanvas 142603 classinstance_ref 136459 // IzdavanjeKontrolerF:IzdavanjeKontroler
-  xyzwh 1006 803.6 2010 11 29
+  xyzwh 990 803.5 2010 11 29
 end
 durationcanvas 143115 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
-  xyzwh 763 810.6 2010 11 25
+  xyzwh 748 810 2010 11 25
 end
 durationcanvas 144011 classinstance_ref 136075 // PretragaClanaFormaF:PretragaClanForma
-  xyzwh 1272 1055 2010 11 40
+  xyzwh 1250 1055 2010 11 40
 end
 durationcanvas 144139 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
-  xyzwh 763 1056 2010 11 25
+  xyzwh 748 1056 2010 11 25
 end
 durationcanvas 145419 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
-  xyzwh 763 1107 2010 11 40
+  xyzwh 748 1107 2010 11 40
 end
 durationcanvas 145547 classinstance_ref 133771 // IzdavanjeF:Izdavanje
-  xyzwh 1115 1107 2010 11 25
+  xyzwh 1107 1107.5 2010 11 25
 end
 durationcanvas 145803 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 85 1181 2010 11 40
+  xyzwh 72 1181 2010 11 40
 end
 durationcanvas 145931 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
-  xyzwh 763 1182 2010 11 30
+  xyzwh 748 1182 2010 11 30
 end
 durationcanvas 146187 classinstance_ref 136459 // IzdavanjeKontrolerF:IzdavanjeKontroler
-  xyzwh 1006 1199 2010 11 44
+  xyzwh 990 1199 2010 11 44
 end
 durationcanvas 146443 classinstance_ref 135947 // IzdavanjeFormaF:IzdavanjeForma
-  xyzwh 763 1217 2010 11 27
+  xyzwh 748 1217 2010 11 27
 end
 durationcanvas 146699 classinstance_ref 135691 // KnjigaFormaF:KnjigaForma
-  xyzwh 203 1232 2010 11 25
+  xyzwh 190 1232 2010 11 25
 end
 msg 129803 synchronous
   from durationcanvas_ref 129547
@@ -215,7 +215,7 @@ msg 129803 synchronous
 msg 130059 synchronous
   from durationcanvas_ref 129675
   to durationcanvas_ref 129931
-  yz 106 2020 msg operation_ref 139589 // "pretraziRezervaciju(in kriterijum : string) : Rezervacija [0..1]"
+  yz 106 2020 msg operation_ref 139589 // "pretraziRezervaciju(in kriterijum : string) : Rezervacija [*]"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 568 92
 msg 130315 synchronous
@@ -365,7 +365,7 @@ msg 140299 synchronous
 msg 140555 synchronous
   from durationcanvas_ref 140171
   to durationcanvas_ref 140427
-  yz 925 2015 msg operation_ref 138821 // "pretraziClana(in kriterijum : string) : Clan [0..1]"
+  yz 925 2015 msg operation_ref 138821 // "pretraziClana(in kriterijum : string) : Clan [*]"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 1391 913
 msg 140811 synchronous

@@ -13,31 +13,31 @@ classinstancecanvas 128395 classinstance_ref 128011 // BibliotekarF
   xyz 511 23 2020 life_line_z 2000
 end
 durationcanvas 129163 classinstance_ref 128139 // DodavanjeBibliotekaraFormaF:DodavanjeBibliotekaraForma
-  xyzwh 304 89 2010 11 28
+  xyzwh 275 89 2010 11 28
 end
 durationcanvas 129291 classinstance_ref 128395 // BibliotekarF:Bibliotekar
-  xyzwh 578 89 2010 11 26
+  xyzwh 565 89 2010 11 26
 end
 durationcanvas 129547 classinstance_ref 128395 // BibliotekarF:Bibliotekar
-  xyzwh 578 129 2010 11 25
+  xyzwh 565 129 2010 11 25
 end
 durationcanvas 129675 classinstance_ref 128139 // DodavanjeBibliotekaraFormaF:DodavanjeBibliotekaraForma
-  xyzwh 304 129 2010 11 26
+  xyzwh 275 129 2010 11 26
 end
 durationcanvas 129931 classinstance_ref 128011 // AdminF:Admin
-  xyzwh 60 183 2010 11 26
+  xyzwh 52 183 2010 11 26
 end
 durationcanvas 130059 classinstance_ref 128139 // DodavanjeBibliotekaraFormaF:DodavanjeBibliotekaraForma
-  xyzwh 304 181 2010 11 25
+  xyzwh 275 181 2010 11 25
 end
 durationcanvas 130315 classinstance_ref 128267 // DodavanjeBibliotekaraKontrolerF:BibliotekarKontroler
-  xyzwh 836 192 2010 11 25
+  xyzwh 810 192 2010 11 25
 end
 durationcanvas 130571 classinstance_ref 128267 // DodavanjeBibliotekaraKontrolerF:BibliotekarKontroler
-  xyzwh 836 247 2010 11 27
+  xyzwh 810 247 2010 11 27
 end
 durationcanvas 130699 classinstance_ref 128139 // DodavanjeBibliotekaraFormaF:DodavanjeBibliotekaraForma
-  xyzwh 304 247 2010 11 26
+  xyzwh 275 247 2010 11 26
 end
 msg 129419 synchronous
   from durationcanvas_ref 129163

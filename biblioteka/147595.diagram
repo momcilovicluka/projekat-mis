@@ -45,223 +45,223 @@ fragment 149899 "alt"
   form "akoZanrNePostoji" xyzwh 63.7 1248.5 2005 993 314
 end
 durationcanvas 132107 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 84 182.8 2010 11 37
+  xyzwh 71 182 2010 11 37
 end
 durationcanvas 132235 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
-  xyzwh 315 184.2 2010 11 47
+  xyzwh 292 184 2010 11 47
 end
 durationcanvas 132491 classinstance_ref 128395 // AutorFormaF:AutorForma
-  xyzwh 564 192.9 2010 11 37
+  xyzwh 552 192 2010 11 37
 end
 durationcanvas 134667 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 86 289.3 2010 11 37
+  xyzwh 71 289 2010 11 37
 end
 durationcanvas 134795 classinstance_ref 128395 // AutorFormaF:AutorForma
-  xyzwh 564 289.7 2010 11 37
+  xyzwh 552 289 2010 11 37
 end
 durationcanvas 135051 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
-  xyzwh 869 289.3 2010 11 43
+  xyzwh 856 289 2010 11 43
 end
 durationcanvas 135307 classinstance_ref 128651 // AutorF:Autor
-  xyzwh 1035 295.5 2010 11 37
+  xyzwh 1030 295 2010 11 37
 end
 durationcanvas 135563 classinstance_ref 128651 // AutorF:Autor
-  xyzwh 1035 339.2 2010 11 37
+  xyzwh 1030 339 2010 11 37
 end
 durationcanvas 135691 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
-  xyzwh 869 339.3 2010 11 37
+  xyzwh 856 339 2010 11 37
 end
 durationcanvas 135947 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
-  xyzwh 869 395.4 2010 11 37
+  xyzwh 856 395 2010 11 37
 end
 durationcanvas 136075 classinstance_ref 128395 // AutorFormaF:AutorForma
-  xyzwh 564 395.5 2010 11 37
+  xyzwh 552 395 2010 11 37
 end
 durationcanvas 136331 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 86 492.3 2010 11 57
+  xyzwh 71 492 2010 11 57
 end
 durationcanvas 136459 classinstance_ref 128395 // AutorFormaF:AutorForma
-  xyzwh 566 492.7 2010 11 50
+  xyzwh 552 492 2010 11 50
 end
 durationcanvas 136715 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
-  xyzwh 715 507.4 2010 11 53
+  xyzwh 700 507 2010 11 53
 end
 durationcanvas 136971 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 84 629.3 2010 11 37
+  xyzwh 71 629 2010 11 37
 end
 durationcanvas 137099 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
-  xyzwh 715 629.3 2010 11 43
+  xyzwh 700 629 2010 11 43
 end
 durationcanvas 138635 classinstance_ref 128651 // AutorF:Autor
-  xyzwh 1035 522.3 2010 11 37
+  xyzwh 1030 522 2010 11 37
 end
 durationcanvas 138891 classinstance_ref 128651 // AutorF:Autor
-  xyzwh 1035 568.2 2010 11 40
+  xyzwh 1030 568 2010 11 40
 end
 durationcanvas 139019 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
-  xyzwh 715 565.5 2010 11 37
+  xyzwh 700 565 2010 11 37
 end
 durationcanvas 139275 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
-  xyzwh 869 635.9 2010 11 37
+  xyzwh 856 635 2010 11 37
 end
 durationcanvas 139531 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
-  xyzwh 869 674.3 2010 11 53
+  xyzwh 856 674 2010 11 53
 end
 durationcanvas 139659 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
-  xyzwh 715 675.5 2010 11 37
+  xyzwh 700 675 2010 11 37
 end
 durationcanvas 139915 classinstance_ref 128779 // NoviAutorFormaF:NoviAutorForma
-  xyzwh 715 735.2 2010 11 37
+  xyzwh 700 735 2010 11 37
 end
 durationcanvas 140043 classinstance_ref 128395 // AutorFormaF:AutorForma
-  xyzwh 564 736.5 2010 11 43
+  xyzwh 552 736 2010 11 43
 end
 durationcanvas 140811 classinstance_ref 128523 // AutorKontrolerF:AutorKontroler
-  xyzwh 869 822.1 2015 11 37
+  xyzwh 856 822 2015 11 37
 end
 durationcanvas 140939 classinstance_ref 128395 // AutorFormaF:AutorForma
-  xyzwh 564 820.6 2015 11 40
+  xyzwh 552 820 2015 11 40
 end
 durationcanvas 141195 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
-  xyzwh 315 72.7 2015 11 37
+  xyzwh 292 72 2015 11 37
 end
 durationcanvas 141323 classinstance_ref 129419 // KnjigaF:Knjiga
-  xyzwh 784 72.7 2010 11 37
+  xyzwh 774 72 2010 11 37
 end
 durationcanvas 141579 classinstance_ref 129419 // KnjigaF:Knjiga
-  xyzwh 782 128 2010 11 43
+  xyzwh 774 128 2010 11 43
 end
 durationcanvas 141707 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
-  xyzwh 315 123.8 2015 11 40
+  xyzwh 292 123 2015 11 40
 end
 durationcanvas 142475 classinstance_ref 129419 // KnjigaF:Knjiga
-  xyzwh 784 943.9 2010 11 43
+  xyzwh 774 943 2010 11 43
 end
 durationcanvas 142603 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
-  xyzwh 315 942.8 2015 11 37
+  xyzwh 292 942 2015 11 37
 end
 durationcanvas 142859 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 86 1032.7 2015 11 37
+  xyzwh 71 1032 2015 11 37
 end
 durationcanvas 142987 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
-  xyzwh 315 1034.9 2015 11 47
+  xyzwh 292 1034 2015 11 47
 end
 durationcanvas 143243 classinstance_ref 128907 // ZanrFormaF:ZanrForma
-  xyzwh 439 1042.9 2010 11 37
+  xyzwh 429 1042 2010 11 37
 end
 durationcanvas 143499 classinstance_ref 128907 // ZanrFormaF:ZanrForma
-  xyzwh 439 1076.8 2010 11 43
+  xyzwh 429 1076 2010 11 43
 end
 durationcanvas 143627 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
-  xyzwh 317 1076.8 2015 11 43
+  xyzwh 292 1076 2015 11 43
 end
 durationcanvas 143883 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 84 1133.8 2015 11 40
+  xyzwh 71 1133 2015 11 40
 end
 durationcanvas 144011 classinstance_ref 128907 // ZanrFormaF:ZanrForma
-  xyzwh 441 1134.7 2010 11 47
+  xyzwh 429 1134 2010 11 47
 end
 durationcanvas 144267 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 84 853.7 2015 11 40
+  xyzwh 71 853 2015 11 40
 end
 durationcanvas 144395 classinstance_ref 128395 // AutorFormaF:AutorForma
-  xyzwh 566 855.5 2015 11 37
+  xyzwh 552 855 2015 11 37
 end
 durationcanvas 145675 classinstance_ref 128395 // AutorFormaF:AutorForma
-  xyzwh 564 905.5 2015 11 37
+  xyzwh 552 905 2015 11 37
 end
 durationcanvas 145803 classinstance_ref 129419 // KnjigaF:Knjiga
-  xyzwh 784 904.2 2010 11 37
+  xyzwh 774 904 2010 11 37
 end
 durationcanvas 146059 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
-  xyzwh 831 1146 2010 11 50
+  xyzwh 820 1146 2010 11 50
 end
 durationcanvas 146315 classinstance_ref 129291 // ZanrF:Zanr
-  xyzwh 988 1159.9 2010 11 37
+  xyzwh 985 1159 2010 11 37
 end
 durationcanvas 146571 classinstance_ref 129291 // ZanrF:Zanr
-  xyzwh 988 1202.8 2010 11 37
+  xyzwh 985 1202 2010 11 37
 end
 durationcanvas 146699 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
-  xyzwh 831 1202.7 2010 11 37
+  xyzwh 820 1202 2010 11 37
 end
 durationcanvas 146955 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
-  xyzwh 831 1253.8 2010 11 40
+  xyzwh 820 1253 2010 11 40
 end
 durationcanvas 147083 classinstance_ref 128907 // ZanrFormaF:ZanrForma
-  xyzwh 441 1256.7 2010 11 43
+  xyzwh 429 1256 2010 11 43
 end
 durationcanvas 147339 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 84 1355.3 2015 11 37
+  xyzwh 71 1355 2015 11 37
 end
 durationcanvas 147467 classinstance_ref 128907 // ZanrFormaF:ZanrForma
-  xyzwh 441 1358.1 2010 11 40
+  xyzwh 429 1358 2010 11 40
 end
 durationcanvas 147723 classinstance_ref 129163 // NoviZanrFormaF:NoviZanrForma
-  xyzwh 641 1357.9 2010 11 40
+  xyzwh 628 1357 2010 11 40
 end
 durationcanvas 147979 classinstance_ref 129291 // ZanrF:Zanr
-  xyzwh 988 1362.7 2010 11 37
+  xyzwh 985 1362 2010 11 37
 end
 durationcanvas 148235 classinstance_ref 129291 // ZanrF:Zanr
-  xyzwh 988 1406.7 2010 11 43
+  xyzwh 985 1406 2010 11 43
 end
 durationcanvas 148363 classinstance_ref 129163 // NoviZanrFormaF:NoviZanrForma
-  xyzwh 641 1403.7 2010 11 40
+  xyzwh 628 1403 2010 11 40
 end
 durationcanvas 148619 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 84 1442.7 2015 11 37
+  xyzwh 71 1442 2015 11 37
 end
 durationcanvas 148747 classinstance_ref 129163 // NoviZanrFormaF:NoviZanrForma
-  xyzwh 641 1443.2 2010 11 50
+  xyzwh 628 1443 2010 11 50
 end
 durationcanvas 149003 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
-  xyzwh 831 1455.6 2010 11 37
+  xyzwh 820 1455 2010 11 37
 end
 durationcanvas 149259 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
-  xyzwh 831 1489.8 2010 11 37
+  xyzwh 820 1489 2010 11 37
 end
 durationcanvas 149387 classinstance_ref 129163 // NoviZanrFormaF:NoviZanrForma
-  xyzwh 641 1491.9 2010 11 53
+  xyzwh 628 1491 2010 11 53
 end
 durationcanvas 149643 classinstance_ref 128907 // ZanrFormaF:ZanrForma
-  xyzwh 441 1503.7 2010 11 40
+  xyzwh 429 1503 2010 11 40
 end
 durationcanvas 150027 classinstance_ref 129035 // ZanrKontrolerF:ZanrKontroler
-  xyzwh 831 1582.7 2010 11 37
+  xyzwh 820 1582 2010 11 37
 end
 durationcanvas 150155 classinstance_ref 128907 // ZanrFormaF:ZanrForma
-  xyzwh 439 1582.7 2010 11 37
+  xyzwh 429 1582 2010 11 37
 end
 durationcanvas 150411 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 84 1635.5 2020 11 37
+  xyzwh 71 1635 2020 11 37
 end
 durationcanvas 150539 classinstance_ref 128907 // ZanrFormaF:ZanrForma
-  xyzwh 439 1634.4 2010 11 47
+  xyzwh 429 1634 2010 11 47
 end
 durationcanvas 151051 classinstance_ref 129419 // KnjigaF:Knjiga
-  xyzwh 784 1644.2 2010 11 37
+  xyzwh 774 1644 2010 11 37
 end
 durationcanvas 151691 classinstance_ref 129419 // KnjigaF:Knjiga
-  xyzwh 782 1687.1 2010 11 43
+  xyzwh 774 1687 2010 11 43
 end
 durationcanvas 151819 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
-  xyzwh 315 1686.7 2020 11 43
+  xyzwh 292 1686 2020 11 43
 end
 durationcanvas 152075 classinstance_ref 128011 // BibliotekarF:Bibliotekar
-  xyzwh 86 1788.8 2020 11 32
+  xyzwh 71 1788 2020 11 32
 end
 durationcanvas 152203 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
-  xyzwh 315 1787.7 2020 11 34
+  xyzwh 292 1787 2020 11 34
 end
 durationcanvas 152459 classinstance_ref 128267 // DodavanjeKnjigeKontrolerF:DodavanjeKnjigeKontroler
-  xyzwh 495 1799.9 2010 11 30
+  xyzwh 469 1799 2010 11 30
 end
 durationcanvas 152715 classinstance_ref 128267 // DodavanjeKnjigeKontrolerF:DodavanjeKnjigeKontroler
-  xyzwh 495 1855.5 2010 11 44
+  xyzwh 469 1855 2010 11 44
 end
 durationcanvas 152843 classinstance_ref 128139 // DodavanjeKnjigeFormaF:DodavanjeKnjigaForma
-  xyzwh 315 1854.4 2020 11 30
+  xyzwh 292 1854 2020 11 30
 end
 msg 132363 synchronous
   from durationcanvas_ref 132107

@@ -9,59 +9,70 @@
 <polygon fill="white" stroke="black" stroke-opacity="1" points ="73,393 79,382 85,393 79,404" />
 <polygon fill="white" stroke="black" stroke-opacity="1" points ="76,642 82,631 88,642 82,653" />
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="41" y="76" width="68" height="50" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="44" y="79" width="65" height="47" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="41" y="76" width="65" height="47" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="75" y="98">Unos podataka o knjizi:</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="75" y="104">ime knjige, broj</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="75" y="110">stranica, povez</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="74" y="97">Unos podataka o</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="74" y="103">knjizi: ime knjige, broj</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="74" y="109">stranica, povez</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="47" y="752" width="70" height="42" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="50" y="755" width="67" height="39" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="47" y="752" width="67" height="39" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="82" y="773">Provera da li knjiga vec</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="82" y="779">postoji u sistemu</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="81" y="772">Provera da li knjiga</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="81" y="778">vec postoji u sistemu</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="48" y="329" width="60" height="38" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="51" y="332" width="57" height="35" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="48" y="329" width="57" height="35" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="78" y="348">Provera da li autor</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="78" y="354">postoji u sistemu</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="77" y="347">Provera da li autor</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="77" y="353">postoji u sistemu</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="53" y="684" width="58" height="34" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="56" y="687" width="55" height="31" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="53" y="684" width="55" height="31" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="82" y="704">Odabir zanra</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="81" y="703">Odabir zanra</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="115" y="374" width="60" height="36" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="118" y="377" width="57" height="33" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="115" y="374" width="57" height="33" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="145" y="392">Dodavanje novog</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="145" y="398">autora</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="144" y="391">Dodavanje novog</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="144" y="397">autora</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="53" y="571" width="58" height="34" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="56" y="574" width="55" height="31" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="53" y="571" width="55" height="31" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="82" y="588">Provera da li zanr</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="82" y="594">postoji u sistemu</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="81" y="587">Provera da li zanr</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="81" y="593">postoji u sistemu</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="45" y="147" width="62" height="36" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="48" y="150" width="59" height="33" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="45" y="147" width="59" height="33" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="76" y="165">Provera validnosti</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="76" y="171">podataka</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="75" y="164">Provera validnosti</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="75" y="170">podataka</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="47" y="276" width="60" height="36" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="50" y="279" width="57" height="33" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="47" y="276" width="57" height="33" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="77" y="294">Pretraga liste</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="77" y="300">autora</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="76" y="293">Pretraga liste</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="76" y="299">autora</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="51" y="422" width="56" height="34" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="54" y="425" width="53" height="31" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="51" y="422" width="53" height="31" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="79" y="442">Odabir autora</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="78" y="441">Odabir autora</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="53" y="516" width="58" height="34" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="56" y="519" width="55" height="31" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="53" y="516" width="55" height="31" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="82" y="533">Pretraga liste</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="82" y="539">zanrova</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="81" y="532">Pretraga liste</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="81" y="538">zanrova</text>
 <g>
-	<rect fill="none" stroke="black" stroke-opacity="1" x="137" y="625" width="58" height="34" rx="10" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="140" y="628" width="55" height="31" rx="10" />
+	<rect fill="#e0ffff" stroke="black" stroke-opacity="1" x="137" y="625" width="55" height="31" rx="10" />
 </g>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="166" y="642">Dodavanje novog</text>
-	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="166" y="648">zanra</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="165" y="641">Dodavanje novog</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-anchor="middle" x="165" y="647">zanra</text>
 <g>
 	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="107" y="822">postoji</text>
 </g>
