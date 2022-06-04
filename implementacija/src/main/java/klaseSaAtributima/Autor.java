@@ -41,11 +41,11 @@ public class Autor {
 		StringBuilder builder = new StringBuilder();
 		builder.append("[").append(idA).append("] ");
 		if (ime != null)
-			builder.append(ime).append(", ");
+			builder.append(ime + " ");
 		if (prezime != null)
 			builder.append(prezime).append(", ");
 		if (datumRodjenja != null)
-			builder.append(new SimpleDateFormat("yyyy-mm-dd").format(this.getDatumRodjenja()));
+			builder.append(new SimpleDateFormat("yyyy-MM-dd").format(this.getDatumRodjenja()));
 		return builder.toString();
 	}
 
@@ -99,7 +99,7 @@ public class Autor {
 		stringZaFile.append(separator);
 		stringZaFile.append(this.getPrezime());
 		stringZaFile.append(separator);
-		stringZaFile.append(new SimpleDateFormat("yyyy-mm-dd").format(this.getDatumRodjenja()));
+		stringZaFile.append(new SimpleDateFormat("yyyy-MM-dd").format(this.getDatumRodjenja()));
 		stringZaFile.append("\n");
 
 		return stringZaFile.toString();

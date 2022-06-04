@@ -23,7 +23,6 @@ import klaseSaAtributima.Zanr;
 import kontrolKlase.DodavanjeKnjigeKontroler;
 
 public class DodavanjeKnjigeForma {
-
 	private JFrame frmDodavanjeKnjige;
 	private JTextField tfNaziv;
 	private JTextField tfIzdavac;
@@ -134,6 +133,7 @@ public class DodavanjeKnjigeForma {
 				AutorForma.main(null);
 			}
 		});
+
 		btnOdabirAutor.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnOdabirAutor.setBounds(62, 185, 159, 33);
 		frmDodavanjeKnjige.getContentPane().add(btnOdabirAutor);
@@ -145,6 +145,7 @@ public class DodavanjeKnjigeForma {
 				ZanrForma.main(null);
 			}
 		});
+
 		btnOdabirZanr.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnOdabirZanr.setBounds(62, 228, 159, 33);
 		frmDodavanjeKnjige.getContentPane().add(btnOdabirZanr);
@@ -162,13 +163,16 @@ public class DodavanjeKnjigeForma {
 
 					Knjiga k = new Knjiga(naziv, autor, zanr, izdavac, brojStrana, brojNaStanju, ukupanBroj);
 					DodavanjeKnjigeKontroler.sacuvajKnjigu(k);
+
+					JOptionPane.showMessageDialog(frmDodavanjeKnjige, "Uspešno dodata knjiga", "Greška",
+							JOptionPane.INFORMATION_MESSAGE);
 				} catch (Exception ex) {
 					JOptionPane.showMessageDialog(frmDodavanjeKnjige, ex.getMessage(), "Greška",
 							JOptionPane.ERROR_MESSAGE);
 				}
-
 			}
 		});
+
 		btnSacuvaj.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnSacuvaj.setBounds(88, 271, 107, 33);
 		frmDodavanjeKnjige.getContentPane().add(btnSacuvaj);

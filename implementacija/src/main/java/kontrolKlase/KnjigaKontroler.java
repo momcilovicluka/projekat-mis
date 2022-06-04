@@ -14,7 +14,7 @@ import klaseSaAtributima.Zanr;
 
 public class KnjigaKontroler {
 	public static Map<Integer, Knjiga> pronadjiKnjigu(String pretraga)
-			throws FileNotFoundException, IOException, NumberFormatException, IllegalArgumentException, ParseException {
+			throws FileNotFoundException, IOException, NumberFormatException, ParseException {
 		if (pretraga == null)
 			return null;
 
@@ -23,7 +23,7 @@ public class KnjigaKontroler {
 			Map<Integer, Knjiga> knjige = new HashMap<Integer, Knjiga>();
 
 			while ((line = br.readLine()) != null) {
-				if (!line.contains(pretraga))
+				if (!line.toLowerCase().contains(pretraga.toLowerCase()))
 					continue;
 
 				String[] tokens = line.split(",");

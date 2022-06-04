@@ -1,13 +1,20 @@
-window_sizes 1920 985 336 1578 803 128
+window_sizes 1920 1001 270 1644 819 128
 
 diagrams
-  active  activitydiagram_ref 134597 // izdavanjeKnjige
+  activitydiagram_ref 134597 // izdavanjeKnjige
     114 98 100 A0 420 0
+  classdiagram_ref 141125 // KlasniDijagram
+    1262 655 68 A0 24 0
+  usecasediagram_ref 128069 // useCaseDiagramBiblAdmin
+    1644 819 100 A0 36 0
+  active  sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
+    1644 819 100 A0 0 0
 end
 show_stereotypes
-selected sequencediagram_ref 147595 // dodavanjeKnjigeSekvencija
+selected sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
 open
   class_ref 128139 // Clan
+  usecase_ref 136203 // Odabir autora
   
 package_ref 128197 // KontrolKlase
 end

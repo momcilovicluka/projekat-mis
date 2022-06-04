@@ -1,7 +1,10 @@
 package klaseSaAtributima;
 
 public abstract class Korisnik {
-	private String ime, prezime, username, password;
+	protected String ime;
+	protected String prezime;
+	protected String username;
+	private String password;
 
 	public Korisnik(String ime, String prezime, String username, String password) {
 		super();

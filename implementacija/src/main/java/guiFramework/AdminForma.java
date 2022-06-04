@@ -54,7 +54,7 @@ public class AdminForma {
 		frmBibliotekaAdmin.setIconImage(
 				Toolkit.getDefaultToolkit().getImage(AdminForma.class.getResource("/guiFramework/book-stack.png")));
 		frmBibliotekaAdmin.setTitle("Biblioteka - Admin");
-		frmBibliotekaAdmin.setBounds(100, 100, 280, 330);
+		frmBibliotekaAdmin.setBounds(100, 100, 280, 422);
 		frmBibliotekaAdmin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmBibliotekaAdmin.getContentPane().setLayout(null);
 
@@ -93,5 +93,17 @@ public class AdminForma {
 		btnDodavanjeClana.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnDodavanjeClana.setBounds(16, 197, 233, 82);
 		frmBibliotekaAdmin.getContentPane().add(btnDodavanjeClana);
+
+		JButton btnRezervacija = new JButton("Izdavanje rezervacije");
+		btnRezervacija.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new RezervacijaForma();
+				RezervacijaForma.main(null);
+			}
+		});
+
+		btnRezervacija.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		btnRezervacija.setBounds(16, 290, 233, 82);
+		frmBibliotekaAdmin.getContentPane().add(btnRezervacija);
 	}
 }

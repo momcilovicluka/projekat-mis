@@ -1,5 +1,6 @@
 package klaseSaAtributima;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Rezervacija {
@@ -44,5 +45,11 @@ public class Rezervacija {
 			throw new IllegalArgumentException("Datum rezervisanja mora biti prosleđen!");
 
 		this.datumRezervisanja = datumRezervisanja;
+	}
+
+	@Override
+	public String toString() {
+		return knjiga.getNaziv() + " - " + clan.getIme() + " " + clan.getPrezime() + " - "
+				+ new SimpleDateFormat("yyyy-MM-dd").format(datumRezervisanja);
 	}
 }

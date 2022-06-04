@@ -17,6 +17,8 @@ import klaseSaAtributima.Knjiga;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
+import java.awt.Component;
 
 public class DetaljiKnjigeForma {
 
@@ -62,7 +64,7 @@ public class DetaljiKnjigeForma {
 				.getImage(DetaljiKnjigeForma.class.getResource("/guiFramework/book-stack.png")));
 		frmDetaljiKnjige.setTitle("Detalji knjige");
 		frmDetaljiKnjige.setResizable(false);
-		frmDetaljiKnjige.setBounds(100, 100, 372, 324);
+		frmDetaljiKnjige.setBounds(100, 100, 434, 309);
 		frmDetaljiKnjige.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		JLabel lbNaziv = new JLabel("Naziv:");
@@ -114,62 +116,82 @@ public class DetaljiKnjigeForma {
 		});
 		btnIzdaj.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		GroupLayout groupLayout = new GroupLayout(frmDetaljiKnjige.getContentPane());
-		groupLayout.setHorizontalGroup(groupLayout.createParallelGroup(Alignment.TRAILING).addGroup(groupLayout
-				.createSequentialGroup().addContainerGap(10, Short.MAX_VALUE)
-				.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-						.addGroup(groupLayout.createSequentialGroup().addComponent(lbBrojKNjigaUBiblioteci)
-								.addPreferredGap(ComponentPlacement.RELATED).addComponent(
-										lbBrojKNjigaUBiblioteci_1, GroupLayout.PREFERRED_SIZE, 148,
-										GroupLayout.PREFERRED_SIZE))
-						.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
-								.addGroup(groupLayout.createSequentialGroup().addComponent(lbNaziv)
-										.addPreferredGap(ComponentPlacement.RELATED).addComponent(lbNaziv_1)
-										.addContainerGap())
-								.addGroup(groupLayout.createSequentialGroup().addComponent(lbAutor)
-										.addPreferredGap(ComponentPlacement.RELATED).addComponent(lbAutor_1,
-												GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-								.addGroup(groupLayout.createSequentialGroup().addComponent(lblZanr)
-										.addPreferredGap(ComponentPlacement.RELATED).addComponent(lblZanr_1,
-												GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-								.addGroup(groupLayout.createSequentialGroup().addComponent(lbIzdavac)
-										.addPreferredGap(ComponentPlacement.RELATED).addComponent(lbIzdavac_1,
-												GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-								.addGroup(groupLayout.createSequentialGroup().addComponent(lbbrojStrana)
-										.addPreferredGap(ComponentPlacement.RELATED).addComponent(lbbrojStrana_1,
-												GroupLayout.PREFERRED_SIZE, 162, GroupLayout.PREFERRED_SIZE)))
-						.addGroup(groupLayout.createSequentialGroup().addComponent(lblBrojKnjigaUkupno)
-								.addPreferredGap(ComponentPlacement.RELATED).addComponent(lblBrojKnjigaUkupno_1,
-										GroupLayout.PREFERRED_SIZE, 261, GroupLayout.PREFERRED_SIZE))))
-				.addGroup(Alignment.LEADING,
-						groupLayout.createSequentialGroup().addGap(135)
-								.addComponent(btnIzdaj, GroupLayout.PREFERRED_SIZE, 87, GroupLayout.PREFERRED_SIZE)
-								.addContainerGap(208, Short.MAX_VALUE)));
-		groupLayout.setVerticalGroup(groupLayout.createParallelGroup(Alignment.LEADING).addGroup(groupLayout
-				.createSequentialGroup().addContainerGap()
-				.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE).addComponent(lbNaziv)
+		groupLayout.setHorizontalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(groupLayout.createSequentialGroup()
+					.addGap(10)
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addGroup(groupLayout.createSequentialGroup()
+							.addComponent(lbBrojKNjigaUBiblioteci)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(lbBrojKNjigaUBiblioteci_1, GroupLayout.PREFERRED_SIZE, 56, GroupLayout.PREFERRED_SIZE))
+						.addGroup(groupLayout.createSequentialGroup()
+							.addComponent(lbNaziv)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(lbNaziv_1)
+							.addPreferredGap(ComponentPlacement.RELATED))
+						.addGroup(groupLayout.createSequentialGroup()
+							.addComponent(lbAutor)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(lbAutor_1, GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE))
+						.addGroup(groupLayout.createSequentialGroup()
+							.addComponent(lblZanr)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(lblZanr_1, GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE))
+						.addGroup(groupLayout.createSequentialGroup()
+							.addComponent(lbIzdavac)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(lbIzdavac_1, GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE))
+						.addGroup(groupLayout.createSequentialGroup()
+							.addComponent(lbbrojStrana)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(lbbrojStrana_1, GroupLayout.PREFERRED_SIZE, 162, GroupLayout.PREFERRED_SIZE))
+						.addGroup(groupLayout.createSequentialGroup()
+							.addComponent(lblBrojKnjigaUkupno)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(lblBrojKnjigaUkupno_1)))
+					.addGap(89))
+				.addGroup(groupLayout.createSequentialGroup()
+					.addGap(167)
+					.addComponent(btnIzdaj, GroupLayout.PREFERRED_SIZE, 87, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(166, Short.MAX_VALUE))
+		);
+		groupLayout.setVerticalGroup(
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(groupLayout.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addComponent(lbNaziv)
 						.addComponent(lbNaziv_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE).addComponent(lbAutor)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addComponent(lbAutor)
 						.addComponent(lbAutor_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE).addComponent(lblZanr)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addComponent(lblZanr)
 						.addComponent(lblZanr_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE).addComponent(lbIzdavac)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+						.addComponent(lbIzdavac)
 						.addComponent(lbIzdavac_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE).addComponent(lbbrojStrana)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lbbrojStrana)
 						.addComponent(lbbrojStrana_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE).addComponent(lbBrojKNjigaUBiblioteci)
-						.addComponent(lbBrojKNjigaUBiblioteci_1, GroupLayout.PREFERRED_SIZE, 25,
-								GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE).addComponent(lblBrojKnjigaUkupno)
-						.addComponent(lblBrojKnjigaUkupno_1, GroupLayout.PREFERRED_SIZE, 25,
-								GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-				.addComponent(btnIzdaj, GroupLayout.PREFERRED_SIZE, 33, GroupLayout.PREFERRED_SIZE).addGap(12)));
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lbBrojKNjigaUBiblioteci)
+						.addComponent(lbBrojKNjigaUBiblioteci_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblBrojKnjigaUkupno)
+						.addComponent(lblBrojKnjigaUkupno_1, GroupLayout.PREFERRED_SIZE, 25, GroupLayout.PREFERRED_SIZE))
+					.addPreferredGap(ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+					.addComponent(btnIzdaj, GroupLayout.PREFERRED_SIZE, 33, GroupLayout.PREFERRED_SIZE)
+					.addGap(8))
+		);
+		groupLayout.linkSize(SwingConstants.HORIZONTAL, new Component[] {lbBrojKNjigaUBiblioteci_1, lblBrojKnjigaUkupno_1});
 		frmDetaljiKnjige.getContentPane().setLayout(groupLayout);
 	}
 

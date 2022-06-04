@@ -84,16 +84,19 @@ public class AutorForma {
 
 		JList<Autor> listAutor;
 		DefaultListModel<Autor> listModel = new DefaultListModel<Autor>();
+
 		try {
 			listModel.addAll(AutorKontroler.pronadjiAutora("").values());
 		} catch (IllegalArgumentException | ParseException | IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+
 		listAutor = new JList<Autor>(listModel);
 		listAutor.setLayoutOrientation(JList.HORIZONTAL_WRAP);
 		listAutor.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		listAutor.setVisibleRowCount(-1);
+
 		listAutor.addListSelectionListener(new ListSelectionListener() {
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
@@ -101,6 +104,7 @@ public class AutorForma {
 					btnIzaberiAutora.setEnabled(true);
 			}
 		});
+
 		listAutor.setBounds(8, 40, 372, 187);
 		frmAutor.getContentPane().add(listAutor);
 
@@ -111,14 +115,15 @@ public class AutorForma {
 			public void actionPerformed(ActionEvent e) {
 				String pretraga = tfUnos.getText().trim();
 				listModel.clear();
+
 				try {
 					listModel.addAll(AutorKontroler.pronadjiAutora(pretraga).values());
 				} catch (IllegalArgumentException | ParseException | IOException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
 		});
+
 		frmAutor.getContentPane().add(btnPretrazi);
 
 		JButton lblDodajAutora = new JButton("Dodaj autora");
@@ -139,6 +144,7 @@ public class AutorForma {
 				frmAutor.dispose();
 			}
 		});
+
 		btnIzaberiAutora.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnIzaberiAutora.setBounds(231, 237, 148, 23);
 		frmAutor.getContentPane().add(btnIzaberiAutora);

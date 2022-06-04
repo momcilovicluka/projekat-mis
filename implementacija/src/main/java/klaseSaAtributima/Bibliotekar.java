@@ -18,7 +18,7 @@ public class Bibliotekar extends Korisnik {
 		stringZaFile.append(separator);
 		stringZaFile.append(this.getPassword());
 		stringZaFile.append(separator);
-		stringZaFile.append("b");
+		stringZaFile.append("B");
 		stringZaFile.append("\n");
 
 		return stringZaFile.toString();

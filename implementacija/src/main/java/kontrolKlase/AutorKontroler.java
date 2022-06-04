@@ -34,7 +34,7 @@ public class AutorKontroler {
 				String ime = tokens[1].trim();
 				String prezime = tokens[2].trim();
 
-				SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd");
+				SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 				Date datumRodjenja = formatter.parse(tokens[3].trim());
 
 				autori.put(idA, new Autor(idA, ime, prezime, datumRodjenja));

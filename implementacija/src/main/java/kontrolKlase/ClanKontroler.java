@@ -11,15 +11,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 import klaseSaAtributima.Clan;
+import klaseSaAtributima.Korisnik;
 
 public class ClanKontroler {
-	public static Map<Integer, Clan> pretraziClana(String pretraga)
+	public static Map<String, Korisnik> pretraziClana(String pretraga)
 			throws ParseException, NumberFormatException, IllegalArgumentException, IOException {
 		if (pretraga == null)
 			return null;
 
 		try (BufferedReader br = new BufferedReader(new FileReader("res/korisnici.csv"))) {
-			Map<Integer, Clan> clanovi = new HashMap<Integer, Clan>();
+			Map<String, Korisnik> clanovi = new HashMap<String, Korisnik>();
 			String line = "";
 
 			while ((line = br.readLine()) != null) {
@@ -27,13 +28,14 @@ public class ClanKontroler {
 					continue;
 
 				String[] tokens = line.split(",");
-				int idC = Integer.parseInt(tokens[0].trim());
-				String ime = tokens[1].trim();
-				String prezime = tokens[2].trim();
-				String username = tokens[3].trim();
-				String password = tokens[4].trim();
+				String ime = tokens[0].trim();
+				String prezime = tokens[1].trim();
+				String username = tokens[2].trim();
+				String password = tokens[3].trim();
+				String tip = tokens[4].trim();
 
-				clanovi.put(idC, new Clan(idC, ime, prezime, username, password));
+				if ("C".equals(tip))
+					clanovi.put(username, new Clan(ime, prezime, username, password));
 			}
 
 			return clanovi;

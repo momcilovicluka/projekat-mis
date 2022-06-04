@@ -14,8 +14,7 @@ import klaseSaAtributima.Knjiga;
 import klaseSaAtributima.Rezervacija;
 
 public class RezervacijaKontroler {
-	public static List<Rezervacija> pretraziRezervaciju(String pretraga)
-			throws IllegalArgumentException, IOException, ParseException {
+	public static List<Rezervacija> pretraziRezervaciju(String pretraga) throws IOException, ParseException {
 		if (pretraga == null)
 			return null;
 
@@ -31,9 +30,9 @@ public class RezervacijaKontroler {
 
 				Knjiga knjiga = KnjigaKontroler.pronadjiKnjigu(tokens[0].trim())
 						.get(Integer.parseInt(tokens[0].trim()));
-				Clan clan = ClanKontroler.pretraziClana(tokens[1].trim()).get(Integer.parseInt(tokens[1].trim()));
+				Clan clan = (Clan) ClanKontroler.pretraziClana(tokens[1].trim()).get(tokens[1].trim());
 
-				SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd");
+				SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 				Date datumRezervisanja = formatter.parse(tokens[2].trim());
 
 				rezervacije.add(new Rezervacija(knjiga, clan, datumRezervisanja));

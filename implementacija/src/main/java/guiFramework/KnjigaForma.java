@@ -9,6 +9,8 @@ import javax.swing.JTextArea;
 import javax.swing.ListSelectionModel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 
 import klaseSaAtributima.Knjiga;
 import kontrolKlase.KnjigaKontroler;
@@ -16,6 +18,8 @@ import kontrolKlase.KnjigaKontroler;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
+
 import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -58,7 +62,6 @@ public class KnjigaForma {
 			UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
 				| UnsupportedLookAndFeelException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 
@@ -72,32 +75,35 @@ public class KnjigaForma {
 
 		JLabel lbKnjige = new JLabel("Pretrazi knjige:");
 		lbKnjige.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lbKnjige.setBounds(8, 8, 120, 25);
+		lbKnjige.setBounds(7, 9, 120, 23);
 		frmPretragaKnjiga.getContentPane().add(lbKnjige);
 
 		JTextArea taPretragaKnjige = new JTextArea();
-		taPretragaKnjige.setBounds(130, 11, 166, 22);
+		taPretragaKnjige.setBounds(134, 10, 166, 22);
 		frmPretragaKnjiga.getContentPane().add(taPretragaKnjige);
 
-		JButton btnPretrazi = new JButton("Pretrazi");
+		JButton btnPretrazi = new JButton("Pretraži");
 		btnPretrazi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnPretrazi.setBounds(304, 10, 103, 23);
+		btnPretrazi.setBounds(307, 10, 103, 23);
 		frmPretragaKnjiga.getContentPane().add(btnPretrazi);
 
 		JList<Knjiga> listKnjige;
 		DefaultListModel<Knjiga> listModel = new DefaultListModel<Knjiga>();
+
 		try {
 			listModel.addAll(KnjigaKontroler.pronadjiKnjigu("").values());
 		} catch (IllegalArgumentException | IOException | ParseException e1) {
 			e1.printStackTrace();
 		}
+
 		listKnjige = new JList<Knjiga>(listModel);
 		listKnjige.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		listKnjige.setVisibleRowCount(-1);
-		listKnjige.setBounds(8, 47, 401, 178);
+		listKnjige.setBounds(8, 41, 401, 178);
 		frmPretragaKnjiga.getContentPane().add(listKnjige);
 
 		JButton btnOdaberi = new JButton("Odaberi");
+		btnOdaberi.setEnabled(false);
 		btnOdaberi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frmPretragaKnjiga.setVisible(false);
@@ -108,7 +114,34 @@ public class KnjigaForma {
 		});
 
 		btnOdaberi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnOdaberi.setBounds(157, 230, 103, 23);
+		btnOdaberi.setBounds(157, 228, 103, 23);
 		frmPretragaKnjiga.getContentPane().add(btnOdaberi);
+
+		btnPretrazi.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String pretraga = taPretragaKnjige.getText().trim();
+				btnOdaberi.setEnabled(false);
+
+				System.out.println(pretraga);
+
+				try {
+					listModel.clear();
+					listModel.addAll(KnjigaKontroler.pronadjiKnjigu(pretraga).values());
+
+					System.out.println(listModel);
+				} catch (IllegalArgumentException | IOException | ParseException e1) {
+					JOptionPane.showMessageDialog(frmPretragaKnjiga, "Došlo je do greške!", "Greška",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+
+		listKnjige.addListSelectionListener(new ListSelectionListener() {
+			@Override
+			public void valueChanged(ListSelectionEvent e) {
+				if (listKnjige.getSelectedIndex() != -1)
+					btnOdaberi.setEnabled(true);
+			}
+		});
 	}
 }

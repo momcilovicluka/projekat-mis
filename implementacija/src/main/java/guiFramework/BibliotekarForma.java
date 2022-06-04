@@ -8,6 +8,8 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class BibliotekarForma {
 
@@ -52,19 +54,45 @@ public class BibliotekarForma {
 		frmBibliotekaBibliotekar.setIconImage(Toolkit.getDefaultToolkit()
 				.getImage(BibliotekarForma.class.getResource("/guiFramework/book-stack.png")));
 		frmBibliotekaBibliotekar.setTitle("Biblioteka - Bibliotekar");
-		frmBibliotekaBibliotekar.setBounds(100, 100, 312, 248);
+		frmBibliotekaBibliotekar.setBounds(100, 100, 291, 347);
 		frmBibliotekaBibliotekar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmBibliotekaBibliotekar.getContentPane().setLayout(null);
 
 		JButton btnDodajKnjigu = new JButton("Dodavanje knjige");
+		btnDodajKnjigu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new DodavanjeKnjigeForma();
+				DodavanjeKnjigeForma.main(null);
+			}
+		});
+
 		btnDodajKnjigu.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnDodajKnjigu.setBounds(32, 15, 233, 82);
+		btnDodajKnjigu.setBounds(22, 16, 233, 82);
 		frmBibliotekaBibliotekar.getContentPane().add(btnDodajKnjigu);
 
 		JButton btnIzdavanjeKnjige = new JButton("Izdavanje knjige");
+		btnIzdavanjeKnjige.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new KnjigaForma();
+				KnjigaForma.main(null);
+			}
+		});
+
 		btnIzdavanjeKnjige.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnIzdavanjeKnjige.setBounds(32, 112, 233, 82);
+		btnIzdavanjeKnjige.setBounds(22, 114, 233, 82);
 		frmBibliotekaBibliotekar.getContentPane().add(btnIzdavanjeKnjige);
+
+		JButton btnRezervacija = new JButton("Izdavanje rezervacije");
+		btnRezervacija.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new RezervacijaForma();
+				RezervacijaForma.main(null);
+			}
+		});
+
+		btnRezervacija.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		btnRezervacija.setBounds(22, 212, 233, 82);
+		frmBibliotekaBibliotekar.getContentPane().add(btnRezervacija);
 	}
 
 }
