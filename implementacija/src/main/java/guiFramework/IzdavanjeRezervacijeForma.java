@@ -56,9 +56,9 @@ public class IzdavanjeRezervacijeForma {
 			UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
 				| UnsupportedLookAndFeelException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 		frmIzdavanjeRezervisaneKnjige = new JFrame();
 		frmIzdavanjeRezervisaneKnjige.setTitle("Izdavanje rezervisane knjige");
 		frmIzdavanjeRezervisaneKnjige.setIconImage(Toolkit.getDefaultToolkit()
