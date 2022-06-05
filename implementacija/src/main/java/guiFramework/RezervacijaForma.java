@@ -123,8 +123,6 @@ public class RezervacijaForma {
 				String pretraga = tfPretragaRezervacija.getText().trim();
 				btnOdaberi.setEnabled(false);
 
-				System.out.println("Dobar");
-
 				try {
 					listModel.clear();
 					listModel.addAll(RezervacijaKontroler.pretraziRezervaciju(pretraga));

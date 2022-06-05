@@ -6,11 +6,13 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -90,7 +92,13 @@ public class IzdavanjeForma {
 			public void actionPerformed(ActionEvent e) {
 				Izdavanje izdavanje = new Izdavanje(knjiga, clan, Date.valueOf(LocalDate.now()),
 						Date.valueOf(LocalDate.now().plusDays(30)));
-				IzdavanjeKontroler.sacuvajIzdavanje(izdavanje);
+				boolean dodat = IzdavanjeKontroler.sacuvajIzdavanje(izdavanje);
+				if (dodat)
+					JOptionPane.showMessageDialog(frmIzdavanjeKnjige, "Izdavanje je uspešno dodato", "Uspeh",
+							JOptionPane.INFORMATION_MESSAGE);
+				else
+					JOptionPane.showMessageDialog(frmIzdavanjeKnjige, "Izdavanje nije uspelo", "Greška",
+							JOptionPane.WARNING_MESSAGE);
 			}
 		});
 		btnIzdaj.setFont(new Font("Segoe UI", Font.PLAIN, 18));
@@ -109,17 +117,19 @@ public class IzdavanjeForma {
 		btnClan.setBounds(11, 103, 178, 28);
 		frmIzdavanjeKnjige.getContentPane().add(btnClan);
 
-		JLabel lblNazivField = new JLabel("");
+		JLabel lblNazivField = new JLabel(knjiga.toString());
 		lblNazivField.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblNazivField.setBounds(115, 10, 263, 21);
 		frmIzdavanjeKnjige.getContentPane().add(lblNazivField);
 
-		JLabel lblDatumIzdavanjaField = new JLabel("");
+		JLabel lblDatumIzdavanjaField = new JLabel(
+				new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now())));
 		lblDatumIzdavanjaField.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblDatumIzdavanjaField.setBounds(153, 41, 225, 21);
 		frmIzdavanjeKnjige.getContentPane().add(lblDatumIzdavanjaField);
 
-		JLabel lblRokField = new JLabel("");
+		JLabel lblRokField = new JLabel(
+				new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now().plusDays(30))));
 		lblRokField.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblRokField.setBounds(141, 73, 237, 21);
 		frmIzdavanjeKnjige.getContentPane().add(lblRokField);

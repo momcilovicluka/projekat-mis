@@ -122,13 +122,10 @@ public class KnjigaForma {
 				String pretraga = taPretragaKnjige.getText().trim();
 				btnOdaberi.setEnabled(false);
 
-				System.out.println(pretraga);
-
 				try {
 					listModel.clear();
 					listModel.addAll(KnjigaKontroler.pronadjiKnjigu(pretraga).values());
 
-					System.out.println(listModel);
 				} catch (IllegalArgumentException | IOException | ParseException e1) {
 					JOptionPane.showMessageDialog(frmPretragaKnjiga, "Došlo je do greške!", "Greška",
 							JOptionPane.ERROR_MESSAGE);

@@ -10,11 +10,14 @@ import java.time.LocalDate;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 import klaseSaAtributima.Izdavanje;
 import klaseSaAtributima.Rezervacija;
+import kontrolKlase.IzdavanjeRezervacijeKontroler;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -85,14 +88,14 @@ public class IzdavanjeRezervacijeForma {
 		lblClan.setBounds(11, 47, 46, 25);
 		frmIzdavanjeRezervisaneKnjige.getContentPane().add(lblClan);
 
-		Date rokZaVracanje = Date.valueOf(LocalDate.now().plusDays(30));
-		JLabel lblRokZaVracanjeInfo = new JLabel(new SimpleDateFormat("yyyy-MM-dd").format(rokZaVracanje));
+		JLabel lblRokZaVracanjeInfo = new JLabel(
+				new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now().plusDays(30))));
 		lblRokZaVracanjeInfo.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblRokZaVracanjeInfo.setBounds(158, 119, 102, 25);
 		frmIzdavanjeRezervisaneKnjige.getContentPane().add(lblRokZaVracanjeInfo);
 
-		String datumIzdavanja = new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now()));
-		JLabel lblDatumIzdavanjaInfo = new JLabel(datumIzdavanja);
+		JLabel lblDatumIzdavanjaInfo = new JLabel(
+				new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now())));
 		lblDatumIzdavanjaInfo.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblDatumIzdavanjaInfo.setBounds(171, 83, 102, 25);
 		frmIzdavanjeRezervisaneKnjige.getContentPane().add(lblDatumIzdavanjaInfo);
@@ -111,9 +114,14 @@ public class IzdavanjeRezervacijeForma {
 		btnIzdaj.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Izdavanje novoIzdavanje = new Izdavanje(rezervacija.getKnjiga(), rezervacija.getClan(),
-						Date.valueOf(LocalDate.now()), rokZaVracanje);
-				System.out.println(novoIzdavanje);
-				// IzdavanjeRezervacijeKontroler.
+						Date.valueOf(LocalDate.now()), Date.valueOf(LocalDate.now().plusDays(30)));
+				boolean dodat = IzdavanjeRezervacijeKontroler.sacuvajIzdavanje(novoIzdavanje);
+				if (dodat)
+					JOptionPane.showMessageDialog(frmIzdavanjeRezervisaneKnjige, "Izdavanje je uspešno dodato", "Uspeh",
+							JOptionPane.INFORMATION_MESSAGE);
+				else
+					JOptionPane.showMessageDialog(frmIzdavanjeRezervisaneKnjige, "Izdavanje nije uspelo", "Greška",
+							JOptionPane.WARNING_MESSAGE);
 			}
 		});
 

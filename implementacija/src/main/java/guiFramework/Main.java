@@ -128,7 +128,7 @@ public class Main {
 		btnLogin.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Dobar");
+
 				String username = tfUsername.getText().trim();
 				String password = String.valueOf(pfPassword.getPassword()).trim();
 

@@ -11,16 +11,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 import klaseSaAtributima.Clan;
-import klaseSaAtributima.Korisnik;
 
 public class ClanKontroler {
-	public static Map<String, Korisnik> pretraziClana(String pretraga)
+	public static Map<String, Clan> pretraziClana(String pretraga)
 			throws ParseException, NumberFormatException, IllegalArgumentException, IOException {
 		if (pretraga == null)
 			return null;
 
 		try (BufferedReader br = new BufferedReader(new FileReader("res/korisnici.csv"))) {
-			Map<String, Korisnik> clanovi = new HashMap<String, Korisnik>();
+			Map<String, Clan> clanovi = new HashMap<String, Clan>();
 			String line = "";
 
 			while ((line = br.readLine()) != null) {
