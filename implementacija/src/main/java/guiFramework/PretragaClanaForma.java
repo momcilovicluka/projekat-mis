@@ -7,10 +7,15 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+
+import klaseSaAtributima.Clan;
+
 import javax.swing.JButton;
 import javax.swing.JList;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class PretragaClanaForma {
 
@@ -74,15 +79,21 @@ public class PretragaClanaForma {
 		btnPretrazi.setBounds(322, 8, 97, 23);
 		frmPretragaClanova.getContentPane().add(btnPretrazi);
 
-		JButton btnOdaberi = new JButton("Odaberi člana");
-		btnOdaberi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnOdaberi.setBounds(140, 232, 147, 23);
-		frmPretragaClanova.getContentPane().add(btnOdaberi);
-
-		JList<?> listClanova = new JList<Object>();
+		JList<Clan> listClanova = new JList<Clan>();
 		listClanova.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		listClanova.setBounds(8, 39, 411, 187);
 		frmPretragaClanova.getContentPane().add(listClanova);
+
+		JButton btnOdaberi = new JButton("Odaberi člana");
+		btnOdaberi.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				IzdavanjeForma.clan = (Clan) listClanova.getSelectedValue();
+				frmPretragaClanova.setVisible(false);
+			}
+		});
+		btnOdaberi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		btnOdaberi.setBounds(140, 232, 147, 23);
+		frmPretragaClanova.getContentPane().add(btnOdaberi);
 	}
 
 }

@@ -7,6 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import klaseSaAtributima.Rezervacija;
+
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.Toolkit;
@@ -16,6 +18,7 @@ import java.awt.event.ActionEvent;
 public class DetaljiRezervacijeForma {
 
 	private JFrame frmIzdavanjeRezervacije;
+	public static Rezervacija rezervacija;
 
 	/**
 	 * Launch the application.
