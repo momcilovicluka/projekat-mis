@@ -67,52 +67,52 @@ public class DodavanjeBibliotekaraForma {
 				.getImage(DodavanjeBibliotekaraForma.class.getResource("/guiFramework/book-stack.png")));
 		frmNoviBibliotekar.setTitle("Novi bibliotekar");
 		frmNoviBibliotekar.getContentPane().setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		frmNoviBibliotekar.setBounds(100, 100, 271, 199);
+		frmNoviBibliotekar.setBounds(100, 100, 232, 199);
 		frmNoviBibliotekar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmNoviBibliotekar.getContentPane().setLayout(null);
 
 		JLabel lblIme = new JLabel("Ime:");
 		lblIme.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lblIme.setBounds(75, 11, 45, 19);
+		lblIme.setBounds(12, 10, 45, 19);
 		frmNoviBibliotekar.getContentPane().add(lblIme);
 
 		JLabel lblPrezime = new JLabel("Prezime:");
 		lblPrezime.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lblPrezime.setBounds(46, 41, 74, 19);
+		lblPrezime.setBounds(12, 39, 74, 19);
 		frmNoviBibliotekar.getContentPane().add(lblPrezime);
 
 		tfIme = new JTextField();
 		tfIme.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		tfIme.setBounds(122, 11, 96, 19);
+		tfIme.setBounds(110, 10, 96, 19);
 		frmNoviBibliotekar.getContentPane().add(tfIme);
 		tfIme.setColumns(10);
 
 		tfPrezime = new JTextField();
 		tfPrezime.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		tfPrezime.setColumns(10);
-		tfPrezime.setBounds(122, 41, 96, 19);
+		tfPrezime.setBounds(110, 39, 96, 19);
 		frmNoviBibliotekar.getContentPane().add(tfPrezime);
 
 		JLabel lblUsername = new JLabel("Username:");
 		lblUsername.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lblUsername.setBounds(31, 70, 89, 19);
+		lblUsername.setBounds(12, 68, 89, 19);
 		frmNoviBibliotekar.getContentPane().add(lblUsername);
 
 		tfUsername = new JTextField();
 		tfUsername.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		tfUsername.setColumns(10);
-		tfUsername.setBounds(122, 74, 96, 19);
+		tfUsername.setBounds(110, 68, 96, 19);
 		frmNoviBibliotekar.getContentPane().add(tfUsername);
 
 		JLabel lblPassword = new JLabel("Password:");
 		lblPassword.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		lblPassword.setBounds(34, 100, 86, 19);
+		lblPassword.setBounds(12, 97, 86, 19);
 		frmNoviBibliotekar.getContentPane().add(lblPassword);
 
 		tfPassword = new JTextField();
 		tfPassword.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		tfPassword.setColumns(10);
-		tfPassword.setBounds(122, 104, 96, 19);
+		tfPassword.setBounds(110, 97, 96, 19);
 		frmNoviBibliotekar.getContentPane().add(tfPassword);
 
 		JButton btnSacuvaj = new JButton("Sačuvaj");
@@ -139,7 +139,7 @@ public class DodavanjeBibliotekaraForma {
 			}
 		});
 		btnSacuvaj.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		btnSacuvaj.setBounds(79, 130, 96, 23);
+		btnSacuvaj.setBounds(61, 126, 96, 23);
 		frmNoviBibliotekar.getContentPane().add(btnSacuvaj);
 	}
 }
