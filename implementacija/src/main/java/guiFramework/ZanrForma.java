@@ -87,7 +87,6 @@ public class ZanrForma {
 				NoviZanrForma.main(null);
 			}
 		});
-
 		btnDodajZanr.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnDodajZanr.setBounds(7, 231, 137, 23);
 		frmZanr.getContentPane().add(btnDodajZanr);
@@ -100,18 +99,15 @@ public class ZanrForma {
 
 		JList<Zanr> listZanr;
 		DefaultListModel<Zanr> listModel = new DefaultListModel<Zanr>();
-
 		try {
 			listModel.addAll(ZanrKontroler.pronadjiZanr("").values());
 		} catch (IllegalArgumentException | IOException e1) {
 			e1.printStackTrace();
 		}
-
 		listZanr = new JList<Zanr>(listModel);
 		listZanr.setLayoutOrientation(JList.HORIZONTAL_WRAP);
 		listZanr.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		listZanr.setVisibleRowCount(-1);
-
 		listZanr.addListSelectionListener(new ListSelectionListener() {
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
@@ -119,7 +115,6 @@ public class ZanrForma {
 					btnIzaberiZanr.setEnabled(true);
 			}
 		});
-
 		listZanr.setBounds(7, 40, 372, 187);
 		frmZanr.getContentPane().add(listZanr);
 
@@ -127,7 +122,6 @@ public class ZanrForma {
 		btnPretrazi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String pretraga = tfPretraga.getText().trim();
-
 				try {
 					listModel.clear();
 					listModel.addAll(ZanrKontroler.pronadjiZanr(pretraga).values());
@@ -136,7 +130,6 @@ public class ZanrForma {
 				}
 			}
 		});
-
 		btnPretrazi.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		btnPretrazi.setBounds(275, 12, 104, 23);
 		frmZanr.getContentPane().add(btnPretrazi);

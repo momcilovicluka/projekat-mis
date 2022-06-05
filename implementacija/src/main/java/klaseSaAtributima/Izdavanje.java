@@ -1,5 +1,6 @@
 package klaseSaAtributima;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Izdavanje {
@@ -58,5 +59,21 @@ public class Izdavanje {
 			throw new IllegalArgumentException("Rok za vraćanje mora biti prosleđen!");
 
 		this.rokZaVracanje = rokZaVracanje;
+	}
+
+	public String toStringFile() {
+		StringBuilder stringZaFile = new StringBuilder();
+		String separator = ",";
+
+		stringZaFile.append(this.getKnjiga().getIdk());
+		stringZaFile.append(separator);
+		stringZaFile.append(this.getClan().getUsername());
+		stringZaFile.append(separator);
+		stringZaFile.append(new SimpleDateFormat("yyyy-MM-dd").format(this.getDatumIzdavanja()));
+		stringZaFile.append(separator);
+		stringZaFile.append(new SimpleDateFormat("yyyy-MM-dd").format(this.getRokZaVracanje()));
+		stringZaFile.append("\n");
+
+		return stringZaFile.toString();
 	}
 }
