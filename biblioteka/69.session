@@ -1,27 +1,12 @@
-window_sizes 1920 1032 327 1587 876 104
+window_sizes 1920 1017 328 1586 861 104
 cleanlooks_style
 diagrams
-  usecasediagram_ref 128011 // useCaseClan
-    112 90 100 A4 0 0
-  activitydiagram_ref 134597 // izdavanjeKnjige
-    112 90 100 A0 0 0
-  active  activitydiagram_ref 134539 // dodavanjeKnjige
-    1587 876 59 A0 0 0
-  classdiagram_ref 141125 // KlasniDijagram
-    112 90 80 A0 0 0
-  sequencediagram_ref 141067 // IzdavanjeKnjigeSekvencija
-    112 90 100 A0 0 0
-  sequencediagram_ref 147595 // dodavanjeKnjigeSekvencija
-    112 90 100 A0 0 0
-  sequencediagram_ref 154123 // dodavanjeBibliotekaraSekvencija
-    112 90 100 A0 0 0
-  classdiagram_ref 147781 // packageDijagram
-    112 90 100 A0 0 0
-  usecasediagram_ref 128069 // useCaseDiagramBiblAdmin
-    112 90 100 A0 0 0
+  active  classdiagram_ref 147781 // packageDijagram
+    1586 861 100 A0 0 0
 end
 show_stereotypes
-selected activitydiagram_ref 134539 // dodavanjeKnjige
+selected 
+  package_ref 141893 // text
 open
   class_ref 128139 // Clan
   activity_ref 128069 // izdavanjeKnjigeActivity

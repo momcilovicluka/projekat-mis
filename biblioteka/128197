@@ -1,6 +1,6 @@
 format 224
 "KontrolKlase" // KontrolKlase
-  revision 1
+  revision 3
   modified_by 69 "Luka"
   // class settings
   
@@ -35,5 +35,36 @@ format 224
       stereotype "import"
       on 
       package_ref 128453 // KlaseSaAtributima
+  end
+
+  simplerelation 164549
+    -_->
+      stereotype "access"
+      on 
+      package_ref 134981 // res
+  end
+
+  simplerelation 177605
+    -_->
+      on 
+      package_ref 141509 // util
+  end
+
+  simplerelation 177733
+    -_->
+      on 
+      package_ref 141893 // text
+  end
+
+  simplerelation 177861
+    -_->
+      on 
+      package_ref 141765 // io
+  end
+
+  simplerelation 177989
+    -_->
+      on 
+      package_ref 141637 // nio
   end
 end

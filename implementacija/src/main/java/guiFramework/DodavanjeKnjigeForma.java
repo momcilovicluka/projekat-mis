@@ -164,7 +164,7 @@ public class DodavanjeKnjigeForma {
 					Knjiga k = new Knjiga(naziv, autor, zanr, izdavac, brojStrana, brojNaStanju, ukupanBroj);
 					DodavanjeKnjigeKontroler.sacuvajKnjigu(k);
 
-					JOptionPane.showMessageDialog(frmDodavanjeKnjige, "Uspešno dodata knjiga", "Greška",
+					JOptionPane.showMessageDialog(frmDodavanjeKnjige, "Uspešno dodata knjiga", "Uspeh",
 							JOptionPane.INFORMATION_MESSAGE);
 				} catch (Exception ex) {
 					JOptionPane.showMessageDialog(frmDodavanjeKnjige, ex.getMessage(), "Greška",

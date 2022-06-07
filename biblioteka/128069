@@ -1,7 +1,7 @@
 format 224
 "GUIFramework" // GUIFramework
-  revision 2
-  modified_by 11 "Dalibor"
+  revision 3
+  modified_by 69 "Luka"
   // class settings
   
   classdiagramsettings member_max_width 0 end
@@ -46,6 +46,13 @@ format 224
 
   simplerelation 143755
     -_->
+      on 
+      package_ref 128453 // KlaseSaAtributima
+  end
+
+  simplerelation 171077
+    -_->
+      stereotype "import"
       on 
       package_ref 128453 // KlaseSaAtributima
   end

@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Bouml (http://bouml.free.fr/) -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="1127" height="274" version="1.1" xmlns="http://www.w3.org/2000/svg">
-<g>
-	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="212" y="139" width="3" height="13" />
-	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="121" y="135" width="91" height="17" />
-	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-anchor="middle" x="167" y="148">GUIFramework</text>
-	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="351" y="157" width="3" height="100" />
-	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="125" y="254" width="229" height="3" />
-	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="121" y="153" width="230" height="101" />
-</g>
+<svg width="1127" height="476" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <g>
 	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="555" y="149" width="3" height="13" />
 	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="476" y="145" width="79" height="17" />
@@ -19,12 +11,33 @@
 	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="476" y="163" width="200" height="86" />
 </g>
 <g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="553" y="350" width="3" height="13" />
+	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="469" y="346" width="84" height="17" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-anchor="middle" x="511" y="359">res</text>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="681" y="368" width="3" height="95" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="473" y="460" width="211" height="3" />
+	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="469" y="364" width="212" height="96" />
+</g>
+<g>
 	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="938" y="149" width="3" height="13" />
 	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="825" y="145" width="113" height="17" />
 	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-anchor="middle" x="882" y="158">KlaseSaAtributima</text>
 	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1111" y="167" width="3" height="94" />
 	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="829" y="258" width="285" height="3" />
 	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="825" y="163" width="286" height="95" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="212" y="139" width="3" height="13" />
+	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="121" y="135" width="91" height="17" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-anchor="middle" x="167" y="148">GUIFramework</text>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="351" y="157" width="3" height="100" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="125" y="254" width="229" height="3" />
+	<rect fill="#c0ffff" stroke="black" stroke-width="1" stroke-opacity="1" x="121" y="153" width="230" height="101" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="577" y1="345" x2="583" y2="339" />
+	<line stroke="black" stroke-opacity="1" x1="577" y1="345" x2="571" y2="339" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="577" y1="253" x2="577" y2="345" />
 </g>
 <g>
 	<line stroke="black" stroke-opacity="1" x1="475" y1="197" x2="469" y2="190" />
@@ -37,9 +50,12 @@
 	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="680" y1="200" x2="824" y2="200" />
 </g>
 <g>
-	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="713" y="196">&lt;&lt;import&gt;&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="547" y="307">&lt;&lt;access&gt;&gt;</text>
 </g>
 <g>
 	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="371" y="205">&lt;&lt;import&gt;&gt;</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="713" y="196">&lt;&lt;import&gt;&gt;</text>
 </g>
 </svg>

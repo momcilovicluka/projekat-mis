@@ -2,20 +2,71 @@ format 224
 
 packagecanvas 128197 
   package_ref 128069 // GUIFramework
-  name_in_tab yes color blue  xyzwh 121 135 2000 235 124
+  name_in_tab yes color blue  xyzwh 130 359 2000 235 124
 end
 packagecanvas 128325 
   package_ref 128453 // KlaseSaAtributima
-  name_in_tab yes color blue  xyzwh 825 145 2000 291 118
+  name_in_tab yes color blue  xyzwh 834 369 2000 291 118
 end
 packagecanvas 128581 
   package_ref 128197 // KontrolKlase
-  name_in_tab yes show_context_mode no show_stereotype_properties no color blue  xyzwh 476 145 2000 205 109
+  name_in_tab yes show_context_mode no show_stereotype_properties no color blue  xyzwh 485 369 2000 205 109
+end
+packagecanvas 129093 
+  package_ref 134981 // res
+  name_in_tab yes show_context_mode no show_stereotype_properties no color blue  xyzwh 478 570 2000 217 119
+end
+packagecanvas 130117 
+  package_ref 141765 // io
+  name_in_tab yes show_context_mode no show_stereotype_properties no color blue  xyzwh 277 87 2000 221 93
+end
+packagecanvas 130245 
+  package_ref 141637 // nio
+  name_in_tab yes show_context_mode no show_stereotype_properties no color blue  xyzwh 661 77 2000 293 109
+end
+packagecanvas 130501 
+  package_ref 141893 // text
+  name_in_tab yes show_context_mode no show_stereotype_properties no color blue  xyzwh 661 217 2000 283 109
+end
+packagecanvas 130629 
+  package_ref 141509 // util
+  name_in_tab yes show_context_mode no show_stereotype_properties no color blue  xyzwh 278 215 2000 237 103
 end
 simplerelationcanvas 128837 simplerelation_ref 157765
-  from ref 128197 z 2001 stereotype "<<import>>" xyz 371 197 3000 to ref 128581
+  from ref 128197 z 2001 stereotype "<<import>>" xyz 380 421 3000 to ref 128581
 end
 simplerelationcanvas 128965 simplerelation_ref 157893
-  from ref 128581 z 2001 stereotype "<<import>>" xyz 713 188 3000 to ref 128325
+  from ref 128581 z 2001 stereotype "<<import>>" xyz 722 412 3000 to ref 128325
+end
+simplerelationcanvas 129349 simplerelation_ref 164549
+  from ref 128581 z 2001 stereotype "<<access>>" xyz 556 523 3000 to ref 129093
+end
+simplerelationcanvas 129477 simplerelation_ref 171077
+  from ref 128197 z 2001 stereotype "<<import>>" xyz 567 51 3000 to point 240 31
+  line 129861 z 2001 to point 973 31
+  line 129989 z 2001 to ref 128325
+end
+simplerelationcanvas 130885 simplerelation_ref 177605
+  decenter_begin 57
+  from ref 128581 z 2001 to point 492 345
+  line 132165 z 2001 to point 394 342
+  line 132037 z 2001 to ref 130629
+end
+simplerelationcanvas 131013 simplerelation_ref 177733
+  decenter_begin 878
+  decenter_end 409
+  from ref 128581 z 2001 to point 663 342
+  line 131781 z 2001 to point 773 344
+  line 131909 z 2001 to ref 130501
+end
+simplerelationcanvas 131141 simplerelation_ref 177861
+  decenter_begin 268
+  from ref 128581 z 2001 to point 532 131
+  line 131525 z 2001 to ref 130117
+end
+simplerelationcanvas 131269 simplerelation_ref 177989
+  decenter_begin 667
+  from ref 128581 z 2001 to point 620 128
+  line 131397 z 2001 to ref 130245
 end
 end

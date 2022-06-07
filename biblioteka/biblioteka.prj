@@ -1,6 +1,6 @@
 format 224
 "biblioteka"
-  revision 21
+  revision 24
   modified_by 69 "Luka"
 
 
@@ -4301,4 +4301,14 @@ ${docstring}${members}
   package_ref 128325 // KlaseZaSaCSV
 
   package_ref 128453 // KlaseSaAtributima
+
+  package_ref 134981 // res
+
+  package_ref 141509 // util
+
+  package_ref 141637 // nio
+
+  package_ref 141765 // io
+
+  package_ref 141893 // text
 end
